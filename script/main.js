@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   initBurgerMenu();
+    initClientLogosSwiper();
 });
 
 function initBurgerMenu() {
@@ -48,4 +49,26 @@ function toggleMobileMenu(menu, burger, body, overlay) {
     body.style.overflow = "";
     body.classList.remove("menu-open");
   }
+}
+
+function initClientLogosSwiper() {
+  const wrapper = document.querySelector(".realEstateSection-swiper-wrapper");
+  if (!wrapper) return;
+
+  const originalSlides = Array.from(wrapper.children);
+  const neededClones = 10;
+  for (let i = 0; i < neededClones; i++) {
+    const slide = originalSlides[i % originalSlides.length].cloneNode(true);
+    wrapper.appendChild(slide);
+  }
+
+  /* global Swiper */
+  new Swiper(".realEstateSection-swiper", {
+    loop: true,
+    speed: 5000,
+    slidesPerView: "auto",
+    spaceBetween: 30,
+    autoplay: { delay: 0, disableOnInteraction: false },
+    allowTouchMove: false,
+  });
 }
