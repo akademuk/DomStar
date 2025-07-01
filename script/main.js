@@ -67,7 +67,7 @@ function initClientLogosSwiper() {
     loop: true,
     speed: 5000,
     slidesPerView: "auto",
-    spaceBetween: 30,
+    spaceBetween: 16,
     autoplay: { delay: 0, disableOnInteraction: false },
     allowTouchMove: false,
   });
