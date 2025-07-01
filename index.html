@@ -105,40 +105,41 @@
             <picture class="hero__picture">
                 <!-- WebP для десктопа (>=1280px) -->
                 <source type="image/webp" media="(min-width: 1280px)" srcset="
-                    img/hero.webp       1280w,
-                    img/hero@2x.webp    2560w
-                    " sizes="1280px">
-                                <!-- PNG для десктопа (fallback) -->
+      img/hero.webp        1280w,
+      img/hero@2x.webp     2560w
+    " sizes="100vw">
+                <!-- PNG-фоллбек для десктопа -->
                 <source media="(min-width: 1280px)" srcset="
-                    img/hero.png        1280w,
-                    img/hero@2x.png     2560w
-                    " sizes="1280px">
+      img/hero.png         1280w,
+      img/hero@2x.png      2560w
+    " sizes="100vw">
 
                 <!-- WebP для планшетов (768px–1279px) -->
                 <source type="image/webp" media="(min-width: 768px) and (max-width: 1279px)" srcset="
-                    img/hero-mobile.webp       768w,
-                    img/hero-mobile@2x.webp    1536w
-                    " sizes="768px">
-                                <!-- PNG для планшетов (fallback) -->
+      img/hero-mobile.webp      768w,
+      img/hero-mobile@2x.webp  1536w
+    " sizes="100vw">
+                <!-- PNG-фоллбек для планшетов -->
                 <source media="(min-width: 768px) and (max-width: 1279px)" srcset="
-                    img/hero-mobile.png        768w,
-                    img/hero-mobile@2x.png     1536w
-                    " sizes="768px">
+      img/hero-mobile.png       768w,
+      img/hero-mobile@2x.png   1536w
+    " sizes="100vw">
 
                 <!-- WebP для мобильных (<768px) -->
                 <source type="image/webp" media="(max-width: 767px)" srcset="
-                    img/hero768.webp       360w,
-                    img/hero768@2x.webp    720w
-                    " sizes="100vw">
-                                <!-- PNG для мобильных (fallback) -->
+      img/hero768.webp      360w,
+      img/hero768@2x.webp   720w
+    " sizes="100vw">
+                <!-- PNG-фоллбек для мобильных -->
                 <source media="(max-width: 767px)" srcset="
-                    img/hero768.png        360w,
-                    img/hero768@2x.png     720w
-                    " sizes="100vw">
+      img/hero768.png       360w,
+      img/hero768@2x.png    720w
+    " sizes="100vw">
 
-                <!-- Финальный фоллбек -->
-                <img src="img/hero768.webp" alt="Небоскрёбы на фоне неба" class="hero__img">
+                <!-- Финальный фоллбек LCP-изображения -->
+                <img src="img/hero768.webp" alt="Небоскрёбы на фоне неба" class="hero__img" fetchpriority="high">
             </picture>
+
 
 
 
