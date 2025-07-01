@@ -23,8 +23,10 @@
     <header class="header">
         <div class="header__inner container">
             <a href="/" class="header__logo">
-                <img src="img/logo-mobile.svg" width="107" height="26" alt="DOMSTAR Training Ecosystem" class="header__logo-mobile">
-                <img src="img/logo.svg" width="136" height="34" alt="DOMSTAR Training Ecosystem" class="header__logo-desktop">
+                <img src="img/logo-mobile.svg" width="107" height="26" alt="DOMSTAR Training Ecosystem"
+                    class="header__logo-mobile">
+                <img src="img/logo.svg" width="136" height="34" alt="DOMSTAR Training Ecosystem"
+                    class="header__logo-desktop">
             </a>
             <nav class="nav" aria-label="Главное меню">
                 <ul class="nav__list">
@@ -101,34 +103,46 @@
     <main>
         <section class="hero">
             <picture class="hero__picture">
-                <!-- WebP для десктопа -->
+                <!-- WebP для десктопа (>=1280px) -->
                 <source type="image/webp" media="(min-width: 1280px)" srcset="
-                    img/hero.webp   1x,
-                    img/hero@2x.webp 2x
-                ">
+            img/hero.webp       1x,
+            img/hero@2x.webp    2x
+        ">
                 <!-- PNG для десктопа (fallback) -->
                 <source media="(min-width: 1280px)" srcset="
-                    img/hero.png   1x,
-                    img/hero@2x.png 2x
-                ">
+            img/hero.png        1x,
+            img/hero@2x.png     2x
+        ">
 
-                <!-- WebP для мобильных -->
-                <source type="image/webp" media="(max-width: 1279px)" srcset="
-                    img/hero-mobile.webp   1x,
-                    img/hero-mobile@2x.webp 2x
-                ">
+                <!-- WebP для планшетов (768px–1279px) -->
+                <source type="image/webp" media="(min-width: 768px) and (max-width: 1279px)" srcset="
+            img/hero-mobile.webp       1x,
+            img/hero-mobile@2x.webp    2x
+        ">
+                <!-- PNG для планшетов (fallback) -->
+                <source media="(min-width: 768px) and (max-width: 1279px)" srcset="
+            img/hero-mobile.png        1x,
+            img/hero-mobile@2x.png     2x
+        ">
+
+                <!-- WebP для мобильных (<768px) -->
+                <source type="image/webp" media="(max-width: 767px)" srcset="
+            img/hero768.webp       1x,
+            img/hero768@2x.webp    2x
+        ">
                 <!-- PNG для мобильных (fallback) -->
-                <source media="(max-width: 1279px)" srcset="
-                    img/hero-mobile.png   1x,
-                    img/hero-mobile@2x.png 2x
-                ">
+                <source media="(max-width: 767px)" srcset="
+            img/hero768.png        1x,
+            img/hero768@2x.png     2x
+        ">
 
                 <!-- Финальный фоллбек -->
                 <img src="img/hero.png" alt="Небоскрёбы на фоне неба" class="hero__img">
             </picture>
 
 
-            
+
+
 
             <div class="hero__content container">
                 <div class="hero__title">
