@@ -359,7 +359,7 @@ body {
     flex: 1 0 0;
     color: var(--colors-Red-50);
     font-family: var(--fonts-family-Segoe-UI);
-    font-size: 10px;
+    font-size: 14px;;
     font-weight: 400;
     line-height: 100%;
 }
@@ -377,7 +377,7 @@ body {
     border: none;
     color: var(--colors-Fuchsia-50);
     font-family: var(--fonts-family-Segoe-UI);
-    font-size: 10px;
+    font-size: 14px;;
     font-weight: 600;
     line-height: 120%;
     cursor: pointer;
@@ -533,7 +533,7 @@ body.menu-open {
 .nav__list__link {
     color: var(--colors-Fuchsia-50);
     font-family: var(--fonts-family-Segoe-UI);
-    font-size: 10px;
+    font-size: 14px;;
     font-weight: 600;
     line-height: 120%;
     text-decoration: none;
@@ -576,7 +576,7 @@ body.menu-open {
     background: var(--colors-base-white-100);
     color: var(--colors-Red-950);
     font-family: var(--fonts-family-Segoe-UI);
-    font-size: 10px;
+    font-size: 14px;;
     font-weight: 600;
     line-height: 120%; 
     transition: all 0.4s;
@@ -715,7 +715,7 @@ body.menu-open {
 .hero__promo .hero__cta {
     border: none;
     text-decoration: none;
-    font-size: 10px;
+    font-size: 14px;;
     height: 48px;
     padding: 14px 16px;
 }
