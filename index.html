@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/style.css">
-    <link rel="preload" as="image" href="img/hero768.webp" imagesrcset="img/hero768.webp 360w" imagesizes="100vw" />
+    
 
 </head>
 
@@ -104,38 +104,14 @@
     <!-- HERO SECTION -->
     <main>
         <section class="hero">
+
+
             <picture class="hero__picture">
-                <!-- WebP для десктопа (>=1280px) -->
-                <source type="image/webp" media="(min-width: 1280px)" srcset="
-      img/hero.webp       1280w
-    " sizes="100vw">
-                <!-- PNG-фоллбек для десктопа -->
-                <source media="(min-width: 1280px)" srcset="
-      img/hero.png        1280w
-    " sizes="100vw">
-
-                <!-- WebP для планшетов (768px–1279px) -->
-                <source type="image/webp" media="(min-width: 768px) and (max-width: 1279px)" srcset="
-      img/hero-mobile.webp      768w
-    " sizes="100vw">
-                <!-- PNG-фоллбек для планшетов -->
-                <source media="(min-width: 768px) and (max-width: 1279px)" srcset="
-      img/hero-mobile.png       768w
-    " sizes="100vw">
-
-                <!-- WebP для мобильных (<768px) -->
-                <source type="image/webp" media="(max-width: 767px)" srcset="
-      img/hero768.webp      360w
-    " sizes="100vw">
-                <!-- PNG-фоллбек для мобильных -->
-                <source media="(max-width: 767px)" srcset="
-      img/hero768.png       360w
-    " sizes="100vw">
-
-                <!-- LCP-элемент: сразу врываемся в рендер -->
-                <img src="img/hero768.webp" alt="Небоскрёбы на фоне неба" class="hero__img" width="360" height="600"
-                    fetchpriority="high" decoding="async">
-            </picture>
+                            <source type="img/webp" srcset="images/hero.webp">
+                            <img src="img/hero.png" width="1920" height="990"
+                                alt="Screenshot of EstateIn real estate project" 
+                                aria-describedby="hero-description">
+                        </picture>
 
 
 
