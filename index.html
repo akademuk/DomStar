@@ -129,13 +129,26 @@
 
 
             <picture class="hero__picture--noize">
-                <source type="image/webp" srcset="
+               <!-- WebP для десктопа -->
+                <source type="image/webp" media="(min-width: 1280px)" srcset="
                     img/Noise.webp   1x,
                     img/Noise@2x.webp 2x
                 ">
+                <!-- PNG для десктопа (fallback) -->
                 <source media="(min-width: 1280px)" srcset="
-                    img/Noise.png            1x,
-                    img/Noise@2x.png         2x
+                    img/Noise.png   1x,
+                    img/Noise@2x.png 2x
+                ">
+
+                <!-- WebP для мобильных -->
+                <source type="image/webp" media="(max-width: 1279px)" srcset="
+                    img/noise-mobile.webp   1x,
+                    img/noise-mobile@2x.webp 2x
+                ">
+                <!-- PNG для мобильных (fallback) -->
+                <source media="(max-width: 1279px)" srcset="
+                    img/noise-mobile.png   1x,
+                    img/noise-mobile@2x.png 2x
                 ">
 
                 <img src="img/Noise.png" alt="Небоскрёбы на фоне неба" class="hero__img" loading="lazy" width="1920" height="990">
