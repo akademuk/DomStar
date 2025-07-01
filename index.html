@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DomStar</title>
+
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class="promo-bar">
+        <div class="wrapper">
+            <img width="24" height="24" src="img/icon1.svg" alt="icon" class="promo-bar__icon">
+            <p>Акция! Полный курс с ментором и базой недвижимости по 4 странам со скидкой — стартуйте прямо сейчас!</p>
+            <button>Записаться <img src="img/arrow-right.svg" width="20" height="20" alt="icon"></button>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header__inner container">
+            <a href="/" class="header__logo">
+                <img src="img/logo-mobile.svg" width="107" height="26" alt="DOMSTAR Training Ecosystem" class="header__logo-mobile">
+                <img src="img/logo.svg" width="136" height="34" alt="DOMSTAR Training Ecosystem" class="header__logo-desktop">
+            </a>
+            <nav class="nav" aria-label="Главное меню">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#marketing" class="nav__link">Маркетинг</a></li>
+                    <li class="nav__item"><a href="#platform" class="nav__link">Платформа</a></li>
+                    <li class="nav__item"><a href="#courses" class="nav__link">Обучение</a></li>
+                    <li class="nav__item"><a href="#company" class="nav__link">Компания</a></li>
+                    <li class="nav__item"><a href="#lms" class="nav__link">LMS</a></li>
+                </ul>
+            </nav>
+            <div class="header__actions">
+                <button class="button header__join-button">Присоединиться
+                    <img width="20" height="21" src="img/icon-btn1.svg" alt="button icon">
+                </button>
+                <button class="header__login-link">Вход
+                    <img width="20" height="21" src="img/icon-btn2.svg" alt="button icon">
+                </button>
+            </div>
+            <div class="mobile-menu">
+                <button class="burger button" aria-label="Open menu" aria-expanded="false">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </button>
+            </div>
+            <div class="mobile-links" aria-hidden="true">
+                <nav class="nav__list__nav" aria-label="Главное меню">
+                    <ul class="nav__list__list">
+                        <li class="nav__list__item"><a href="#marketing" class="nav__list__link">Маркетинг</a></li>
+                        <li class="nav__list__item"><a href="#platform" class="nav__list__link">Платформа</a></li>
+                        <li class="nav__list__item"><a href="#courses" class="nav__list__link">Обучение</a></li>
+                        <li class="nav__list__item"><a href="#company" class="nav__list__link">Компания</a></li>
+                        <li class="nav__list__item"><a href="#lms" class="nav__list__link">LMS</a></li>
+                    </ul>
+                </nav>
+                <div class="header__actions">
+                    <button class="button header__join-button">Присоединиться
+                        <img width="20" height="21" src="img/icon-btn1.svg" alt="button icon">
+                    </button>
+                    <button class="header__login-link">Вход
+                        <img width="20" height="21" src="img/icon-btn2.svg" alt="button icon">
+                    </button>
+                </div>
+                <ul class="nav__list__social">
+                    <li class="nav__list__social--item">
+                        <a href="/" class="nav__list__link">
+                            <img src="img/nav__list__link1.svg" width="20" height="21" alt="icon">
+                        </a>
+                    </li>
+
+                    <li class="nav__list__social--item">
+                        <a href="/" class="nav__list__link">
+                            <img src="img/nav__list__link2.svg" width="18" height="17" alt="icon">
+                        </a>
+                    </li>
+
+                    <li class="nav__list__social--item">
+                        <a href="/" class="nav__list__link">
+                            <img src="img/nav__list__link3.svg" width="18" height="16" alt="icon">
+                        </a>
+                    </li>
+
+                    <li class="nav__list__social--item">
+                        <a href="/" class="nav__list__link">
+                            <img src="img/nav__list__link4.svg" width="18" height="17" alt="icon">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <main>
+        <section class="hero">
+            <picture class="hero__picture">
+                <!-- WebP для десктопа -->
+                <source type="image/webp" media="(min-width: 1280px)" srcset="
+                    img/hero.webp   1x,
+                    img/hero@2x.webp 2x
+                ">
+                <!-- PNG для десктопа (fallback) -->
+                <source media="(min-width: 1280px)" srcset="
+                    img/hero.png            1x,
+                    img/hero@2x.png         2x
+                ">
+
+                <!-- WebP для мобильных -->
+                <source type="image/webp" media="(max-width: 1279px)" srcset="
+                    img/hero-mobile.webp    1x,
+                    img/hero-mobile@2x.webp 2x
+                ">
+                <!-- JPG для мобильных (fallback) -->
+                <source media="(max-width: 767px)" srcset="
+                    img/hero-mobile.png     1x,
+                    img/hero-mobile@2x.png  2x
+                ">
+
+                <!-- Финальный фоллбек -->
+                <img src="img/hero.png" alt="Небоскрёбы на фоне неба" class="hero__img">
+            </picture>
+
+            <picture class="hero__picture--noize">
+                <source type="image/webp" srcset="
+                    img/Noise.webp   1x,
+                    img/Noise@2x.webp 2x
+                ">
+                <source media="(min-width: 1280px)" srcset="
+                    img/Noise.png            1x,
+                    img/Noise@2x.png         2x
+                ">
+
+                <img src="img/Noise.png" alt="Небоскрёбы на фоне неба" class="hero__img">
+            </picture>
+
+            <div class="hero__content container">
+                <div class="hero__title">
+                    <h1>Обучающая экосистема</h1>
+                    <p class="hero__subtitle">для риелторов и брокеров</p>
+                </div>
+
+                <div class="hero__promo">
+                    <span class="hero__promo-text">
+                        <span><img width="32" height="33" src="img/icon2.svg" alt="icon"></span>
+                        Зарабатывай дополнительно от $2000 в месяц из любой точки мира на недвижимости
+                    </span>
+                    <a href="#join" class="button--primary hero__cta">Присоединиться сейчас</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <div class="menu-overlay"></div>
+    <script src="script/main.js"></script>
+</body>
+
+</html>
