@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/style.css">
-    
+
 
 </head>
 
@@ -104,9 +104,53 @@
     <!-- HERO SECTION -->
     <main>
         <section class="hero">
+            <picture class="hero__picture">
+                <source type="image/webp" media="(min-width: 1280px)" srcset="
+                img/hero.webp       1280w
+                " sizes="100vw">
+                <source media="(min-width: 1280px)" srcset="
+                img/hero.png        1280w
+                " sizes="100vw">
 
 
-          
+                <source type="image/webp" media="(min-width: 768px) and (max-width: 1279px)" srcset="
+                img/hero-mobile.webp      768w
+                " sizes="100vw">
+                <source media="(min-width: 768px) and (max-width: 1279px)" srcset="
+                img/hero-mobile.png       768w
+                " sizes="100vw">
+
+                <source type="image/webp" media="(max-width: 767px)" srcset="
+                img/hero768.webp      360w
+                " sizes="100vw">
+                <source media="(max-width: 767px)" srcset="
+                img/hero768.png       360w
+                " sizes="100vw">
+
+                <img src="img/hero768.webp" alt="Небоскрёбы на фоне неба" class="hero__img" width="360" height="600"
+                    fetchpriority="high" decoding="async">
+            </picture>
+
+            <picture class="hero__picture--noize">
+                <source type="image/webp" media="(min-width: 1280px)" srcset="
+                img/Noise.webp       1280w
+                " sizes="100vw">
+                <source media="(min-width: 1280px)" srcset="
+                img/Noise.png        1280w
+                " sizes="100vw">
+
+                <source type="image/webp" media="(max-width: 1279px)" srcset="
+                img/noise-mobile.webp      360w
+                " sizes="100vw">
+                <source media="(max-width: 767px)" srcset="
+                img/noise-mobile.png       360w
+                " sizes="100vw">
+
+                <img src="img/noise-mobile.webp" alt="Небоскрёбы на фоне неба" class="hero__img" width="360" height="600"
+                    fetchpriority="high" decoding="async">
+            </picture>
+
+
 
 
 
