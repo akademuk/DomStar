@@ -56,7 +56,7 @@
     --colors-amber-800: #706f5c;
     --colors-amber-900: #4a4a3d;
     --colors-amber-950: #272721;
-    --colors-blue-100: #eaeafa;
+    --colors-Blue-100: #eaeafa;
     --colors-blue-200: #e0e0f7;
     --colors-blue-300: #d5d6f4;
     --colors-blue-400: #cbccf2;
@@ -120,7 +120,7 @@
     --colors-Red-600: #c3ab9d;
     --colors-Red-700: #98867b;
     --colors-red-800: #70635b;
-    --colors-red-900: #4a423d;
+    --colors-Red-900: #4a423d;
     --colors-Red-950: #272421;
     --colors-sky-100: #eaf4fa;
     --colors-sky-200: #e0eef7;
@@ -361,12 +361,12 @@ body {
     font-family: var(--fonts-family-Segoe-UI);
     font-size: 12px;
     font-weight: 400;
-    line-height: 100%;
+    line-height: 107%;
 }
 
 .promo-bar button {
     display: flex;
-    max-width: 118px;
+    max-width: 117px;
     width: 100%;
     height: 28px;
     padding: 0 0 0 14px;
@@ -433,9 +433,9 @@ body.menu-open {
 .burger {
     overflow: hidden;
     flex-direction: column;
-    border: 3px solid #262626;
-    width: 58px;
-    height: 54px;
+    outline: 3px solid #262626;
+    width: 52px;
+    height: 48px;
     padding: 14px 16px;
     cursor: pointer;
     gap: 3px;
@@ -464,7 +464,7 @@ body.menu-open {
 
 .header {
     background: var(--colors-base-black-100);
-    padding: 8px 16px;
+    padding: 10px 16px;
     min-width: 320px;
     max-width: 1279px;
     position: relative;
@@ -642,6 +642,7 @@ body.menu-open {
 .hero__picture--noize {
     position: absolute;
     top: 0;
+    overflow: hidden;
     left: 0;
     width: 100%;
     height: 100%;
@@ -735,7 +736,6 @@ body.menu-open {
     align-items: flex-start;
     gap: 16px;
     align-self: stretch;
-    overflow: hidden;
     margin: 0 auto;
 }
 
@@ -752,7 +752,7 @@ body.menu-open {
     display: flex;
     height: 376px;
     min-width: 256px;
-    padding: 24px;
+    padding: 21px 24px;
     flex-direction: column;
     align-items: flex-start;
     flex: 1 0 0;
@@ -765,16 +765,24 @@ body.menu-open {
     color: var(--colors-Blue-950);
     font-size: var(--fonts-size-18);
     font-weight: 500;
-    line-height: 120%; 
-    margin-bottom: 16px;
+    line-height: 120%;
+    margin-bottom: 7px;
+    position: relative;
+    z-index: 1;
 }
 
 .realEstateSection-card p {
     color: var(--colors-Blue-900);
     font-size: 12px;
     font-weight: 400;
-    line-height: 120%; 
-    margin-bottom: 48px;
+    line-height: 120%;
+    margin-bottom: 44px;
+    position: relative;
+    z-index: 1;
+}
+
+.realEstateSection-card4 p {
+    margin-bottom: 28px;
 }
 
 .realEstateSection-card img {
@@ -809,7 +817,7 @@ body.menu-open {
 }
 
 .realEstateSection-card.realEstateSection-card2 img {
-   display: none;
+    display: none;
 }
 
 .realEstateSection-card4 {
@@ -839,16 +847,18 @@ body.menu-open {
     padding: 0px 24px 24px 24px;
     min-height: 328px;
     border-radius: 12px;
+    height: auto;
     background: var(--colors-Red-950);
     overflow: hidden;
+    position: relative;
 }
 
-.realEstateSection-card3 > img {
-    width: 100%;
-    min-width: 408px;
+.realEstateSection-card3>img {
+    width: calc(100% + 48px);
     object-fit: cover;
-    height: 207px;
-    margin: -37px -24px 11px -24px;
+    height: 202px;
+    min-height: 202px;
+    margin: -20px -24px 0px -24px;
 }
 
 .realEstateSection-card3 h3 {
@@ -857,12 +867,14 @@ body.menu-open {
 
 .realEstateSection-card3 p {
     color: var(--colors-Red-50);
+    margin-bottom: 18px;
 }
 
 .realEstateSection-card3 a {
     padding: 14px 16px;
     width: 100%;
     text-decoration: none;
+    font-size: 12px;
 }
 
 .realEstateSection-card3 a img {
@@ -874,13 +886,176 @@ body.menu-open {
 .realEstateSection-card3 svg {
     width: 561.415px;
     height: 538.578px;
+    z-index: -1;
     mix-blend-mode: color-dodge;
-    filter: blur(60.32300567626953px);
+    background: radial-gradient(46.54% 46.44% at 66% 27.65%, rgba(203, 204, 242, 0.25) 0%, rgba(195, 157, 188, 0.00) 100%, rgba(248, 223, 229, 0.00) 100%);
     position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 30%;
+    left: -103%;
+    transform: rotate(115deg);
 }
+
+
+.accordion-content {
+    display: none;
+}
+
+.accordion-item:hover .accordion-content {
+    display: block;
+    animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .accordion-content {
+        display: none;
+    }
+
+    .accordion-item.active .accordion-content {
+        display: block;
+    }
+}
+
+
+.targetAudienceSection {
+    padding: 64px 16px;
+}
+
+.targetAudienceSection .wrapper {
+    display: flex;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 54px;
+    align-self: stretch;
+}
+
+.targetAudienceSection .wrapper h2 {
+    color: var(--colors-Blue-950);
+    font-size: var(--fonts-size-24);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; 
+}
+
+.targetAudienceSection__box {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 24px;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+.targetAudienceSection__box-img {
+    border-radius: 12px;
+    outline: 2px solid var(--colors-base-white-25);
+    height: 376px;
+    flex: 1;
+    min-width: 288px;
+    overflow: hidden;
+}
+
+.targetAudienceSection__box-accardion {
+    min-width: 288px;
+    flex: 1 0 0;
+}
+
+.targetAudienceSection__box-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.accordion-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    color: var(--colors-Red-950);
+    font-size: var(--fonts-size-18);
+    font-weight: 500;
+    line-height: 120%; 
+}
+
+.accordion-header-icon {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    object-fit: contain;
+    border-radius: 8px;
+    background: var(--colors-base-white-100);
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.15);
+}
+
+.accordion-header-arrow {
+    margin-left: auto;
+}
+
+.accordion-item {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    padding: 22px 16px 40px 14px;
+    border-radius: 12px;
+    border: 2px solid var(--colors-base-white-25);
+    background: var(--colors-Blue-100);
+}
+
+.accordion-item.active {
+    background: var(--colors-Red-900);
+}
+
+.accordion-item.active .accordion-header {
+    color: var(--colors-Red-50)
+}
+
+
+.accordion-item.active .accordion-header-arrow {
+    transform: rotate(90deg);
+    filter: brightness(0) saturate(100%) invert(99%) sepia(21%) saturate(468%) hue-rotate(259deg) brightness(120%) contrast(100%);
+}
+
+.accordion-content p{
+    background: var(--colors-Red-900);
+    color: var(--colors-Red-50);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.accordion-item:nth-of-type(1) {
+    transform: translateY(0);
+}
+
+.accordion-item:nth-of-type(2) {
+    transform: translateY(-24px);
+}
+
+.accordion-item:nth-of-type(3) {
+    transform: translateY(-48px);
+}
+
+.accordion-item:nth-of-type(4) {
+    transform: translateY(-72px);
+}
+
+.accordion-header-arrow {
+    margin-left: auto;
+}
+
+
+
 
 
 
@@ -993,7 +1168,7 @@ body.menu-open {
         height: 48px;
         justify-content: center;
         align-items: center;
-        gap: 10px;
+        gap: 4px;
         border-radius: 12px;
         border: 2px solid var(--colors-Red-100);
         background: var(--colors-base-white-100);
@@ -1042,6 +1217,8 @@ body.menu-open {
     .hero__promo {
         max-width: 1176px;
         padding: 24px;
+        width: 100%;
+        margin: 0 auto;
         border-radius: 30px;
         background: #FDF7F4;
         flex-direction: row;
@@ -1095,15 +1272,20 @@ body.menu-open {
 
     .realEstateSection-card h3 {
         font-size: var(--fonts-size-24);
-        margin-bottom: 16px;
+        margin-bottom: 5px;
     }
 
     .realEstateSection-card p {
         font-size: var(--fonts-size-16);
         margin-bottom: 0;
+        max-width: 500px;
     }
 
-    .realEstateSection-card.realEstateSection-card2  {
+    .realEstateSection-card3 {
+        padding-bottom: 20px;
+    }
+
+    .realEstateSection-card.realEstateSection-card2 {
         background: var(--colors-Pink-100);
         position: relative;
     }
@@ -1142,7 +1324,81 @@ body.menu-open {
         height: 176px;
     }
 
-    .realEstateSection-card3 > img {
-        
+    .realEstateSection-card3>img {
+        width: calc(100% + 64px);
+        height: 221px;
+        min-width: 100%;
+        margin: -57px 0 0 -32px;
+        object-fit: contain;
+    }
+
+    .realEstateSection-card3,
+    .realEstateSection-card4 {
+        min-height: 411px;
+    }
+
+    .realEstateSection__row {
+        align-items: stretch;
+    }
+
+    .realEstateSection-card3 a {
+        margin-top: auto;
+        font-size: 14px;
+        gap: 4px;
+    }
+
+    .realEstateSection-card3 svg {
+        width: 100%;
+        height: 538.578px;
+        background: radial-gradient(46.54% 46.44% at 66% 27.65%, rgba(203, 204, 242, 0.25) 0%, rgba(195, 157, 188, 0.00) 100%, rgba(248, 223, 229, 0.00) 100%);
+        mix-blend-mode: color-dodge;
+        filter: blur(60.32300567626953px);
+        top: 70%;
+        left: 35%;
+    }
+
+    .realEstateSection {
+        padding: 19px 16px 100px 16px;
+    }
+
+    .realEstateSection-card4 {
+        padding-top: 59px;
+    }
+
+    .targetAudienceSection {
+        background: var(--colors-Red-50);
+        padding: 96px 52px;
+    }
+
+    .targetAudienceSection .wrapper {
+        max-width: 1176px;
+        gap: 49px;
+    }
+
+    .targetAudienceSection__box-img {
+        height: 576px;
+        border-radius: 24px;
+    }
+
+    .targetAudienceSection .wrapper h2 {
+        font-size: var(--fonts-size-33);
+    }
+
+    .accordion-item {
+       padding: 48px 30px 40px 30px;
+       border-radius: 24px;
+       cursor: pointer;
+    }
+
+    .accordion-item:hover .accordion-header-arrow {
+        transform: translate(90deg);
+    }
+
+    .accordion-header {
+        font-size: var(--fonts-size-24);
+    }
+
+    .accordion-content p {
+        font-size: var(--fonts-size-16);
     }
 }
