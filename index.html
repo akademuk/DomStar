@@ -129,7 +129,7 @@
                 " sizes="100vw">
 
                 <img src="img/hero768.webp" alt="Небоскрёбы на фоне неба" class="hero__img" width="360" height="600"
-                    fetchpriority="high" decoding="async">
+                    loading="lazy">
             </picture>
 
             <picture class="hero__picture--noize">
@@ -148,7 +148,7 @@
                 " sizes="100vw">
 
                 <img src="img/noise-mobile.webp" alt="Небоскрёбы на фоне неба" class="hero__img" width="360"
-                    height="600" fetchpriority="high" decoding="async">
+                    height="600" loading="lazy">
             </picture>
 
             <div class="hero__content container">
@@ -258,7 +258,7 @@
                 " sizes="100vw">
 
                 <img src="img/realEstateSection-mobile.webp" alt="Небоскрёбы на фоне неба" class="hero__img" width="360"
-                    height="600" fetchpriority="high" decoding="async">
+                    height="600" loading="lazy">
             </picture>
 
             <picture class="hero__picture--noize">
@@ -277,7 +277,7 @@
                 " sizes="100vw">
 
                 <img src="img/noise-mobile.webp" alt="Небоскрёбы на фоне неба" class="hero__img" width="360"
-                    height="600" fetchpriority="high" decoding="async">
+                    height="600" loading="lazy">
             </picture>
         </div>
 
@@ -286,57 +286,210 @@
                 <h2>Кому подходит эта система:</h2>
                 <div class="targetAudienceSection__box">
                     <div class="targetAudienceSection__box-img">
-                         <picture>
+                        <picture>
                             <source type="image/webp" srcset="img/targetAudienceSection.webp">
-                            <img src="img/targetAudienceSection.png" width="576" height="576"
-                                alt="" loading="lazy">
+                            <img src="img/targetAudienceSection.png" width="576" height="576" alt="" loading="lazy">
                         </picture>
                     </div>
                     <div class="targetAudienceSection__box-accardion">
                         <div class="accordion">
                             <div class="accordion-item active">
                                 <div class="accordion-header">
-                                    <img width="24" height="25" src="img/accardion-icon1.svg" alt="icon" class="accordion-header-icon">
-                                        Вы новичок
-                                    <img width="24" height="25" src="img/accrdion-arrow.svg" alt="icon" class="accordion-header-arrow">
+                                    <img width="24" height="25" src="img/accardion-icon1.svg" alt="icon"
+                                        class="accordion-header-icon">
+                                    Вы новичок
+                                    <img width="24" height="25" src="img/accrdion-arrow.svg" alt="icon"
+                                        class="accordion-header-arrow">
                                 </div>
                                 <div class="accordion-content">
-                                    <p>Хотите стать успешным риелтором? Мы предложим план, который поможет вам быстро освоить профессию и заключить первые сделки.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="accordion-item">
-                                <div class="accordion-header">
-                                    <img width="24" height="25" src="img/accardion-icon2.svg" alt="icon" class="accordion-header-icon">
-                                        Уже работаете риелтором
-                                    <img width="24" height="25" src="img/accrdion-arrow.svg" alt="icon" class="accordion-header-arrow">
-                                </div>
-                                <div class="accordion-content">
-                                    <p>Хотите стать успешным риелтором? Мы предложим план, который поможет вам быстро освоить профессию и заключить первые сделки.</p>
+                                    <p>Хотите стать успешным риелтором? Мы предложим план, который поможет вам быстро
+                                        освоить профессию и заключить первые сделки.</p>
                                 </div>
                             </div>
 
                             <div class="accordion-item">
                                 <div class="accordion-header">
-                                    <img width="24" height="25" src="img/accardion-icon3.svg" alt="icon" class="accordion-header-icon">
-                                        Имеете нестабильный доход
-                                    <img width="24" height="25" src="img/accrdion-arrow.svg" alt="icon" class="accordion-header-arrow">
+                                    <img width="24" height="25" src="img/accardion-icon2.svg" alt="icon"
+                                        class="accordion-header-icon">
+                                    Уже работаете риелтором
+                                    <img width="24" height="25" src="img/accrdion-arrow.svg" alt="icon"
+                                        class="accordion-header-arrow">
                                 </div>
                                 <div class="accordion-content">
-                                    <p>Хотите стать успешным риелтором? Мы предложим план, который поможет вам быстро освоить профессию и заключить первые сделки.</p>
+                                    <p>Хотите стать успешным риелтором? Мы предложим план, который поможет вам быстро
+                                        освоить профессию и заключить первые сделки.</p>
                                 </div>
                             </div>
 
                             <div class="accordion-item">
                                 <div class="accordion-header">
-                                    <img width="24" height="25" src="img/accardion-icon4.svg" alt="icon" class="accordion-header-icon">
-                                        Нужна поддержка экспертов
-                                    <img width="24" height="25" src="img/accrdion-arrow.svg" alt="icon" class="accordion-header-arrow">
+                                    <img width="24" height="25" src="img/accardion-icon3.svg" alt="icon"
+                                        class="accordion-header-icon">
+                                    Имеете нестабильный доход
+                                    <img width="24" height="25" src="img/accrdion-arrow.svg" alt="icon"
+                                        class="accordion-header-arrow">
                                 </div>
                                 <div class="accordion-content">
-                                    <p>Хотите стать успешным риелтором? Мы предложим план, который поможет вам быстро освоить профессию и заключить первые сделки.</p>
+                                    <p>Хотите стать успешным риелтором? Мы предложим план, который поможет вам быстро
+                                        освоить профессию и заключить первые сделки.</p>
                                 </div>
                             </div>
+
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <img width="24" height="25" src="img/accardion-icon4.svg" alt="icon"
+                                        class="accordion-header-icon">
+                                    Нужна поддержка экспертов
+                                    <img width="24" height="25" src="img/accrdion-arrow.svg" alt="icon"
+                                        class="accordion-header-arrow">
+                                </div>
+                                <div class="accordion-content">
+                                    <p>Хотите стать успешным риелтором? Мы предложим план, который поможет вам быстро
+                                        освоить профессию и заключить первые сделки.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="education parallax">
+            <div class="wrapper">
+                <div class="education__img">
+                    <picture>
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="
+                        img/education__img.webp       1280w
+                        " sizes="100vw">
+                        <source media="(min-width: 1280px)" srcset="
+                        img/education__img.png        1280w
+                        " sizes="100vw">
+
+                        <source type="image/webp" media="(max-width: 1279px)" srcset="
+                        img/education__img-mob.webp      360w
+                        " sizes="100vw">
+                        <source media="(max-width: 767px)" srcset="
+                        img/education__img-mob.png       360w
+                        " sizes="100vw">
+
+                        <img src="img/education__img-mob.webp" alt="" width="360" height="600" loading="lazy">
+                    </picture>
+                </div>
+                <div class="education__content">
+                    <div class="education__content-title">
+                        <h2>Обучение:</h2>
+                        <h3>курсы, мастер-классы, вебинары</h3>
+                        <p>Мы разработали пошаговые курсы для новичков и профессионалов, которые помогут вам освоить
+                            международный рынок недвижимости.</p>
+                    </div>
+
+                    <div class="education__content-grid">
+                        <div class="education__content-card">
+                            <div class="education__content-img">
+                                <img src="img/education__content-card1.svg" width="50" height="49" alt="icon">
+                            </div>
+                            <p>Онлайн-курсы по продажам, маркетингу, юридическим аспектам в ОАЭ, Бали, Кипре и Украине.
+                            </p>
+                            <a href="/">Подробнее
+                                <img src="img/arrow-right.svg" width="20" height="20" alt="icon">
+                            </a>
+                        </div>
+
+                        <div class="education__content-card">
+                            <div class="education__content-img">
+                                <img src="img/education__content-card2.svg" width="32" height="33" alt="icon">
+                            </div>
+                            <p>Закрытые вебинары и мастер-классы от опытных риелторов с разбором реальных кейсов.</p>
+                            <a href="/">Подробнее
+                                <img src="img/arrow-right.svg" width="20" height="20" alt="icon">
+                            </a>
+                        </div>
+
+                        <div class="education__content-card">
+                            <div class="education__content-img">
+                                <img src="img/education__content-card3.svg" width="32" height="33" alt="icon">
+                            </div>
+                            <p>Гайды, чек-листы и скрипты для работы с клиентами.</p>
+                            <a href="/">Подробнее
+                                <img src="img/arrow-right.svg" width="20" height="20" alt="icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="targetAudienceSections">
+            <div class="wrapper">
+                <div class="targetAudienceSections__title">
+                    <div class="targetAudienceSections__title-text">
+                        <h2>Подписка на сервис:</h2>
+                        <h3>Доступ ко всем инструментам</h3>
+                        <p>Оформляя подписку, вы получаете всё необходимое для эффективной работы:</p>
+                    </div>
+                    <div class="targetAudienceSections__title-btn">
+                        <a href="/" class="button--secondary">Подписаться сейчас
+                            <img src="img/icon-btn0.svg" width="21" height="21" alt="icon">
+                        </a>
+                        <a href="/" class="button--primary">Подробнее
+                            <img src="img/arrow-right.svg" width="21" height="21" alt="icon">
+                        </a>
+                    </div>
+                </div>
+                <div class="targetAudienceSections__content">
+                    <div class="targetAudienceSections__card">
+                        <div class="targetAudienceSections__card-img">
+                             <picture>
+                                <source type="image/webp" srcset="img/targetAudienceSection1.webp">
+                                <img src="img/targetAudienceSection1.jpg" width="256" height="228"
+                                    alt="" loading="lazy">
+                            </picture>
+                        </div>
+                        <div class="targetAudienceSections__card-content">
+                            <h3>Личный <br> ассистент</h3>
+                            <p>Помогает с вопросами, документами и организацией сделок.</p>
+                        </div>
+                    </div>
+
+                    <div class="targetAudienceSections__card">
+                        <div class="targetAudienceSections__card-img">
+                             <picture>
+                                <source type="image/webp" srcset="img/targetAudienceSection2.webp">
+                                <img src="img/targetAudienceSection2.jpg" width="256" height="228"
+                                    alt="" loading="lazy">
+                            </picture>
+                        </div>
+                        <div class="targetAudienceSections__card-content">
+                            <h3>Доступ к актуальной <br> документации</h3>
+                            <p>Юридические шаблоны, договоры, инструкции.</p>
+                        </div>
+                    </div>
+
+                    <div class="targetAudienceSections__card">
+                        <div class="targetAudienceSections__card-img">
+                             <picture>
+                                <source type="image/webp" srcset="img/targetAudienceSection3.webp">
+                                <img src="img/targetAudienceSection3.jpg" width="256" height="228"
+                                    alt="" loading="lazy">
+                            </picture>
+                        </div>
+                        <div class="targetAudienceSections__card-content">
+                            <h3>Комьюнити <br> риелторов</h3>
+                            <p>Закрытые чаты с экспертами, обмен опытом, совместные сделки.</p>
+                        </div>
+                    </div>
+
+                    <div class="targetAudienceSections__card">
+                        <div class="targetAudienceSections__card-img">
+                             <picture>
+                                <source type="image/webp" srcset="img/targetAudienceSection4.webp">
+                                <img src="img/targetAudienceSection4.jpg" width="256" height="228"
+                                    alt="" loading="lazy">
+                            </picture>
+                        </div>
+                        <div class="targetAudienceSections__card-content">
+                            <h3>База планировок <br> и объектов</h3>
+                            <p>Доступ к эксклюзивным новостройкам, инвестиционным проектам и проверенным застройщикам.</p>
                         </div>
                     </div>
                 </div>
