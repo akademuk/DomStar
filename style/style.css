@@ -2672,7 +2672,8 @@ body.menu-open {
   align-self: stretch;
 }
 
-.footer__copyright {
+.footer__copyright,
+.footer__copyright span {
   color: var(--colors-Red-950);
   text-align: center;
   font-family: "Segoe UI";
