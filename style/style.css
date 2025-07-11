@@ -962,19 +962,19 @@ body.menu-open {
 .realEstateSection-card3 img {
   width: calc(100% + 48px);
   object-fit: contain;
-  height: 202px;
-  min-height: 202px;
-  margin: -20px -24px 0px -24px;
+  height: auto;
+  margin: 0 -24px;
 }
 
 .realEstateSection-card3 .button img {
   width: 20px;
-height: 20px;
-min-height: 20px;
+  height: 20px;
+  min-height: 20px;
 }
 
 .realEstateSection-card3 h3 {
   color: var(--colors-Red-50);
+  margin-top: auto;
 }
 
 .realEstateSection-card3 p {
@@ -2898,7 +2898,8 @@ min-height: 20px;
   }
 
   .realEstateSection-card img {
-    margin-top: auto;
+    margin-top: -32px;
+    width: calc(100% + 64px);
     display: block;
   }
 

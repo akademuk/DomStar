@@ -23,10 +23,14 @@
     <meta name="twitter:image" content="https://domstar.example.com/img/og-image.jpg" />
     <link rel="canonical" href="https://domstar.example.com/" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5/dist/fancybox/fancybox.css" />
-    <link rel="stylesheet" href="style/swiper-bundle.min.css" />
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5/dist/fancybox/fancybox.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="style/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="stylesheet" href="style/reset.css" />
     <link rel="stylesheet" href="style/style.css" />
+    <noscript>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5/dist/fancybox/fancybox.css" />
+        <link rel="stylesheet" href="style/swiper-bundle.min.css" />
+    </noscript>
 </head>
 
 <body>
