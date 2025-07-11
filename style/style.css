@@ -2898,6 +2898,11 @@ body.menu-open {
   }
 
   .realEstateSection-card img {
+    margin-top: auto;
+    display: block;
+  }
+
+  .realEstateSection-card3 img {
     margin-top: -32px;
     width: calc(100% + 64px);
     display: block;
