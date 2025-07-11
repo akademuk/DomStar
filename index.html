@@ -1,41 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DomStar — обучающая экосистема для риелторов и брокеров</title>
     <meta name="description"
-        content="DomStar — обучающая экосистема для риелторов и брокеров. Курсы, инструменты, поддержка и база недвижимости по 4 странам. Стартуйте карьеру в недвижимости с нами!" />
+        content="DomStar — обучающая экосистема для риелторов и брокеров. Курсы, инструменты, поддержка и база недвижимости по 4 странам. Стартуйте карьеру в недвижимости с нами!">
     <meta name="keywords"
-        content="DomStar, обучение риелторов, курсы недвижимости, брокеры, недвижимость, онлайн-курсы, международная недвижимость, Dubai, Бали, Кипр, Украина, обучение, инструменты для риелторов, поддержка, база недвижимости" />
-    <meta name="author" content="DomStar" />
-    <meta property="og:title" content="DomStar — обучающая экосистема для риелторов и брокеров" />
+        content="DomStar, обучение риелторов, курсы недвижимости, брокеры, недвижимость, онлайн-курсы, международная недвижимость, Dubai, Бали, Кипр, Украина, обучение, инструменты для риелторов, поддержка, база недвижимости">
+    <meta name="author" content="DomStar">
+    <meta property="og:title" content="DomStar — обучающая экосистема для риелторов и брокеров">
     <meta property="og:description"
-        content="Курсы, инструменты, поддержка и база недвижимости по 4 странам. Стартуйте карьеру в недвижимости с DomStar!" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://domstar.example.com/" />
-    <meta property="og:image" content="https://domstar.example.com/img/og-image.jpg" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="DomStar — обучающая экосистема для риелторов и брокеров" />
+        content="Курсы, инструменты, поддержка и база недвижимости по 4 странам. Стартуйте карьеру в недвижимости с DomStar!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://domstar.example.com/">
+    <meta property="og:image" content="https://domstar.example.com/img/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="DomStar — обучающая экосистема для риелторов и брокеров">
     <meta name="twitter:description"
-        content="Курсы, инструменты, поддержка и база недвижимости по 4 странам. Стартуйте карьеру в недвижимости с DomStar!" />
-    <meta name="twitter:image" content="https://domstar.example.com/img/og-image.jpg" />
-    <link rel="canonical" href="https://domstar.example.com/" />
+        content="Курсы, инструменты, поддержка и база недвижимости по 4 странам. Стартуйте карьеру в недвижимости с DomStar!">
+    <meta name="twitter:image" content="https://domstar.example.com/img/og-image.jpg">
+    <link rel="canonical" href="https://domstar.example.com/">
 
-    <link rel="preload" href="style/reset.css" as="style" />
-    <link rel="preload" href="style/style.css" as="style" />
-    <link rel="stylesheet" href="style/reset.css" />
-    <link rel="stylesheet" href="style/style.css" />
+    <link rel="preload" href="style/reset.css" as="style">
+    <link rel="preload" href="style/style.css" as="style">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
 
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5/dist/fancybox/fancybox.css" as="style" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5/dist/fancybox/fancybox.css" media="print" onload="this.media='all'" />
-    <link rel="preload" href="style/swiper-bundle.min.css" as="style" />
-    <link rel="stylesheet" href="style/swiper-bundle.min.css" media="print" onload="this.media='all'" />
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5/dist/fancybox/fancybox.css" as="style">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5/dist/fancybox/fancybox.css" media="print"
+        onload="this.media='all'">
+    <link rel="preload" href="style/swiper-bundle.min.css" as="style">
+    <link rel="stylesheet" href="style/swiper-bundle.min.css" media="print" onload="this.media='all'">
 
     <noscript>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5/dist/fancybox/fancybox.css" />
-        <link rel="stylesheet" href="style/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5/dist/fancybox/fancybox.css">
+        <link rel="stylesheet" href="style/swiper-bundle.min.css">
     </noscript>
 
     <style>
@@ -551,10 +552,13 @@
             .hero__title h1 {
                 font-size: 114px;
                 letter-spacing: -1.14px;
-                -webkit-mask: linear-gradient(#000 0 0) text;
-                mask: linear-gradient(#000 0 0) text;
+                background: linear-gradient(#000, #fff);
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                mask-image: linear-gradient(to bottom, #000 0%, #000 100%);
                 backdrop-filter: blur(5px);
-                backdrop-filter: blur(50px);
+                /* Removed duplicate backdrop-filter */
             }
 
             .hero__subtitle {
@@ -589,14 +593,14 @@
 <body>
     <div class="promo-bar">
         <div class="wrapper">
-            <img width="24" height="24" src="img/icon1.svg" alt="icon" class="promo-bar__icon" />
+            <img width="24" height="24" src="img/icon1.svg" alt="icon" class="promo-bar__icon">
             <p>
                 Акция! Полный курс с ментором и базой недвижимости по 4 странам со
                 скидкой — стартуйте прямо сейчас!
             </p>
             <button>
                 Записаться
-                <img src="img/arrow-right.svg" width="20" height="20" alt="icon" />
+                <img src="img/arrow-right.svg" width="20" height="20" alt="icon">
             </button>
         </div>
     </div>
@@ -606,9 +610,9 @@
         <div class="header__inner container">
             <a href="/" class="header__logo">
                 <img src="img/logo-mobile.svg" width="107" height="26" alt="DOMSTAR Training Ecosystem"
-                    class="header__logo-mobile" />
+                    class="header__logo-mobile">
                 <img src="img/logo.svg" width="136" height="34" alt="DOMSTAR Training Ecosystem"
-                    class="header__logo-desktop" />
+                    class="header__logo-desktop">
             </a>
             <nav class="nav" aria-label="Главное меню">
                 <ul class="nav__list">
@@ -630,11 +634,11 @@
             <div class="header__actions">
                 <button class="button header__join-button">
                     Присоединиться
-                    <img width="20" height="21" src="img/icon-btn1.svg" alt="button icon" />
+                    <img width="20" height="21" src="img/icon-btn1.svg" alt="button icon">
                 </button>
                 <button class="header__login-link">
                     Вход
-                    <img width="20" height="21" src="img/icon-btn2.svg" alt="button icon" />
+                    <img width="20" height="21" src="img/icon-btn2.svg" alt="button icon">
                 </button>
             </div>
             <div class="mobile-menu">
@@ -667,35 +671,35 @@
                 <div class="header__actions">
                     <button class="button header__join-button">
                         Присоединиться
-                        <img width="20" height="21" src="img/icon-btn1.svg" alt="button icon" />
+                        <img width="20" height="21" src="img/icon-btn1.svg" alt="button icon">
                     </button>
                     <button class="header__login-link">
                         Вход
-                        <img width="20" height="21" src="img/icon-btn2.svg" alt="button icon" />
+                        <img width="20" height="21" src="img/icon-btn2.svg" alt="button icon">
                     </button>
                 </div>
                 <ul class="nav__list__social">
                     <li class="nav__list__social--item">
                         <a href="/" class="nav__list__link">
-                            <img src="img/nav__list__link1.svg" width="20" height="21" alt="icon" />
+                            <img src="img/nav__list__link1.svg" width="20" height="21" alt="icon">
                         </a>
                     </li>
 
                     <li class="nav__list__social--item">
                         <a href="/" class="nav__list__link">
-                            <img src="img/nav__list__link2.svg" width="18" height="17" alt="icon" />
+                            <img src="img/nav__list__link2.svg" width="18" height="17" alt="icon">
                         </a>
                     </li>
 
                     <li class="nav__list__social--item">
                         <a href="/" class="nav__list__link">
-                            <img src="img/nav__list__link3.svg" width="18" height="16" alt="icon" />
+                            <img src="img/nav__list__link3.svg" width="18" height="16" alt="icon">
                         </a>
                     </li>
 
                     <li class="nav__list__social--item">
                         <a href="/" class="nav__list__link">
-                            <img src="img/nav__list__link4.svg" width="18" height="17" alt="icon" />
+                            <img src="img/nav__list__link4.svg" width="18" height="17" alt="icon">
                         </a>
                     </li>
                 </ul>
@@ -707,33 +711,30 @@
     <main>
         <section class="hero">
             <picture class="hero__picture">
-                <source type="image/webp" media="(min-width: 1280px)" srcset="img/hero.webp 1280w" sizes="100vw"
-                    fetchpriority="high" />
-                <source media="(min-width: 1280px)" srcset="img/hero.png 1280w" sizes="100vw" fetchpriority="high" />
+                <source type="image/webp" media="(min-width: 1280px)" srcset="img/hero.webp 1280w" sizes="100vw">
+                <source media="(min-width: 1280px)" srcset="img/hero.png 1280w" sizes="100vw">
 
                 <source type="image/webp" media="(min-width: 768px) and (max-width: 1279px)"
-                    srcset="img/hero-mobile.webp 768w" sizes="100vw" fetchpriority="high" />
+                    srcset="img/hero-mobile.webp 768w" sizes="100vw">
                 <source media="(min-width: 768px) and (max-width: 1279px)" srcset="img/hero-mobile.png 768w"
-                    sizes="100vw" fetchpriority="high" />
+                    sizes="100vw">
 
-                <source type="image/webp" media="(max-width: 767px)" srcset="img/hero768.webp 360w" sizes="100vw"
-                    fetchpriority="high" />
-                <source media="(max-width: 767px)" srcset="img/hero768.png 360w" sizes="100vw" fetchpriority="high" />
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/hero768.webp 360w" sizes="100vw">
+                <source media="(max-width: 767px)" srcset="img/hero768.png 360w" sizes="100vw">
 
                 <img src="img/hero768.webp" alt="Небоскрёбы на фоне неба" class="hero__img" width="360" height="600"
-                    fetchpriority="high" />
+                    fetchpriority="high">
             </picture>
 
             <picture class="hero__picture--noize">
-                <source type="image/webp" media="(min-width: 1280px)" srcset="img/Noise.webp 1280w" sizes="100vw" />
-                <source media="(min-width: 1280px)" srcset="img/Noise.png 1280w" sizes="100vw" />
+                <source type="image/webp" media="(min-width: 1280px)" srcset="img/Noise.webp 1280w" sizes="100vw">
+                <source media="(min-width: 1280px)" srcset="img/Noise.png 1280w" sizes="100vw">
 
-                <source type="image/webp" media="(max-width: 1279px)" srcset="img/noise-mobile.webp 360w"
-                    sizes="100vw" />
-                <source media="(max-width: 767px)" srcset="img/noise-mobile.png 360w" sizes="100vw" />
+                <source type="image/webp" media="(max-width: 1279px)" srcset="img/noise-mobile.webp 360w" sizes="100vw">
+                <source media="(max-width: 767px)" srcset="img/noise-mobile.png 360w" sizes="100vw">
 
                 <img src="img/noise-mobile.webp" alt="Небоскрёбы на фоне неба" class="hero__img" width="1279"
-                    height="600" loading="lazy" style="width: 100%; height: auto; aspect-ratio: 1279/600" />
+                    height="600" loading="lazy" style="width: 100%; height: auto; aspect-ratio: 1279/600">
             </picture>
 
             <div class="hero__content container">
@@ -744,7 +745,7 @@
 
                 <div class="hero__promo">
                     <span class="hero__promo-text">
-                        <span><img width="32" height="33" src="img/icon2.svg" alt="icon" /></span>
+                        <span><img width="32" height="33" src="img/icon2.svg" alt="icon"></span>
                         Зарабатывай дополнительно от $2000 в месяц из любой точки мира на
                         недвижимости
                     </span>
@@ -757,16 +758,16 @@
             <div class="wrapper">
                 <div class="realEstateSection__row">
                     <div class="realEstateSection-card">
-                        <h3 role="heading" aria-level="2">Обучение и практика</h3>
+                        <h3 aria-level="2">Обучение и практика</h3>
                         <p>
                             Изучайте рынок, применяйте знания на практике и сразу
                             монетизируйте навыки
                         </p>
-                        <img width="170" height="171" src="img/card1.svg" alt="icon" />
+                        <img width="170" height="171" src="img/card1.svg" alt="icon">
                     </div>
 
                     <div class="realEstateSection-card realEstateSection-card2">
-                        <h3 role="heading" aria-level="2">
+                        <h3 aria-level="2">
                             Работайте из любой точки мира
                         </h3>
                         <p>
@@ -774,15 +775,15 @@
                             Кипра и Украины
                         </p>
                         <picture>
-                            <source type="image/webp" srcset="img/card2.webp" />
-                            <img src="img/card2.png" width="776" height="376" alt="image" loading="lazy" />
+                            <source type="image/webp" srcset="img/card2.webp">
+                            <img src="img/card2.png" width="776" height="376" alt="image" loading="lazy">
                         </picture>
                     </div>
                 </div>
 
                 <div class="realEstateSection__row">
                     <div class="realEstateSection-card realEstateSection-card4">
-                        <h3 role="heading" aria-level="2">
+                        <h3 aria-level="2">
                             Доступ к эксклюзивным объектам
                         </h3>
                         <p>
@@ -793,44 +794,44 @@
                             <div class="realEstateSection-swiper-wrapper swiper-wrapper">
                                 <div class="realEstateSection-slide swiper-slide">
                                     <picture>
-                                        <source type="image/webp" srcset="img/slider1.webp" />
+                                        <source type="image/webp" srcset="img/slider1.webp">
                                         <img src="img/slider1.png" width="176" height="176" alt="Company 1"
-                                            loading="lazy" />
+                                            loading="lazy">
                                     </picture>
                                 </div>
                                 <div class="realEstateSection-slide swiper-slide">
                                     <picture>
-                                        <source type="image/webp" srcset="img/slider2.webp" />
+                                        <source type="image/webp" srcset="img/slider2.webp">
                                         <img src="img/slider2.png" width="176" height="176" alt="Company 2"
-                                            loading="lazy" />
+                                            loading="lazy">
                                     </picture>
                                 </div>
                                 <div class="realEstateSection-slide swiper-slide">
                                     <picture>
-                                        <source type="image/webp" srcset="img/slider3.webp" />
+                                        <source type="image/webp" srcset="img/slider3.webp">
                                         <img src="img/slider3.png" width="176" height="176" alt="Company 3"
-                                            loading="lazy" />
+                                            loading="lazy">
                                     </picture>
                                 </div>
                                 <div class="realEstateSection-slide swiper-slide">
                                     <picture>
-                                        <source type="image/webp" srcset="img/slider2.webp" />
+                                        <source type="image/webp" srcset="img/slider2.webp">
                                         <img src="img/slider2.png" width="176" height="176" alt="Company 2"
-                                            loading="lazy" />
+                                            loading="lazy">
                                     </picture>
                                 </div>
                                 <div class="realEstateSection-slide swiper-slide">
                                     <picture>
-                                        <source type="image/webp" srcset="img/slider1.webp" />
+                                        <source type="image/webp" srcset="img/slider1.webp">
                                         <img src="img/slider1.png" width="176" height="176" alt="Company 1"
-                                            loading="lazy" />
+                                            loading="lazy">
                                     </picture>
                                 </div>
                                 <div class="realEstateSection-slide swiper-slide">
                                     <picture>
-                                        <source type="image/webp" srcset="img/slider3.webp" />
+                                        <source type="image/webp" srcset="img/slider3.webp">
                                         <img src="img/slider3.png" width="176" height="176" alt="Company 3"
-                                            loading="lazy" />
+                                            loading="lazy">
                                     </picture>
                                 </div>
                             </div>
@@ -838,44 +839,43 @@
                     </div>
                     <div class="realEstateSection-card realEstateSection-card3">
                         <picture>
-                            <source type="image/webp" srcset="img/card3.webp" />
-                            <img width="170" height="171" src="img/card3.png" alt="icon" loading="lazy" />
+                            <source type="image/webp" srcset="img/card3.webp">
+                            <img width="170" height="171" src="img/card3.png" alt="icon" loading="lazy">
                         </picture>
-                        <h3 role="heading" aria-level="2">
+                        <h3 aria-level="2">
                             Готовые инструменты для продаж
                         </h3>
                         <p>
                             Автоматизированные воронки, скрипты, аналитика и поддержка для
                             роста ваших доходов
                         </p>
-                        <a href="/" class="button">Присоединиться <img src="img/arrow-right.svg" alt="icon" /></a>
+                        <a href="/" class="button">Присоединиться <img src="img/arrow-right.svg" alt="icon"></a>
                     </div>
                 </div>
             </div>
 
             <picture class="hero__picture">
                 <source type="image/webp" media="(min-width: 1280px)" srcset="img/realEstateSection.webp 1280w"
-                    sizes="100vw" />
-                <source media="(min-width: 1280px)" srcset="img/realEstateSection.png 1280w" sizes="100vw" />
+                    sizes="100vw">
+                <source media="(min-width: 1280px)" srcset="img/realEstateSection.png 1280w" sizes="100vw">
 
                 <source type="image/webp" media="(max-width: 1279px)" srcset="img/realEstateSection-mobile.webp 360w"
-                    sizes="100vw" />
-                <source media="(max-width: 767px)" srcset="img/realEstateSection-mobile.png 360w" sizes="100vw" />
+                    sizes="100vw">
+                <source media="(max-width: 767px)" srcset="img/realEstateSection-mobile.png 360w" sizes="100vw">
 
                 <img src="img/realEstateSection-mobile.webp" alt="Небоскрёбы на фоне неба" class="hero__img" width="360"
-                    height="600" loading="lazy" />
+                    height="600" loading="lazy">
             </picture>
 
             <picture class="hero__picture--noize">
-                <source type="image/webp" media="(min-width: 1280px)" srcset="img/Noise.webp 1280w" sizes="100vw" />
-                <source media="(min-width: 1280px)" srcset="img/Noise.png 1280w" sizes="100vw" />
+                <source type="image/webp" media="(min-width: 1280px)" srcset="img/Noise.webp 1280w" sizes="100vw">
+                <source media="(min-width: 1280px)" srcset="img/Noise.png 1280w" sizes="100vw">
 
-                <source type="image/webp" media="(max-width: 1279px)" srcset="img/noise-mobile.webp 360w"
-                    sizes="100vw" />
-                <source media="(max-width: 767px)" srcset="img/noise-mobile.png 360w" sizes="100vw" />
+                <source type="image/webp" media="(max-width: 1279px)" srcset="img/noise-mobile.webp 360w" sizes="100vw">
+                <source media="(max-width: 767px)" srcset="img/noise-mobile.png 360w" sizes="100vw">
 
                 <img src="img/noise-mobile.webp" alt="Небоскрёбы на фоне неба" class="hero__img" width="1279"
-                    height="600" loading="lazy" style="width: 100%; height: auto; aspect-ratio: 1279/600" />
+                    height="600" loading="lazy" style="width: 100%; height: auto; aspect-ratio: 1279/600">
             </picture>
         </div>
 
@@ -885,8 +885,8 @@
                 <div class="targetAudienceSection__box">
                     <div class="targetAudienceSection__box-img">
                         <picture>
-                            <source type="image/webp" srcset="img/targetAudienceSection.webp" />
-                            <img src="img/targetAudienceSection.png" width="576" height="576" alt="" loading="lazy" />
+                            <source type="image/webp" srcset="img/targetAudienceSection.webp">
+                            <img src="img/targetAudienceSection.png" width="576" height="576" alt="" loading="lazy">
                         </picture>
                     </div>
                     <div class="targetAudienceSection__box-accardion">
@@ -894,10 +894,10 @@
                             <div class="accordion-item active">
                                 <div class="accordion-header">
                                     <img width="24" height="25" src="img/accardion-icon1.svg" alt="icon"
-                                        class="accordion-header-icon" />
+                                        class="accordion-header-icon">
                                     Вы новичок
                                     <img width="24" height="25" src="img/accrdion-arrow.svg" alt="icon"
-                                        class="accordion-header-arrow" />
+                                        class="accordion-header-arrow">
                                 </div>
                                 <div class="accordion-content">
                                     <p>
@@ -911,10 +911,10 @@
                             <div class="accordion-item">
                                 <div class="accordion-header">
                                     <img width="24" height="25" src="img/accardion-icon2.svg" alt="icon"
-                                        class="accordion-header-icon" />
+                                        class="accordion-header-icon">
                                     Уже работаете риелтором
                                     <img width="24" height="25" src="img/accrdion-arrow.svg" alt="icon"
-                                        class="accordion-header-arrow" />
+                                        class="accordion-header-arrow">
                                 </div>
                                 <div class="accordion-content">
                                     <p>
@@ -928,10 +928,10 @@
                             <div class="accordion-item">
                                 <div class="accordion-header">
                                     <img width="24" height="25" src="img/accardion-icon3.svg" alt="icon"
-                                        class="accordion-header-icon" />
+                                        class="accordion-header-icon">
                                     Имеете нестабильный доход
                                     <img width="24" height="25" src="img/accrdion-arrow.svg" alt="icon"
-                                        class="accordion-header-arrow" />
+                                        class="accordion-header-arrow">
                                 </div>
                                 <div class="accordion-content">
                                     <p>
@@ -945,10 +945,10 @@
                             <div class="accordion-item">
                                 <div class="accordion-header">
                                     <img width="24" height="25" src="img/accardion-icon4.svg" alt="icon"
-                                        class="accordion-header-icon" />
+                                        class="accordion-header-icon">
                                     Нужна поддержка экспертов
                                     <img width="24" height="25" src="img/accrdion-arrow.svg" alt="icon"
-                                        class="accordion-header-arrow" />
+                                        class="accordion-header-arrow">
                                 </div>
                                 <div class="accordion-content">
                                     <p>
@@ -969,14 +969,14 @@
                 <div class="education__img">
                     <picture>
                         <source type="image/webp" media="(min-width: 1280px)" srcset="img/education__img.webp 1280w"
-                            sizes="100vw" />
-                        <source media="(min-width: 1280px)" srcset="img/education__img.png 1280w" sizes="100vw" />
+                            sizes="100vw">
+                        <source media="(min-width: 1280px)" srcset="img/education__img.png 1280w" sizes="100vw">
 
                         <source type="image/webp" media="(max-width: 1279px)" srcset="img/education__img-mob.webp 360w"
-                            sizes="100vw" />
-                        <source media="(max-width: 767px)" srcset="img/education__img-mob.png 360w" sizes="100vw" />
+                            sizes="100vw">
+                        <source media="(max-width: 767px)" srcset="img/education__img-mob.png 360w" sizes="100vw">
 
-                        <img src="img/education__img-mob.webp" alt="" width="360" height="600" loading="lazy" />
+                        <img src="img/education__img-mob.webp" alt="" width="360" height="600" loading="lazy">
                     </picture>
                 </div>
                 <div class="education__content">
@@ -992,37 +992,37 @@
                     <div class="education__content-grid">
                         <div class="education__content-card">
                             <div class="education__content-img">
-                                <img src="img/education__content-card1.svg" width="50" height="49" alt="icon" />
+                                <img src="img/education__content-card1.svg" width="50" height="49" alt="icon">
                             </div>
                             <p>
                                 Онлайн-курсы по продажам, маркетингу, юридическим аспектам в
                                 ОАЭ, Бали, Кипре и Украине.
                             </p>
                             <a href="/">Подробнее
-                                <img src="img/arrow-right.svg" width="20" height="20" alt="icon" />
+                                <img src="img/arrow-right.svg" width="20" height="20" alt="icon">
                             </a>
                         </div>
 
                         <div class="education__content-card">
                             <div class="education__content-img">
-                                <img src="img/education__content-card2.svg" width="32" height="33" alt="icon" />
+                                <img src="img/education__content-card2.svg" width="32" height="33" alt="icon">
                             </div>
                             <p>
                                 Закрытые вебинары и мастер-классы от опытных риелторов с
                                 разбором реальных кейсов.
                             </p>
                             <a href="/">Подробнее
-                                <img src="img/arrow-right.svg" width="20" height="20" alt="icon" />
+                                <img src="img/arrow-right.svg" width="20" height="20" alt="icon">
                             </a>
                         </div>
 
                         <div class="education__content-card">
                             <div class="education__content-img">
-                                <img src="img/education__content-card3.svg" width="32" height="33" alt="icon" />
+                                <img src="img/education__content-card3.svg" width="32" height="33" alt="icon">
                             </div>
                             <p>Гайды, чек-листы и скрипты для работы с клиентами.</p>
                             <a href="/">Подробнее
-                                <img src="img/arrow-right.svg" width="20" height="20" alt="icon" />
+                                <img src="img/arrow-right.svg" width="20" height="20" alt="icon">
                             </a>
                         </div>
                     </div>
@@ -1043,10 +1043,10 @@
                     </div>
                     <div class="targetAudienceSections__title-btn">
                         <a href="/" class="button--secondary">Подписаться сейчас
-                            <img src="img/icon-btn0.svg" width="21" height="21" alt="icon" />
+                            <img src="img/icon-btn0.svg" width="21" height="21" alt="icon">
                         </a>
                         <a href="/" class="button--primary">Подробнее
-                            <img src="img/arrow-right.svg" width="21" height="21" alt="icon" />
+                            <img src="img/arrow-right.svg" width="21" height="21" alt="icon">
                         </a>
                     </div>
                 </div>
@@ -1054,14 +1054,14 @@
                     <div class="targetAudienceSections__card">
                         <div class="targetAudienceSections__card-img">
                             <picture>
-                                <source type="image/webp" srcset="img/targetAudienceSection1.webp" />
+                                <source type="image/webp" srcset="img/targetAudienceSection1.webp">
                                 <img src="img/targetAudienceSection1.jpg" width="256" height="228" alt=""
-                                    loading="lazy" />
+                                    loading="lazy">
                             </picture>
                         </div>
                         <div class="targetAudienceSections__card-content">
                             <h3>
-                                Личный <br />
+                                Личный <br>
                                 ассистент
                             </h3>
                             <p>Помогает с вопросами, документами и организацией сделок.</p>
@@ -1071,14 +1071,14 @@
                     <div class="targetAudienceSections__card">
                         <div class="targetAudienceSections__card-img">
                             <picture>
-                                <source type="image/webp" srcset="img/targetAudienceSection2.webp" />
+                                <source type="image/webp" srcset="img/targetAudienceSection2.webp">
                                 <img src="img/targetAudienceSection2.jpg" width="256" height="228" alt=""
-                                    loading="lazy" />
+                                    loading="lazy">
                             </picture>
                         </div>
                         <div class="targetAudienceSections__card-content">
                             <h3>
-                                Доступ к актуальной <br />
+                                Доступ к актуальной <br>
                                 документации
                             </h3>
                             <p>Юридические шаблоны, договоры, инструкции.</p>
@@ -1088,14 +1088,14 @@
                     <div class="targetAudienceSections__card">
                         <div class="targetAudienceSections__card-img">
                             <picture>
-                                <source type="image/webp" srcset="img/targetAudienceSection3.webp" />
+                                <source type="image/webp" srcset="img/targetAudienceSection3.webp">
                                 <img src="img/targetAudienceSection3.jpg" width="256" height="228" alt=""
-                                    loading="lazy" />
+                                    loading="lazy">
                             </picture>
                         </div>
                         <div class="targetAudienceSections__card-content">
                             <h3>
-                                Комьюнити <br />
+                                Комьюнити <br>
                                 риелторов
                             </h3>
                             <p>
@@ -1107,14 +1107,14 @@
                     <div class="targetAudienceSections__card">
                         <div class="targetAudienceSections__card-img">
                             <picture>
-                                <source type="image/webp" srcset="img/targetAudienceSection4.webp" />
+                                <source type="image/webp" srcset="img/targetAudienceSection4.webp">
                                 <img src="img/targetAudienceSection4.jpg" width="256" height="228" alt=""
-                                    loading="lazy" />
+                                    loading="lazy">
                             </picture>
                         </div>
                         <div class="targetAudienceSections__card-content">
                             <h3>
-                                База планировок <br />
+                                База планировок <br>
                                 и объектов
                             </h3>
                             <p>
@@ -1131,8 +1131,8 @@
             <div class="wrapper">
                 <div class="leadManagementSection-img">
                     <picture>
-                        <source type="image/webp" srcset="img/img.webp" />
-                        <img src="img/img.png" width="550" height="412" alt="/" loading="lazy" />
+                        <source type="image/webp" srcset="img/img.webp">
+                        <img src="img/img.png" width="550" height="412" alt="/" loading="lazy">
                     </picture>
                 </div>
                 <div class="leadManagementSection-content">
@@ -1148,7 +1148,7 @@
                             </div>
                             <div class="leadManagementSection-date">
                                 <p class="leadManagementSection-date-text">August 9, 2025</p>
-                                <img width="26" height="26" src="img/icons.svg" alt="icon" />
+                                <img width="26" height="26" src="img/icons.svg" alt="icon">
                             </div>
                         </div>
 
@@ -1163,22 +1163,25 @@
                         </h3>
                         <ul class="lead-management__benefits-list">
                             <li class="lead-management__benefits-item">
-                                <img src="img/icons1.svg" width="26" height="26" alt="" role="presentation"
-                                    aria-hidden="true" class="lead-management__benefits-icon" />
+                                <img src="img/icons1.svg" width="26" height="26"
+                                    alt="Green checkmark symbol indicating successful completion or approval, set against a circular background with a calm and positive tone"
+                                    aria-hidden="true" class="lead-management__benefits-icon">
                                 <span class="lead-management__benefits-text">Вы получаете заявки от клиентов, которым
                                     нужен
                                     риелтор.</span>
                             </li>
                             <li class="lead-management__benefits-item">
-                                <img src="img/icons1.svg" width="26" height="26" alt="" role="presentation"
-                                    aria-hidden="true" class="lead-management__benefits-icon" />
+                                <img src="img/icons1.svg" width="26" height="26"
+                                    alt="Green checkmark symbol indicating successful completion or approval, set against a circular background with a calm and positive tone"
+                                    aria-hidden="true" class="lead-management__benefits-icon">
                                 <span class="lead-management__benefits-text">Вам остаётся консультировать, подбирать
                                     объект и закрывать
                                     сделку.</span>
                             </li>
                             <li class="lead-management__benefits-item">
-                                <img src="img/icons1.svg" width="26" height="26" alt="" role="presentation"
-                                    aria-hidden="true" class="lead-management__benefits-icon" />
+                                <img src="img/icons1.svg" width="26" height="26"
+                                    alt="Green checkmark symbol indicating successful completion or approval, set against a circular background with a calm and positive tone"
+                                    aria-hidden="true" class="lead-management__benefits-icon">
                                 <span class="lead-management__benefits-text">Мы поддерживаем на каждом этапе – от
                                     подбора до подписания
                                     договора.</span>
@@ -1193,8 +1196,8 @@
 
             <div class="leadManagementSection-banner">
                 <picture>
-                    <source type="image/webp" srcset="img/bg-img2.webp" />
-                    <img src="img/bg-img2.png" width="1920" height="708" alt="/" loading="lazy" />
+                    <source type="image/webp" srcset="img/bg-img2.webp">
+                    <img src="img/bg-img2.png" width="1920" height="708" alt="/" loading="lazy">
                 </picture>
             </div>
         </div>
@@ -1208,17 +1211,17 @@
 
                     <nav class="graduates__nav" aria-label="Навигация по отзывам">
                         <button class="swiper-button-prev" aria-label="Предыдущий отзыв">
-                            <img width="20" height="21" src="img/prev.svg" alt="icon" />
+                            <img width="20" height="21" src="img/prev.svg" alt="icon">
                         </button>
                         <button class="swiper-button-next" aria-label="Следующий отзыв">
-                            <img width="20" height="21" src="img/next.svg" alt="icon" />
+                            <img width="20" height="21" src="img/next.svg" alt="icon">
                         </button>
                     </nav>
                 </div>
 
-                <div class="graduates__slider swiper" aria-label="Отзывы выпускников">
+                <div class="graduates__slider swiper" role="region" aria-labelledby="graduates-title">
                     <div class="swiper-wrapper">
-                        <article class="graduates__slide swiper-slide">
+                        <div class="graduates__slide swiper-slide">
                             <blockquote class="graduates__quote">
                                 <p>
                                     «Огромное спасибо Кристине за такую возможность зарабатывать
@@ -1233,17 +1236,17 @@
                                         class="graduates__video-link" aria-label="Смотреть видео отзыв Яна Киор">
                                         <picture>
                                             <source type="image/webp" srcset="img/video-banner1.webp" width="412"
-                                                height="222" />
+                                                height="222">
                                             <img src="img/video-banner1.jpg" alt="Видео отзыв Яна Киор" width="412"
-                                                height="222" loading="lazy" />
+                                                height="222" loading="lazy">
                                         </picture>
                                         <span class="graduates__video-play" aria-hidden="true">
-                                            <img src="img/play-btn.svg" width="56" height="57" alt="Play button" />
+                                            <img src="img/play-btn.svg" width="56" height="57" alt="Play button">
                                         </span>
                                     </a>
                                     <figcaption class="visually-hidden">
                                         <time class="graduates__date" datetime="2025-08-09">August 9, 2025</time>
-                                        <img width="26" height="26" src="img/icons.svg" alt="icon" />
+                                        <img width="26" height="26" src="img/icons.svg" alt="icon">
                                     </figcaption>
                                 </figure>
                                 <div class="graduates__quote-content">
@@ -1258,26 +1261,26 @@
                                         </div>
                                     </dl>
                                     <div class="graduates__points-arrow">
-                                        <img src="img/arrow-right2.svg" width="73" height="8" alt="icon" />
+                                        <img src="img/arrow-right2.svg" width="73" height="8" alt="icon">
                                     </div>
                                     <div class="graduates__meta">
                                         <div class="graduates__author">
                                             <picture>
-                                                <source type="image/webp" srcset="img/avatar1.webp" />
+                                                <source type="image/webp" srcset="img/avatar1.webp">
                                                 <img src="img/avatar1.png" alt="Яна Киор, Риелтор в ОАЭ"
-                                                    class="graduates__avatar" width="48" height="48" loading="lazy" />
+                                                    class="graduates__avatar" width="48" height="48" loading="lazy">
                                             </picture>
                                         </div>
                                         <p class="graduates__name">
-                                            Яна Киор<br />
+                                            Яна Киор<br>
                                             <span>Риелтор в ОАЭ</span>
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                        </article>
+                        </div>
 
-                        <article class="graduates__slide swiper-slide">
+                        <div class="graduates__slide swiper-slide">
                             <blockquote class="graduates__quote">
                                 <p>
                                     «Обязательно проходите Академию DomStar и верьте в себя у
@@ -1292,17 +1295,17 @@
                                         class="graduates__video-link" aria-label="Смотреть видео отзыв Яна Киор">
                                         <picture>
                                             <source type="image/webp" srcset="img/video-banner2.webp" width="412"
-                                                height="222" />
+                                                height="222">
                                             <img src="img/video-banner2.jpg" alt="Видео отзыв Яна Киор" width="412"
-                                                height="222" loading="lazy" />
+                                                height="222" loading="lazy">
                                         </picture>
                                         <span class="graduates__video-play" aria-hidden="true">
-                                            <img src="img/play-btn.svg" width="56" height="57" alt="" />
+                                            <img src="img/play-btn.svg" width="56" height="57" alt="">
                                         </span>
                                     </a>
                                     <figcaption class="visually-hidden">
                                         <time class="graduates__date" datetime="2025-08-09">August 9, 2025</time>
-                                        <img width="26" height="26" src="img/icons.svg" alt="icon" />
+                                        <img width="26" height="26" src="img/icons.svg" alt="icon">
                                     </figcaption>
                                 </figure>
                                 <div class="graduates__quote-content">
@@ -1317,26 +1320,26 @@
                                         </div>
                                     </dl>
                                     <div class="graduates__points-arrow">
-                                        <img src="img/arrow-right2.svg" width="73" height="8" alt="icon" />
+                                        <img src="img/arrow-right2.svg" width="73" height="8" alt="icon">
                                     </div>
                                     <div class="graduates__meta">
                                         <div class="graduates__author">
                                             <picture>
-                                                <source type="image/webp" srcset="img/avatar1.webp" />
+                                                <source type="image/webp" srcset="img/avatar1.webp">
                                                 <img src="img/avatar1.png" alt="Яна Киор, Риелтор в ОАЭ"
-                                                    class="graduates__avatar" width="48" height="48" loading="lazy" />
+                                                    class="graduates__avatar" width="48" height="48" loading="lazy">
                                             </picture>
                                         </div>
                                         <p class="graduates__name">
-                                            Яна Киор<br />
+                                            Яна Киор<br>
                                             <span>Риелтор в ОАЭ</span>
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                        </article>
+                        </div>
 
-                        <article class="graduates__slide swiper-slide">
+                        <div class="graduates__slide swiper-slide">
                             <blockquote class="graduates__quote">
                                 <p>
                                     «Огромное спасибо Кристине за такую возможность зарабатывать
@@ -1351,17 +1354,17 @@
                                         class="graduates__video-link" aria-label="Смотреть видео отзыв Яна Киор">
                                         <picture>
                                             <source type="image/webp" srcset="img/video-banner1.webp" width="412"
-                                                height="222" />
+                                                height="222">
                                             <img src="img/video-banner1.jpg" alt="Видео отзыв Яна Киор" width="412"
-                                                height="222" loading="lazy" />
+                                                height="222" loading="lazy">
                                         </picture>
                                         <span class="graduates__video-play" aria-hidden="true">
-                                            <img src="img/play-btn.svg" width="56" height="57" alt="" />
+                                            <img src="img/play-btn.svg" width="56" height="57" alt="">
                                         </span>
                                     </a>
                                     <figcaption class="visually-hidden">
                                         <time class="graduates__date" datetime="2025-08-09">August 9, 2025</time>
-                                        <img width="26" height="26" src="img/icons.svg" alt="icon" />
+                                        <img width="26" height="26" src="img/icons.svg" alt="icon">
                                     </figcaption>
                                 </figure>
                                 <div class="graduates__quote-content">
@@ -1376,26 +1379,26 @@
                                         </div>
                                     </dl>
                                     <div class="graduates__points-arrow">
-                                        <img src="img/arrow-right2.svg" width="73" height="8" alt="icon" />
+                                        <img src="img/arrow-right2.svg" width="73" height="8" alt="icon">
                                     </div>
                                     <div class="graduates__meta">
                                         <div class="graduates__author">
                                             <picture>
-                                                <source type="image/webp" srcset="img/avatar1.webp" />
+                                                <source type="image/webp" srcset="img/avatar1.webp">
                                                 <img src="img/avatar1.png" alt="Яна Киор, Риелтор в ОАЭ"
-                                                    class="graduates__avatar" width="48" height="48" loading="lazy" />
+                                                    class="graduates__avatar" width="48" height="48" loading="lazy">
                                             </picture>
                                         </div>
                                         <p class="graduates__name">
-                                            Яна Киор<br />
+                                            Яна Киор<br>
                                             <span>Риелтор в ОАЭ</span>
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                        </article>
+                        </div>
 
-                        <article class="graduates__slide swiper-slide">
+                        <div class="graduates__slide swiper-slide">
                             <blockquote class="graduates__quote">
                                 <p>
                                     «Обязательно проходите Академию DomStar и верьте в себя у
@@ -1410,17 +1413,17 @@
                                         class="graduates__video-link" aria-label="Смотреть видео отзыв Яна Киор">
                                         <picture>
                                             <source type="image/webp" srcset="img/video-banner2.webp" width="412"
-                                                height="222" />
+                                                height="222">
                                             <img src="img/video-banner2.jpg" alt="Видео отзыв Яна Киор" width="412"
-                                                height="222" loading="lazy" />
+                                                height="222" loading="lazy">
                                         </picture>
                                         <span class="graduates__video-play" aria-hidden="true">
-                                            <img src="img/play-btn.svg" width="56" height="57" alt="" />
+                                            <img src="img/play-btn.svg" width="56" height="57" alt="">
                                         </span>
                                     </a>
                                     <figcaption class="visually-hidden">
                                         <time class="graduates__date" datetime="2025-08-09">August 9, 2025</time>
-                                        <img width="26" height="26" src="img/icons.svg" alt="icon" />
+                                        <img width="26" height="26" src="img/icons.svg" alt="icon">
                                     </figcaption>
                                 </figure>
                                 <div class="graduates__quote-content">
@@ -1435,26 +1438,26 @@
                                         </div>
                                     </dl>
                                     <div class="graduates__points-arrow">
-                                        <img src="img/arrow-right2.svg" width="73" height="8" alt="icon" />
+                                        <img src="img/arrow-right2.svg" width="73" height="8" alt="icon">
                                     </div>
                                     <div class="graduates__meta">
                                         <div class="graduates__author">
                                             <picture>
-                                                <source type="image/webp" srcset="img/avatar1.webp" />
+                                                <source type="image/webp" srcset="img/avatar1.webp">
                                                 <img src="img/avatar1.png" alt="Яна Киор, Риелтор в ОАЭ"
-                                                    class="graduates__avatar" width="48" height="48" loading="lazy" />
+                                                    class="graduates__avatar" width="48" height="48" loading="lazy">
                                             </picture>
                                         </div>
                                         <p class="graduates__name">
-                                            Яна Киор<br />
+                                            Яна Киор<br>
                                             <span>Риелтор в ОАЭ</span>
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                        </article>
+                        </div>
 
-                        <article class="graduates__slide swiper-slide">
+                        <div class="graduates__slide swiper-slide">
                             <blockquote class="graduates__quote">
                                 <p>
                                     «Огромное спасибо Кристине за такую возможность зарабатывать
@@ -1469,17 +1472,17 @@
                                         class="graduates__video-link" aria-label="Смотреть видео отзыв Яна Киор">
                                         <picture>
                                             <source type="image/webp" srcset="img/video-banner1.webp" width="412"
-                                                height="222" />
+                                                height="222">
                                             <img src="img/video-banner1.jpg" alt="Видео отзыв Яна Киор" width="412"
-                                                height="222" loading="lazy" />
+                                                height="222" loading="lazy">
                                         </picture>
                                         <span class="graduates__video-play" aria-hidden="true">
-                                            <img src="img/play-btn.svg" width="56" height="57" alt="" />
+                                            <img src="img/play-btn.svg" width="56" height="57" alt="">
                                         </span>
                                     </a>
                                     <figcaption class="visually-hidden">
                                         <time class="graduates__date" datetime="2025-08-09">August 9, 2025</time>
-                                        <img width="26" height="26" src="img/icons.svg" alt="icon" />
+                                        <img width="26" height="26" src="img/icons.svg" alt="icon">
                                     </figcaption>
                                 </figure>
                                 <div class="graduates__quote-content">
@@ -1494,26 +1497,26 @@
                                         </div>
                                     </dl>
                                     <div class="graduates__points-arrow">
-                                        <img src="img/arrow-right2.svg" width="73" height="8" alt="icon" />
+                                        <img src="img/arrow-right2.svg" width="73" height="8" alt="icon">
                                     </div>
                                     <div class="graduates__meta">
                                         <div class="graduates__author">
                                             <picture>
-                                                <source type="image/webp" srcset="img/avatar1.webp" />
+                                                <source type="image/webp" srcset="img/avatar1.webp">
                                                 <img src="img/avatar1.png" alt="Яна Киор, Риелтор в ОАЭ"
-                                                    class="graduates__avatar" width="48" height="48" loading="lazy" />
+                                                    class="graduates__avatar" width="48" height="48" loading="lazy">
                                             </picture>
                                         </div>
                                         <p class="graduates__name">
-                                            Яна Киор<br />
+                                            Яна Киор<br>
                                             <span>Риелтор в ОАЭ</span>
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                        </article>
+                        </div>
 
-                        <article class="graduates__slide swiper-slide">
+                        <div class="graduates__slide swiper-slide">
                             <blockquote class="graduates__quote">
                                 <p>
                                     «Обязательно проходите Академию DomStar и верьте в себя у
@@ -1528,17 +1531,17 @@
                                         class="graduates__video-link" aria-label="Смотреть видео отзыв Яна Киор">
                                         <picture>
                                             <source type="image/webp" srcset="img/video-banner2.webp" width="412"
-                                                height="222" />
+                                                height="222">
                                             <img src="img/video-banner2.jpg" alt="Видео отзыв Яна Киор" width="412"
-                                                height="222" loading="lazy" />
+                                                height="222" loading="lazy">
                                         </picture>
                                         <span class="graduates__video-play" aria-hidden="true">
-                                            <img src="img/play-btn.svg" width="56" height="57" alt="" />
+                                            <img src="img/play-btn.svg" width="56" height="57" alt="">
                                         </span>
                                     </a>
                                     <figcaption class="visually-hidden">
                                         <time class="graduates__date" datetime="2025-08-09">August 9, 2025</time>
-                                        <img width="26" height="26" src="img/icons.svg" alt="icon" />
+                                        <img width="26" height="26" src="img/icons.svg" alt="icon">
                                     </figcaption>
                                 </figure>
                                 <div class="graduates__quote-content">
@@ -1553,24 +1556,24 @@
                                         </div>
                                     </dl>
                                     <div class="graduates__points-arrow">
-                                        <img src="img/arrow-right2.svg" width="73" height="8" alt="icon" />
+                                        <img src="img/arrow-right2.svg" width="73" height="8" alt="icon">
                                     </div>
                                     <div class="graduates__meta">
                                         <div class="graduates__author">
                                             <picture>
-                                                <source type="image/webp" srcset="img/avatar1.webp" />
+                                                <source type="image/webp" srcset="img/avatar1.webp">
                                                 <img src="img/avatar1.png" alt="Яна Киор, Риелтор в ОАЭ"
-                                                    class="graduates__avatar" width="48" height="48" loading="lazy" />
+                                                    class="graduates__avatar" width="48" height="48" loading="lazy">
                                             </picture>
                                         </div>
                                         <p class="graduates__name">
-                                            Яна Киор<br />
+                                            Яна Киор<br>
                                             <span>Риелтор в ОАЭ</span>
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                        </article>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1591,9 +1594,9 @@
                     <form autocomplete="on" aria-label="Форма заявки на консультацию">
                         <div class="cta__form-col">
                             <input type="text" id="cta-name" name="name" placeholder="Ваше имя" required
-                                autocomplete="name" />
+                                autocomplete="name">
                             <input type="tel" id="cta-phone" name="phone" placeholder="Ваш телефон" required
-                                autocomplete="tel" inputmode="tel" pattern="[\d\s\-\+\(\)]*" />
+                                autocomplete="tel" pattern="[\d\s\-\+\(\)]*" aria-label="Телефон">
 
                             <div class="select-wrapper">
                                 <select id="contact-method" name="contact-method" aria-label="Выберите способ связи">
@@ -1611,25 +1614,28 @@
                     </form>
                 </div>
                 <aside class="lead-management__card lead-management__card--aside"
-                    aria-labelledby="lead-benefits-title-cta" role="complementary">
+                    aria-labelledby="lead-benefits-title-cta">
                     <h3 id="lead-benefits-title-cta" class="lead-management__card-title">
                         Получите:
                     </h3>
                     <ul class="lead-management__benefits-list">
                         <li class="lead-management__benefits-item">
-                            <img src="img/icons1.svg" width="26" height="26" alt="" role="presentation"
-                                aria-hidden="true" class="lead-management__benefits-icon" />
+                            <img src="img/icons1.svg" width="26" height="26"
+                                alt="Green checkmark symbol indicating successful completion or approval, set against a circular background with a calm and positive tone"
+                                aria-hidden="true" class="lead-management__benefits-icon">
                             <span class="lead-management__benefits-text">Разбор вашей ситуации и точек роста</span>
                         </li>
                         <li class="lead-management__benefits-item">
-                            <img src="img/icons1.svg" width="26" height="26" alt="" role="presentation"
-                                aria-hidden="true" class="lead-management__benefits-icon" />
+                            <img src="img/icons1.svg" width="26" height="26"
+                                alt="Green checkmark symbol representing successful completion or approval, set against a circular background with a calm and positive tone"
+                                aria-hidden="true" class="lead-management__benefits-icon">
                             <span class="lead-management__benefits-text">Индивидуальный план выхода на международный
                                 рынок</span>
                         </li>
                         <li class="lead-management__benefits-item">
-                            <img src="img/icons1.svg" width="26" height="26" alt="" role="presentation"
-                                aria-hidden="true" class="lead-management__benefits-icon" />
+                            <img src="img/icons1.svg" width="26" height="26"
+                                alt="Green checkmark symbol representing successful completion or approval, set against a circular background with a calm and positive tone"
+                                aria-hidden="true" class="lead-management__benefits-icon">
                             <span class="lead-management__benefits-text">Доступ к базе знаний по недвижимости в ОАЭ,
                                 Кипре, Бали и
                                 Украине</span>
@@ -1639,8 +1645,8 @@
             </div>
             <div class="cta__bg" aria-hidden="true">
                 <picture>
-                    <source type="image/webp" srcset="img/cta__bg.webp" />
-                    <img src="img/cta__bg.png" width="1920" height="881" alt="" loading="lazy" />
+                    <source type="image/webp" srcset="img/cta__bg.webp">
+                    <img src="img/cta__bg.png" width="1920" height="881" alt="" loading="lazy">
                 </picture>
             </div>
         </section>
@@ -1662,9 +1668,9 @@
                     </div>
                     <figure class="about__image">
                         <picture>
-                            <source type="image/webp" srcset="img/about.webp" />
+                            <source type="image/webp" srcset="img/about.webp">
                             <img src="img/about.jpg" width="526" height="476" alt="Команда Academy Star и обучающиеся"
-                                loading="lazy" />
+                                loading="lazy">
                         </picture>
                         <figcaption class="visually-hidden">
                             Команда Academy Star и обучающиеся
@@ -1675,39 +1681,39 @@
                 <div class="about__main" aria-labelledby="about-founders-title">
                     <div class="about__main-img">
                         <picture>
-                            <source type="image/webp" srcset="img/team.webp" />
+                            <source type="image/webp" srcset="img/team.webp">
                             <img src="img/team.jpg" width="1920" height="1090" alt="Команда Academy Star"
-                                loading="lazy" />
+                                loading="lazy">
                         </picture>
                     </div>
 
                     <div class="about__main-top">
                         <div class="about__main-top--cards" role="list" aria-label="Основатели">
-                            <article class="about__main-top--card" role="listitem">
+                            <div class="about__main-top--card">
                                 <figure>
                                     <picture>
-                                        <source type="image/webp" srcset="img/avatar01.webp" />
+                                        <source type="image/webp" srcset="img/avatar01.webp">
                                         <img src="img/avatar01.png" width="176" height="176"
-                                            alt="Портрет Кристины Зверевой" loading="lazy" />
+                                            alt="Портрет Кристины Зверевой" loading="lazy">
                                     </picture>
                                     <figcaption class="visually-hidden">
                                         Кристина Зверева, <span>Lorem ipsum dolor</span>
                                     </figcaption>
                                 </figure>
-                            </article>
+                            </div>
 
-                            <article class="about__main-top--card" role="listitem">
+                            <div class="about__main-top--card">
                                 <figure>
                                     <picture>
-                                        <source type="image/webp" srcset="img/avatar02.webp" />
+                                        <source type="image/webp" srcset="img/avatar02.webp">
                                         <img src="img/avatar02.png" width="176" height="176"
-                                            alt="Портрет Геннадия Сухацкого" loading="lazy" />
+                                            alt="Портрет Геннадия Сухацкого" loading="lazy">
                                     </picture>
                                     <figcaption class="visually-hidden">
                                         Геннадий Сухацкий, <span>Lorem ipsum dolor</span>
                                     </figcaption>
                                 </figure>
-                            </article>
+                            </div>
                         </div>
                         <div class="about__main-top--content">
                             <h3 id="about-founders-title">Основатели</h3>
@@ -1730,7 +1736,7 @@
                     </div>
 
                     <div class="about__main-bottom">
-                        <article class="about__main-bottom--card">
+                        <div class="about__main-bottom--card">
                             <h4>Почему выбирают Academy Star?</h4>
                             <ul>
                                 <li>
@@ -1745,8 +1751,8 @@
                                     опытом.
                                 </li>
                             </ul>
-                        </article>
-                        <article class="about__main-bottom--card">
+                        </div>
+                        <div class="about__main-bottom--card">
                             <p>
                                 Academy Star — это часть DomStar, международного агентства
                                 недвижимости с офисами в Одессе и Дубае и филиалами на Бали и
@@ -1756,7 +1762,7 @@
                             </p>
                             <strong>Если вы готовы изменить свою жизнь и построить карьеру в
                                 недвижимости, Academy Star — ваш первый шаг к успеху.</strong>
-                        </article>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1767,7 +1773,7 @@
                 <h2 id="faq-title" class="faq-title">Частые вопросы</h2>
                 <div class="faq__box">
                     <div class="faq__box-inner">
-                        <article class="faq-item">
+                        <div class="faq-item">
                             <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1"
                                 id="faq-question-1">
                                 Кому подходит ваша платформа?
@@ -1778,8 +1784,8 @@
                                     развиваться в новой области.
                                 </p>
                             </div>
-                        </article>
-                        <article class="faq-item">
+                        </div>
+                        <div class="faq-item">
                             <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2"
                                 id="faq-question-2">
                                 Как происходит обучение?
@@ -1790,8 +1796,8 @@
                                     заданиями.
                                 </p>
                             </div>
-                        </article>
-                        <article class="faq-item">
+                        </div>
+                        <div class="faq-item">
                             <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3"
                                 id="faq-question-3">
                                 Как мне начать?
@@ -1802,10 +1808,10 @@
                                     курс.
                                 </p>
                             </div>
-                        </article>
+                        </div>
                     </div>
                     <div class="faq__box-inner">
-                        <article class="faq-item">
+                        <div class="faq-item">
                             <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4"
                                 id="faq-question-4">
                                 Сколько я смогу зарабатывать?
@@ -1815,8 +1821,8 @@
                                     Заработок зависит от ваших усилий и вовлеченности в процесс.
                                 </p>
                             </div>
-                        </article>
-                        <article class="faq-item">
+                        </div>
+                        <div class="faq-item">
                             <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5"
                                 id="faq-question-5">
                                 Какие документы нужны для работы?
@@ -1827,46 +1833,46 @@
                                     и ИНН.
                                 </p>
                             </div>
-                        </article>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer" aria-labelledby="footer-title">
+    <footer class="footer">
         <div class="footer__wrapper wrapper">
             <div class="footer__top">
                 <div class="footer__brand">
                     <div class="footer__logo">
                         <a href="/" aria-label="Academy Star - главная страница">
                             <img src="img/logo-footer.svg" width="176" height="43" alt="Academy Star Logo"
-                                loading="lazy" />
+                                loading="lazy">
                         </a>
                     </div>
                     <ul class="footer__social-list" aria-label="Социальные сети">
                         <li class="footer__social-item">
                             <a href="#" aria-label="Instagram Academy Star" class="footer__social-link" rel="noopener"
                                 target="_blank">
-                                <img src="img/social1.svg" width="20" height="21" alt="Instagram" />
+                                <img src="img/social1.svg" width="20" height="21" alt="Instagram">
                             </a>
                         </li>
                         <li class="footer__social-item">
                             <a href="#" aria-label="Telegram Academy Star" class="footer__social-link" rel="noopener"
                                 target="_blank">
-                                <img src="img/social2.svg" width="20" height="21" alt="Telegram" />
+                                <img src="img/social2.svg" width="20" height="21" alt="Telegram">
                             </a>
                         </li>
                         <li class="footer__social-item">
                             <a href="#" aria-label="Facebook Academy Star" class="footer__social-link" rel="noopener"
                                 target="_blank">
-                                <img src="img/social3.svg" width="20" height="21" alt="Facebook" />
+                                <img src="img/social3.svg" width="20" height="21" alt="Facebook">
                             </a>
                         </li>
                         <li class="footer__social-item">
                             <a href="#" aria-label="YouTube Academy Star" class="footer__social-link" rel="noopener"
                                 target="_blank">
-                                <img src="img/social4.svg" width="20" height="21" alt="YouTube" />
+                                <img src="img/social4.svg" width="20" height="21" alt="YouTube">
                             </a>
                         </li>
                     </ul>
@@ -1923,33 +1929,33 @@
                 </nav>
                 <div class="footer__bg" aria-hidden="true">
                     <picture>
-                        <source type="image/webp" srcset="img/footer-bg.webp" />
-                        <img src="img/footer-bg.png" width="1920" height="290" alt="" loading="lazy" />
+                        <source type="image/webp" srcset="img/footer-bg.webp">
+                        <img src="img/footer-bg.png" width="1920" height="290" alt="" loading="lazy">
                     </picture>
                 </div>
             </div>
             <div class="footer__bottom">
                 <p class="footer__copyright">
                     © 2025 DomStar®. All content is available under the Creative Commons
-                    Attribution 4.0 International license unless otherwise noted.<br />
+                    Attribution 4.0 International license unless otherwise noted.<br>
                     <span lang="uk">Фізична особа-підприємець Звєрєва Христина Валеріївна | ІПН:
                         3377414489</span>
                 </p>
                 <ul class="footer__payment-list" aria-label="Способы оплаты">
                     <li class="footer__payment-item">
-                        <img src="img/MasterCard.svg" width="35" height="36" alt="MasterCard" loading="lazy" />
+                        <img src="img/MasterCard.svg" width="35" height="36" alt="MasterCard" loading="lazy">
                     </li>
                     <li class="footer__payment-item">
-                        <img src="img/Visa.svg" width="35" height="36" alt="Visa" loading="lazy" />
+                        <img src="img/Visa.svg" width="35" height="36" alt="Visa" loading="lazy">
                     </li>
                     <li class="footer__payment-item">
-                        <img src="img/Visa2.svg" width="72" height="36" alt="Visa" loading="lazy" />
+                        <img src="img/Visa2.svg" width="72" height="36" alt="Visa" loading="lazy">
                     </li>
                     <li class="footer__payment-item">
-                        <img src="img/Visa3.svg" width="35" height="36" alt="Visa" loading="lazy" />
+                        <img src="img/Visa3.svg" width="35" height="36" alt="Visa" loading="lazy">
                     </li>
                     <li class="footer__payment-item">
-                        <img src="img/GooglePay.svg" width="65" height="36" alt="Google Pay" loading="lazy" />
+                        <img src="img/GooglePay.svg" width="65" height="36" alt="Google Pay" loading="lazy">
                     </li>
                 </ul>
             </div>
