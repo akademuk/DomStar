@@ -73,23 +73,26 @@ function initClientLogosSwiper() {
   });
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  const firstAccordionItem = document.querySelector('.accordion-item');
-  const firstAccordionContent = firstAccordionItem.querySelector('.accordion-content');
+document.addEventListener("DOMContentLoaded", () => {
+  const firstAccordionItem = document.querySelector(".accordion-item");
+  const firstAccordionContent =
+    firstAccordionItem.querySelector(".accordion-content");
 
-  firstAccordionContent.style.display = 'block';
-  firstAccordionItem.classList.add('active');
+  firstAccordionContent.style.display = "block";
+  firstAccordionItem.classList.add("active");
 
   document.querySelectorAll(".accordion-item").forEach((item) => {
     item.addEventListener("mouseenter", () => {
       if (window.innerWidth > 768) {
         const content = item.querySelector(".accordion-content");
 
-        const firstContent = document.querySelector('.accordion-item .accordion-content');
-        const firstItem = document.querySelector('.accordion-item');
+        const firstContent = document.querySelector(
+          ".accordion-item .accordion-content"
+        );
+        const firstItem = document.querySelector(".accordion-item");
         if (firstContent && firstItem) {
-          firstContent.style.display = 'none';
-          firstItem.classList.remove('active');
+          firstContent.style.display = "none";
+          firstItem.classList.remove("active");
         }
 
         item.classList.add("active");
@@ -124,4 +127,40 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+const swiper = new Swiper(".graduates__slider", {
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  spaceBetween: 24,
+  slidesPerView: "auto",
+});
 
+Fancybox.bind('[data-fancybox="graduates-videos"]', {
+  type: "iframe",
+  Toolbar: false,
+  smallBtn: true,
+  iframe: {
+    preload: false,
+  },
+});
+
+  const faqButtons = document.querySelectorAll('.faq-question');
+
+    faqButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            const expanded = this.getAttribute('aria-expanded') === 'true';
+            const answer = document.getElementById(this.getAttribute('aria-controls'));
+
+            // Меняем состояние aria-expanded
+            this.setAttribute('aria-expanded', !expanded);
+
+            // Анимация раскрытия и скрытия
+            if (expanded) {
+                answer.style.maxHeight = '0';
+            } else {
+                answer.style.maxHeight = answer.scrollHeight + 'px'; // Вычисляем высоту ответа
+            }
+        });
+    });
