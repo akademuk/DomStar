@@ -954,17 +954,23 @@ body.menu-open {
     url(../img/card-bg.png) type("image/png")
   );
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   overflow: hidden;
   position: relative;
 }
 
-.realEstateSection-card3 > img {
+.realEstateSection-card3 img {
   width: calc(100% + 48px);
-  object-fit: cover;
+  object-fit: contain;
   height: 202px;
   min-height: 202px;
   margin: -20px -24px 0px -24px;
+}
+
+.realEstateSection-card3 .button img {
+  width: 20px;
+height: 20px;
+min-height: 20px;
 }
 
 .realEstateSection-card3 h3 {
@@ -1602,7 +1608,7 @@ body.menu-open {
   top: 20px;
   border-radius: 6px;
   background: var(--colors-Green-600);
-  color: var(--colors-Red-50);
+  color: var(--colors-base-white-100);
   font-size: 12px;
   font-weight: 500;
 }
@@ -1699,7 +1705,7 @@ body.menu-open {
   border-radius: 24px;
   border: 2px solid #7c9880;
   background: #7c9880;
-  color: var(--colors-base-white-100);
+  color: #000000;
   font-size: 12px;
   font-weight: 400;
   line-height: 120%;
