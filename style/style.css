@@ -906,7 +906,12 @@ body.menu-open {
 
 .realEstateSection-card.realEstateSection-card2 {
   outline: 2px solid var(--colors-base-white-25);
-  background: url(../img/bg-img.png), var(--colors-Pink-100);
+  background:
+    image-set(
+      url(../img/bg-img.webp) type("image/webp"),
+      url(../img/bg-img.png) type("image/png")
+    ),
+    var(--colors-Pink-100);
   background-repeat: no-repeat;
   background-size: calc(100% + 4px);
   background-position: -2px bottom;
@@ -944,7 +949,10 @@ body.menu-open {
   min-height: 328px;
   border-radius: 12px;
   height: auto;
-  background: url(../img/card-bg.png);
+  background: image-set(
+    url(../img/card-bg.webp) type("image/webp"),
+    url(../img/card-bg.png) type("image/png")
+  );
   background-repeat: no-repeat;
   background-size: contain;
   overflow: hidden;
@@ -1168,7 +1176,10 @@ body.menu-open {
 }
 
 .parallax {
-  background-image: url(../img/paralax.png);
+  background-image: image-set(
+    url(../img/paralax.webp) type("image/webp"),
+    url(../img/paralax.jpg) type("image/jpeg")
+  );
   position: relative;
 }
 
