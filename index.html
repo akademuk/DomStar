@@ -198,7 +198,7 @@
             <div class="wrapper">
                 <div class="realEstateSection__row">
                     <div class="realEstateSection-card">
-                        <h3>Обучение и практика</h3>
+                        <h3 role="heading" aria-level="2">Обучение и практика</h3>
                         <p>
                             Изучайте рынок, применяйте знания на практике и сразу
                             монетизируйте навыки
@@ -207,7 +207,7 @@
                     </div>
 
                     <div class="realEstateSection-card realEstateSection-card2">
-                        <h3>Работайте из любой точки мира</h3>
+                        <h3 role="heading" aria-level="2">Работайте из любой точки мира</h3>
                         <p>
                             Станьте риелтором международного уровня на рынке Дубаи, Бали,
                             Кипра и Украины
@@ -221,7 +221,7 @@
 
                 <div class="realEstateSection__row">
                     <div class="realEstateSection-card realEstateSection-card4">
-                        <h3>Доступ к эксклюзивным объектам</h3>
+                        <h3> role="heading" aria-level="2"Доступ к эксклюзивным объектам</h3>
                         <p>
                             Первыми узнавайте о стартах продаж и выгодных предложениях от
                             застройщиков
@@ -278,7 +278,7 @@
                             <source type="image/webp" srcset="img/card3.webp" />
                             <img width="170" height="171" src="img/card3.png" alt="icon" loading="lazy" />
                         </picture>
-                        <h3>Готовые инструменты для продаж</h3>
+                        <h3 role="heading" aria-level="2">Готовые инструменты для продаж</h3>
                         <p>
                             Автоматизированные воронки, скрипты, аналитика и поддержка для
                             роста ваших доходов
@@ -651,10 +651,8 @@
                     </nav>
                 </div>
 
-             
-                <ul class="graduates__slider swiper" role="list">
+                <div class="graduates__slider swiper" aria-label="Отзывы выпускников">
                     <div class="swiper-wrapper">
-                    <li class="graduates__slide swiper-slide" role="listitem">
                         <article class="graduates__slide swiper-slide">
                             <blockquote class="graduates__quote">
                                 <p>
@@ -713,8 +711,7 @@
                                 </div>
                             </div>
                         </article>
-                    </li>
-                    <li class="graduates__slide swiper-slide" role="listitem">
+
                         <article class="graduates__slide swiper-slide">
                             <blockquote class="graduates__quote">
                                 <p>
@@ -773,8 +770,7 @@
                                 </div>
                             </div>
                         </article>
-                    </li>
-                    <li class="graduates__slide swiper-slide" role="listitem">
+
                         <article class="graduates__slide swiper-slide">
                             <blockquote class="graduates__quote">
                                 <p>
@@ -833,8 +829,7 @@
                                 </div>
                             </div>
                         </article>
-                    </li>
-                    <li class="graduates__slide swiper-slide" role="listitem">
+
                         <article class="graduates__slide swiper-slide">
                             <blockquote class="graduates__quote">
                                 <p>
@@ -893,8 +888,7 @@
                                 </div>
                             </div>
                         </article>
-                    </li>
-                    <li class="graduates__slide swiper-slide" role="listitem">
+
                         <article class="graduates__slide swiper-slide">
                             <blockquote class="graduates__quote">
                                 <p>
@@ -953,9 +947,8 @@
                                 </div>
                             </div>
                         </article>
-                    </li>
-                    <li class="graduates__slide swiper-slide" role="listitem">
-                         <article class="graduates__slide swiper-slide">
+
+                        <article class="graduates__slide swiper-slide">
                             <blockquote class="graduates__quote">
                                 <p>
                                     «Обязательно проходите Академию DomStar и верьте в себя у
@@ -1013,9 +1006,8 @@
                                 </div>
                             </div>
                         </article>
-                    </li>
                     </div>
-                </ul>
+                </div>
             </div>
         </section>
 
@@ -1124,36 +1116,30 @@
 
                     <div class="about__main-top">
                         <div class="about__main-top--cards" role="list" aria-label="Основатели">
-                            <ul class="about__main-top--list" role="list">
-                                <li class="about__main-top--item" role="listitem">
-                                    <article class="about__main-top--card">
-                                        <figure>
-                                        <picture>
-                                            <source type="image/webp" srcset="img/avatar01.webp" />
-                                            <img src="img/avatar01.png" width="176" height="176"
-                                                alt="Кристина Зверева, сооснователь Academy Star" loading="lazy" />
-                                        </picture>
-                                        <figcaption class="visually-hidden">
-                                            Кристина Зверева, сооснователь Academy Star
-                                        </figcaption>
-                                        </figure>
-                                    </article>
-                                </li>
-                                <li class="about__main-top--item" role="listitem">
-                                    <article class="about__main-top--card">
-                                        <figure>
-                                        <picture>
-                                            <source type="image/webp" srcset="img/avatar02.webp" />
-                                            <img src="img/avatar02.png" width="176" height="176"
-                                                alt="Геннадий Сухацкий, сооснователь Academy Star" loading="lazy" />
-                                        </picture>
-                                        <figcaption class="visually-hidden">
-                                            Геннадий Сухацкий, сооснователь Academy Star
-                                        </figcaption>
-                                        </figure>
-                                    </article>
-                                </li>
-                            </ul>
+                            <article class="about__main-top--card" role="listitem">
+                                <figure>
+                                    <picture>
+                                        <source type="image/webp" srcset="img/avatar01.webp" />
+                                        <img src="img/avatar01.png" width="176" height="176"
+                                            alt="Кристина Зверева, сооснователь Academy Star" loading="lazy" />
+                                    </picture>
+                                    <figcaption class="visually-hidden">Кристина Зверева, <span>Lorem ipsum dolor</span>
+                                    </figcaption>
+                                </figure>
+                            </article>
+
+                            <article class="about__main-top--card" role="listitem">
+                                <figure>
+                                    <picture>
+                                        <source type="image/webp" srcset="img/avatar02.webp" />
+                                        <img src="img/avatar02.png" width="176" height="176"
+                                            alt="Геннадий Сухацкий, сооснователь Academy Star" loading="lazy" />
+                                    </picture>
+                                    <figcaption class="visually-hidden">Геннадий Сухацкий, <span>Lorem ipsum
+                                            dolor</span>
+                                    </figcaption>
+                                </figure>
+                            </article>
                         </div>
                         <div class="about__main-top--content">
                             <h3 id="about-founders-title">Основатели</h3>
