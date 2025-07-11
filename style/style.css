@@ -637,6 +637,7 @@ body.menu-open {
 
 .mobile-links.open {
   max-height: 100vh;
+  min-height: 100vh;
 }
 
 .header__logo {
@@ -2333,6 +2334,7 @@ body.menu-open {
 
 .about__main-top--card figure img {
   width: 116px;
+  border-radius: 9999px;
   height: 116px;
   object-fit: contain;
 }
