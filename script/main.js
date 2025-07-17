@@ -144,12 +144,21 @@ const swiperContainer = document.querySelector(".graduates__slider");
 if (swiperContainer) {
   const swiper = new Swiper(".graduates__slider", {
     loop: true,
+    // centeredSlides: true,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
     spaceBetween: 24,
     slidesPerView: "auto",
+    breakpoints: {
+      0: {
+        spaceBetween: 16,
+      },
+      1280: {
+        spaceBetween: 24,
+      }
+    }
   });
 }
 
@@ -186,3 +195,60 @@ if (faqButtons.length > 0) {
       });
   });
 }
+
+function initClientLogosSwiper() {
+  const wrapper = document.querySelector(".main-education__partners-wrapper");
+  if (!wrapper) return;
+
+  const originalSlides = Array.from(wrapper.children);
+  const neededClones = 10;
+  for (let i = 0; i < neededClones; i++) {
+    const slide = originalSlides[i % originalSlides.length].cloneNode(true);
+    wrapper.appendChild(slide);
+  }
+
+  /* global Swiper */
+  new Swiper(".main-education__partners-swiper", {
+    loop: true,
+    speed: 5000,
+    slidesPerView: "auto",
+    spaceBetween: 24,
+    autoplay: { delay: 0, disableOnInteraction: false },
+    allowTouchMove: false,
+  });
+}
+
+
+  // Селекторы для вкладок
+    const tabs = document.querySelectorAll('.information__tab');
+    const contents = document.querySelectorAll('.information__content');
+
+    // Переключение вкладок
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            tabs.forEach(t => t.classList.remove('information__tab--active'));
+            tab.classList.add('information__tab--active');
+            const target = tab.dataset.tab;
+            contents.forEach(content => {
+                content.classList.remove('information__content--active');
+                if (content.id === `tab-${target}`) {
+                    content.classList.add('information__content--active');
+                }
+            });
+        });
+    });
+
+    // Селекторы для аккордеона
+    const headers = document.querySelectorAll(".information__accordion-header");
+
+    headers.forEach(header => {
+        header.addEventListener("click", () => {
+            const item = header.parentElement;
+            item.classList.toggle("active");
+
+            // Закрытие других элементов
+            headers.forEach((h) => {
+                if (h !== header) h.parentElement.classList.remove("active");
+            });
+        });
+    });

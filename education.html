@@ -1,0 +1,1948 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DomStar — обучающая экосистема для риелторов и брокеров</title>
+    <meta name="description"
+        content="DomStar — обучающая экосистема для риелторов и брокеров. Курсы, инструменты, поддержка и база недвижимости по 4 странам. Стартуйте карьеру в недвижимости с нами!" />
+    <meta name="keywords"
+        content="DomStar, обучение риелторов, курсы недвижимости, брокеры, недвижимость, онлайн-курсы, международная недвижимость, Dubai, Бали, Кипр, Украина, обучение, инструменты для риелторов, поддержка, база недвижимости" />
+    <meta name="author" content="DomStar" />
+    <meta property="og:title" content="DomStar — обучающая экосистема для риелторов и брокеров" />
+    <meta property="og:description"
+        content="Курсы, инструменты, поддержка и база недвижимости по 4 странам. Стартуйте карьеру в недвижимости с DomStar!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://domstar.example.com/" />
+    <meta property="og:image" content="https://domstar.example.com/img/og-image.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="DomStar — обучающая экосистема для риелторов и брокеров" />
+    <meta name="twitter:description"
+        content="Курсы, инструменты, поддержка и база недвижимости по 4 странам. Стартуйте карьеру в недвижимости с DomStar!" />
+    <meta name="twitter:image" content="https://domstar.example.com/img/og-image.jpg" />
+    <link rel="canonical" href="https://domstar.example.com/" />
+
+    <link rel="preload" href="style/reset.css" as="style" />
+    <link rel="preload" href="style/style.css" as="style" />
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="style/style.css" />
+
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5/dist/fancybox/fancybox.css" as="style" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5/dist/fancybox/fancybox.css" media="print"
+        onload="this.media='all'" />
+    <link rel="preload" href="style/swiper-bundle.min.css" as="style" />
+    <link rel="stylesheet" href="style/swiper-bundle.min.css" media="print" onload="this.media='all'" />
+
+    <noscript>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5/dist/fancybox/fancybox.css" />
+        <link rel="stylesheet" href="style/swiper-bundle.min.css" />
+    </noscript>
+</head>
+
+<body>
+    <div class="promo-bar">
+        <div class="wrapper">
+            <img width="24" height="24" src="img/icon1.svg" alt="icon" class="promo-bar__icon" />
+            <p>
+                Акция! Полный курс с ментором и базой недвижимости по 4 странам со
+                скидкой — стартуйте прямо сейчас!
+            </p>
+            <button>
+                Записаться
+                <img src="img/arrow-right.svg" width="20" height="20" alt="icon" />
+            </button>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header__inner container">
+            <a href="/" class="header__logo">
+                <img src="img/logo-mobile.svg" width="107" height="26" alt="DOMSTAR Training Ecosystem"
+                    class="header__logo-mobile" />
+                <img src="img/logo.svg" width="136" height="34" alt="DOMSTAR Training Ecosystem"
+                    class="header__logo-desktop" />
+            </a>
+            <nav class="nav" aria-label="Главное меню">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#marketing" class="nav__link">Маркетинг</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#platform" class="nav__link">Платформа</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#courses" class="nav__link">Обучение</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#company" class="nav__link">Компания</a>
+                    </li>
+                    <li class="nav__item"><a href="#lms" class="nav__link">LMS</a></li>
+                </ul>
+            </nav>
+            <div class="header__actions">
+                <button class="button header__join-button">
+                    Присоединиться
+                    <img width="20" height="21" src="img/icon-btn1.svg" alt="button icon" />
+                </button>
+                <button class="header__login-link">
+                    Вход
+                    <img width="20" height="21" src="img/icon-btn2.svg" alt="button icon" />
+                </button>
+            </div>
+            <div class="mobile-menu">
+                <button class="burger button" aria-label="Open menu" aria-expanded="false">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </button>
+            </div>
+            <div class="mobile-links">
+                <nav class="nav__list__nav" aria-label="Главное меню">
+                    <ul class="nav__list__list">
+                        <li class="nav__list__item">
+                            <a href="#marketing" class="nav__list__link">Маркетинг</a>
+                        </li>
+                        <li class="nav__list__item">
+                            <a href="#platform" class="nav__list__link">Платформа</a>
+                        </li>
+                        <li class="nav__list__item">
+                            <a href="#courses" class="nav__list__link">Обучение</a>
+                        </li>
+                        <li class="nav__list__item">
+                            <a href="#company" class="nav__list__link">Компания</a>
+                        </li>
+                        <li class="nav__list__item">
+                            <a href="#lms" class="nav__list__link">LMS</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__actions">
+                    <button class="button header__join-button">
+                        Присоединиться
+                        <img width="20" height="21" src="img/icon-btn1.svg" alt="button icon" />
+                    </button>
+                    <button class="header__login-link">
+                        Вход
+                        <img width="20" height="21" src="img/icon-btn2.svg" alt="button icon" />
+                    </button>
+                </div>
+                <ul class="nav__list__social">
+                    <li class="nav__list__social--item">
+                        <a href="/" class="nav__list__link">
+                            <img src="img/nav__list__link1.svg" width="20" height="21" alt="icon" />
+                        </a>
+                    </li>
+
+                    <li class="nav__list__social--item">
+                        <a href="/" class="nav__list__link">
+                            <img src="img/nav__list__link2.svg" width="18" height="17" alt="icon" />
+                        </a>
+                    </li>
+
+                    <li class="nav__list__social--item">
+                        <a href="/" class="nav__list__link">
+                            <img src="img/nav__list__link3.svg" width="18" height="16" alt="icon" />
+                        </a>
+                    </li>
+
+                    <li class="nav__list__social--item">
+                        <a href="/" class="nav__list__link">
+                            <img src="img/nav__list__link4.svg" width="18" height="17" alt="icon" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <main class="main-education">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li>
+                    <a href="/" itemprop="item">
+                        <span>Главная</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/" itemprop="item">
+                        <span>Обучение</span>
+                    </a>
+                </li>
+                <li>
+                    <span>Международная недвижимость PRO</span>
+                </li>
+            </ol>
+        </nav>
+
+        <div class="main-education__wrapper">
+            <div class="main-education__content">
+                <section class="education-hero">
+                    <div class="wrapper">
+                        <div class="education-hero__header">
+                            <h1 class="education-hero__title">
+                                Международная недвижимость PRO
+                            </h1>
+                            <p class="education-hero__subtitle">
+                                Освойте рынок недвижимости Украины, ОАЭ, Бали и Кипра с
+                                действующими экспертами и зарабатывайте дополнительно от 5000$
+                                в месяц
+                            </p>
+                        </div>
+                        <div class="education-hero__info">
+                            <div class="education-hero__authors">
+                                <div class="education-hero__authors-avatars">
+                                    <picture class="education-hero__avatar">
+                                        <source type="image/webp" srcset="img/avatar02.webp" />
+                                        <img src="img/avatar02.jpg" width="48" height="48" alt="Геннадий Сухацкий"
+                                            loading="lazy" />
+                                    </picture>
+                                    <picture class="education-hero__avatar">
+                                        <source type="image/webp" srcset="img/avatar01.webp" />
+                                        <img src="img/avatar01.jpg" width="48" height="48" alt="Кристина Зверева"
+                                            loading="lazy" />
+                                    </picture>
+                                </div>
+                                <div class="education-hero__authors-info">
+                                    <span class="education-hero__authors-label">Авторы курса:</span>
+                                    <ul class="education-hero__authors-list">
+                                        <li class="education-hero__authors-item">
+                                            Геннадий Сухацкий
+                                        </li>
+                                        <li class="education-hero__authors-item">
+                                            Кристина Зверева
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="education-hero__rating" aria-label="Рейтинг курса">
+                                <div class="education-hero__rating-stars">
+                                    <img src="img/star.svg" width="108" height="21" alt="Рейтинг: 4.8 из 5" />
+                                </div>
+                                <div class="education-hero__rating-info">
+                                    <span class="education-hero__rating-value">4.8</span>
+                                    <span class="education-hero__rating-count">(214 учеников)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="main-education__banner" aria-label="Преимущества обучения">
+                    <div class="main-education__banner-bg">
+                        <picture>
+                            <source media="(min-width: 768px)" type="image/webp"
+                                srcset="img/main-education__banner.webp 1x, img/main-education__banner@2x.webp 2x" />
+                            <source media="(min-width: 768px)"
+                                srcset="img/main-education__banner.jpg 1x, img/main-education__banner@2x.jpg 2x" />
+                            <source type="image/webp"
+                                srcset="img/main-education__banner-mobile.webp 1x, img/main-education__banner-mobile@2x.webp 2x" />
+                            <source
+                                srcset="img/main-education__banner-mobile.jpg 1x, img/main-education__banner-mobile@2x.jpg 2x" />
+                            <img class="main-education__banner-image" src="img/main-education__banner-mobile.jpg"
+                                srcset="img/main-education__banner-mobile@2x.jpg 2x" alt="Оператор в центре мониторинга"
+                                width="320" height="220" loading="lazy" />
+                        </picture>
+                    </div>
+                    <div class="main-education__banner-content">
+                        <ul class="main-education__features-list">
+                            <li class="main-education__feature main-education__feature--1">
+                                <h3 class="main-education__feature-title">Обучение и практика</h3>
+                                <p class="main-education__feature-text">
+                                    Изучайте рынок, применяйте знания на практике и сразу монетизируйте навыки
+                                </p>
+                            </li>
+                            <li class="main-education__feature main-education__feature--2">
+                                <h3 class="main-education__feature-title">Работайте из любой точки мира</h3>
+                                <p class="main-education__feature-text">
+                                    Станьте риелтором международного уровня на рынке Дубаи, Бали, Кипра и Украины
+                                </p>
+                            </li>
+                            <li class="main-education__feature main-education__feature--3">
+                                <h3 class="main-education__feature-title">Готовые инструменты для продаж</h3>
+                                <p class="main-education__feature-text">
+                                    Автоматизированные воронки, скрипты, аналитика и поддержка для роста ваших доходов
+                                </p>
+                            </li>
+                        </ul>
+                        <div class="main-education__partners">
+                            <h3 class="main-education__feature-title">Доступ к эксклюзивным объектам</h3>
+                            <p class="main-education__feature-text">
+                                Первыми узнавайте о стартах продаж и выгодных предложениях от застройщиков
+                            </p>
+                            <div class="main-education__partners-swiper swiper">
+                                <div class="main-education__partners-wrapper swiper-wrapper">
+                                    <div class="main-education__partner-slide swiper-slide">
+                                        <picture>
+                                            <source type="image/webp" srcset="img/slider1.webp" />
+                                            <img src="img/slider1.jpg" width="176" height="176" alt="Партнер 1"
+                                                loading="lazy" />
+                                        </picture>
+                                    </div>
+                                    <div class="main-education__partner-slide swiper-slide">
+                                        <picture>
+                                            <source type="image/webp" srcset="img/slider2.webp" />
+                                            <img src="img/slider2.jpg" width="176" height="176" alt="Партнер 2"
+                                                loading="lazy" />
+                                        </picture>
+                                    </div>
+                                    <div class="main-education__partner-slide swiper-slide">
+                                        <picture>
+                                            <source type="image/webp" srcset="img/slider3.webp" />
+                                            <img src="img/slider3.jpg" width="176" height="176" alt="Партнер 3"
+                                                loading="lazy" />
+                                        </picture>
+                                    </div>
+                                    <div class="main-education__partner-slide swiper-slide">
+                                        <picture>
+                                            <source type="image/webp" srcset="img/slider2.webp" />
+                                            <img src="img/slider2.jpg" width="176" height="176" alt="Партнер 2"
+                                                loading="lazy" />
+                                        </picture>
+                                    </div>
+                                    <div class="main-education__partner-slide swiper-slide">
+                                        <picture>
+                                            <source type="image/webp" srcset="img/slider1.webp" />
+                                            <img src="img/slider1.jpg" width="176" height="176" alt="Партнер 1"
+                                                loading="lazy" />
+                                        </picture>
+                                    </div>
+                                    <div class="main-education__partner-slide swiper-slide">
+                                        <picture>
+                                            <source type="image/webp" srcset="img/slider3.webp" />
+                                            <img src="img/slider3.jpg" width="176" height="176" alt="Партнер 3"
+                                                loading="lazy" />
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="faq" aria-labelledby="faq-title">
+                    <div class="wrapper">
+                        <h2 id="faq-title" class="faq-title">Программа подойдет вам, если:</h2>
+                        <div class="faq__box">
+                            <div class="faq__box-inner">
+                                <div class="faq-item">
+                                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1"
+                                        id="faq-question-1">
+                                        Хотите работать в в недвижимости, но не знаете, с чего начать
+                                    </button>
+                                    <div id="faq-answer-1" class="faq-answer" role="region"
+                                        aria-labelledby="faq-question-1">
+                                        <p>
+                                            Платформа подходит для людей, желающих обучаться и
+                                            развиваться в новой области.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="faq-item">
+                                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2"
+                                        id="faq-question-2">
+                                        Вы работаете риелтором, но хотите выйти на международный уровень
+                                    </button>
+                                    <div id="faq-answer-2" class="faq-answer" role="region"
+                                        aria-labelledby="faq-question-2">
+                                        <p>
+                                            Обучение происходит через онлайн-курсы с видеоуроками и
+                                            заданиями.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="faq-item">
+                                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3"
+                                        id="faq-question-3">
+                                        У вас нестабильный доход, зависимость от сезонности, низкие комиссии
+                                    </button>
+                                    <div id="faq-answer-3" class="faq-answer" role="region"
+                                        aria-labelledby="faq-question-3">
+                                        <p>
+                                            Для начала необходимо зарегистрироваться и пройти вводный
+                                            курс.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="faq-item">
+                                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4"
+                                        id="faq-question-4">
+                                        У вас возникают юридические сложности, ошибки в документах
+                                    </button>
+                                    <div id="faq-answer-4" class="faq-answer" role="region"
+                                        aria-labelledby="faq-question-3">
+                                        <p>
+                                            Для начала необходимо зарегистрироваться и пройти вводный
+                                            курс.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="faq-item">
+                                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5"
+                                        id="faq-question-5">
+                                        Вы работаете в одиночку и у вас отутствует поддержка
+                                    </button>
+                                    <div id="faq-answer-5" class="faq-answer" role="region"
+                                        aria-labelledby="faq-question-3">
+                                        <p>
+                                            Для начала необходимо зарегистрироваться и пройти вводный
+                                            курс.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="faq-item">
+                                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-6"
+                                        id="faq-question-6">
+                                        У вас нет времени на обучение
+                                    </button>
+                                    <div id="faq-answer-6" class="faq-answer" role="region"
+                                        aria-labelledby="faq-question-3">
+                                        <p>
+                                            Для начала необходимо зарегистрироваться и пройти вводный
+                                            курс.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="graduates result" aria-labelledby="graduates-title">
+                    <div class="container">
+                        <div class="graduates__header">
+                            <h2 id="graduates-title" class="graduates__title">
+                                Результаты выпускников
+                            </h2>
+
+                            <nav class="graduates__nav" aria-label="Навигация по отзывам">
+                                <button class="swiper-button-prev" aria-label="Предыдущий отзыв">
+                                    <img width="20" height="21" src="img/prev.svg" alt="icon" />
+                                </button>
+                                <button class="swiper-button-next" aria-label="Следующий отзыв">
+                                    <img width="20" height="21" src="img/next.svg" alt="icon" />
+                                </button>
+                            </nav>
+                        </div>
+
+                        <div class="graduates__slider swiper" role="region" aria-labelledby="graduates-title">
+                            <div class="swiper-wrapper">
+                                <div class="graduates__slide swiper-slide">
+                                    <blockquote class="graduates__quote">
+                                        <p>
+                                            «Огромное спасибо Кристине за такую возможность зарабатывать
+                                            на любимом деле в этой стране!»
+                                        </p>
+                                    </blockquote>
+
+                                    <div class="graduates__quote-box">
+                                        <figure class="graduates__video">
+                                            <a data-fancybox="graduates-videos"
+                                                href="https://youtu.be/vuMyYFvnTXg?si=hY_1S7w5_j503H0o"
+                                                class="graduates__video-link"
+                                                aria-label="Смотреть видео отзыв Яна Киор">
+                                                <picture>
+                                                    <source type="image/webp" srcset="img/video-banner1.webp"
+                                                        width="412" height="222" />
+                                                    <img src="img/video-banner1.jpg" alt="Видео отзыв Яна Киор"
+                                                        width="412" height="222" loading="lazy" />
+                                                </picture>
+                                                <span class="graduates__video-play" aria-hidden="true">
+                                                    <img src="img/play-btn.svg" width="56" height="57"
+                                                        alt="Play button" />
+                                                </span>
+                                            </a>
+                                            <figcaption class="visually-hidden">
+                                                <time class="graduates__date" datetime="2025-08-09">August 9,
+                                                    2025</time>
+                                                <img width="26" height="26" src="img/icons.svg" alt="icon" />
+                                            </figcaption>
+                                        </figure>
+                                        <div class="graduates__quote-content">
+                                            <dl class="graduates__points">
+                                                <div class="graduates__point">
+                                                    <dt>Точка А:</dt>
+                                                    <dd>$3,000 в Одессе</dd>
+                                                </div>
+                                                <div class="graduates__point">
+                                                    <dt>Точка Б:</dt>
+                                                    <dd>$12,000 в Дубай</dd>
+                                                </div>
+                                            </dl>
+                                            <div class="graduates__points-arrow">
+                                                <img src="img/big-arrow.svg" width="73" height="190" alt="icon"
+                                                    class="result-img-big" />
+                                                <img src="img/arrow-right2.svg" width="73" height="8" alt="icon"
+                                                    class="result-img-smoll">
+                                            </div>
+                                            <div class="graduates__meta">
+                                                <div class="graduates__author">
+                                                    <picture>
+                                                        <source type="image/webp" srcset="img/avatar1.webp" />
+                                                        <img src="img/avatar1.png" alt="Яна Киор, Риелтор в ОАЭ"
+                                                            class="graduates__avatar" width="48" height="48"
+                                                            loading="lazy" />
+                                                    </picture>
+                                                </div>
+                                                <p class="graduates__name">
+                                                    Яна Киор<br />
+                                                    <span>Риелтор в ОАЭ</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="graduates__slide swiper-slide">
+                                    <blockquote class="graduates__quote">
+                                        <p>
+                                            «Обязательно проходите Академию DomStar и верьте в себя у
+                                            вас всё получится!»
+                                        </p>
+                                    </blockquote>
+
+                                    <div class="graduates__quote-box">
+                                        <figure class="graduates__video">
+                                            <a data-fancybox="graduates-videos"
+                                                href="https://youtu.be/vuMyYFvnTXg?si=hY_1S7w5_j503H0o"
+                                                class="graduates__video-link"
+                                                aria-label="Смотреть видео отзыв Яна Киор">
+                                                <picture>
+                                                    <source type="image/webp" srcset="img/video-banner2.webp"
+                                                        width="412" height="222" />
+                                                    <img src="img/video-banner2.jpg" alt="Видео отзыв Яна Киор"
+                                                        width="412" height="222" loading="lazy" />
+                                                </picture>
+                                                <span class="graduates__video-play" aria-hidden="true">
+                                                    <img src="img/play-btn.svg" width="56" height="57" alt="" />
+                                                </span>
+                                            </a>
+                                            <figcaption class="visually-hidden">
+                                                <time class="graduates__date" datetime="2025-08-09">August 9,
+                                                    2025</time>
+                                                <img width="26" height="26" src="img/icons.svg" alt="icon" />
+                                            </figcaption>
+                                        </figure>
+                                        <div class="graduates__quote-content">
+                                            <dl class="graduates__points">
+                                                <div class="graduates__point">
+                                                    <dt>Точка А:</dt>
+                                                    <dd>$3,000 в Одессе</dd>
+                                                </div>
+                                                <div class="graduates__point">
+                                                    <dt>Точка Б:</dt>
+                                                    <dd>$12,000 в Дубай</dd>
+                                                </div>
+                                            </dl>
+                                            <div class="graduates__points-arrow">
+                                                <img src="img/big-arrow.svg" width="73" height="190" alt="icon"
+                                                    class="result-img-big" />
+                                                <img src="img/arrow-right2.svg" width="73" height="8" alt="icon"
+                                                    class="result-img-smoll">
+                                            </div>
+                                            <div class="graduates__meta">
+                                                <div class="graduates__author">
+                                                    <picture>
+                                                        <source type="image/webp" srcset="img/avatar1.webp" />
+                                                        <img src="img/avatar1.png" alt="Яна Киор, Риелтор в ОАЭ"
+                                                            class="graduates__avatar" width="48" height="48"
+                                                            loading="lazy" />
+                                                    </picture>
+                                                </div>
+                                                <p class="graduates__name">
+                                                    Яна Киор<br />
+                                                    <span>Риелтор в ОАЭ</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="graduates__slide swiper-slide">
+                                    <blockquote class="graduates__quote">
+                                        <p>
+                                            «Огромное спасибо Кристине за такую возможность зарабатывать
+                                            на любимом деле в этой стране!»
+                                        </p>
+                                    </blockquote>
+
+                                    <div class="graduates__quote-box">
+                                        <figure class="graduates__video">
+                                            <a data-fancybox="graduates-videos"
+                                                href="https://youtu.be/vuMyYFvnTXg?si=hY_1S7w5_j503H0o"
+                                                class="graduates__video-link"
+                                                aria-label="Смотреть видео отзыв Яна Киор">
+                                                <picture>
+                                                    <source type="image/webp" srcset="img/video-banner1.webp"
+                                                        width="412" height="222" />
+                                                    <img src="img/video-banner1.jpg" alt="Видео отзыв Яна Киор"
+                                                        width="412" height="222" loading="lazy" />
+                                                </picture>
+                                                <span class="graduates__video-play" aria-hidden="true">
+                                                    <img src="img/play-btn.svg" width="56" height="57" alt="" />
+                                                </span>
+                                            </a>
+                                            <figcaption class="visually-hidden">
+                                                <time class="graduates__date" datetime="2025-08-09">August 9,
+                                                    2025</time>
+                                                <img width="26" height="26" src="img/icons.svg" alt="icon" />
+                                            </figcaption>
+                                        </figure>
+                                        <div class="graduates__quote-content">
+                                            <dl class="graduates__points">
+                                                <div class="graduates__point">
+                                                    <dt>Точка А:</dt>
+                                                    <dd>$3,000 в Одессе</dd>
+                                                </div>
+                                                <div class="graduates__point">
+                                                    <dt>Точка Б:</dt>
+                                                    <dd>$12,000 в Дубай</dd>
+                                                </div>
+                                            </dl>
+                                            <div class="graduates__points-arrow">
+                                                <img src="img/big-arrow.svg" width="73" height="190" alt="icon"
+                                                    class="result-img-big" />
+                                                <img src="img/arrow-right2.svg" width="73" height="8" alt="icon"
+                                                    class="result-img-smoll">
+                                            </div>
+                                            <div class="graduates__meta">
+                                                <div class="graduates__author">
+                                                    <picture>
+                                                        <source type="image/webp" srcset="img/avatar1.webp" />
+                                                        <img src="img/avatar1.png" alt="Яна Киор, Риелтор в ОАЭ"
+                                                            class="graduates__avatar" width="48" height="48"
+                                                            loading="lazy" />
+                                                    </picture>
+                                                </div>
+                                                <p class="graduates__name">
+                                                    Яна Киор<br />
+                                                    <span>Риелтор в ОАЭ</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="graduates__slide swiper-slide">
+                                    <blockquote class="graduates__quote">
+                                        <p>
+                                            «Обязательно проходите Академию DomStar и верьте в себя у
+                                            вас всё получится!»
+                                        </p>
+                                    </blockquote>
+
+                                    <div class="graduates__quote-box">
+                                        <figure class="graduates__video">
+                                            <a data-fancybox="graduates-videos"
+                                                href="https://youtu.be/vuMyYFvnTXg?si=hY_1S7w5_j503H0o"
+                                                class="graduates__video-link"
+                                                aria-label="Смотреть видео отзыв Яна Киор">
+                                                <picture>
+                                                    <source type="image/webp" srcset="img/video-banner2.webp"
+                                                        width="412" height="222" />
+                                                    <img src="img/video-banner2.jpg" alt="Видео отзыв Яна Киор"
+                                                        width="412" height="222" loading="lazy" />
+                                                </picture>
+                                                <span class="graduates__video-play" aria-hidden="true">
+                                                    <img src="img/play-btn.svg" width="56" height="57" alt="" />
+                                                </span>
+                                            </a>
+                                            <figcaption class="visually-hidden">
+                                                <time class="graduates__date" datetime="2025-08-09">August 9,
+                                                    2025</time>
+                                                <img width="26" height="26" src="img/icons.svg" alt="icon" />
+                                            </figcaption>
+                                        </figure>
+                                        <div class="graduates__quote-content">
+                                            <dl class="graduates__points">
+                                                <div class="graduates__point">
+                                                    <dt>Точка А:</dt>
+                                                    <dd>$3,000 в Одессе</dd>
+                                                </div>
+                                                <div class="graduates__point">
+                                                    <dt>Точка Б:</dt>
+                                                    <dd>$12,000 в Дубай</dd>
+                                                </div>
+                                            </dl>
+                                            <div class="graduates__points-arrow">
+                                                <img src="img/big-arrow.svg" width="73" height="190" alt="icon"
+                                                    class="result-img-big" />
+                                                <img src="img/arrow-right2.svg" width="73" height="8" alt="icon"
+                                                    class="result-img-smoll">
+                                            </div>
+                                            <div class="graduates__meta">
+                                                <div class="graduates__author">
+                                                    <picture>
+                                                        <source type="image/webp" srcset="img/avatar1.webp" />
+                                                        <img src="img/avatar1.png" alt="Яна Киор, Риелтор в ОАЭ"
+                                                            class="graduates__avatar" width="48" height="48"
+                                                            loading="lazy" />
+                                                    </picture>
+                                                </div>
+                                                <p class="graduates__name">
+                                                    Яна Киор<br />
+                                                    <span>Риелтор в ОАЭ</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="graduates__slide swiper-slide">
+                                    <blockquote class="graduates__quote">
+                                        <p>
+                                            «Огромное спасибо Кристине за такую возможность зарабатывать
+                                            на любимом деле в этой стране!»
+                                        </p>
+                                    </blockquote>
+
+                                    <div class="graduates__quote-box">
+                                        <figure class="graduates__video">
+                                            <a data-fancybox="graduates-videos"
+                                                href="https://youtu.be/vuMyYFvnTXg?si=hY_1S7w5_j503H0o"
+                                                class="graduates__video-link"
+                                                aria-label="Смотреть видео отзыв Яна Киор">
+                                                <picture>
+                                                    <source type="image/webp" srcset="img/video-banner1.webp"
+                                                        width="412" height="222" />
+                                                    <img src="img/video-banner1.jpg" alt="Видео отзыв Яна Киор"
+                                                        width="412" height="222" loading="lazy" />
+                                                </picture>
+                                                <span class="graduates__video-play" aria-hidden="true">
+                                                    <img src="img/play-btn.svg" width="56" height="57" alt="" />
+                                                </span>
+                                            </a>
+                                            <figcaption class="visually-hidden">
+                                                <time class="graduates__date" datetime="2025-08-09">August 9,
+                                                    2025</time>
+                                                <img width="26" height="26" src="img/icons.svg" alt="icon" />
+                                            </figcaption>
+                                        </figure>
+                                        <div class="graduates__quote-content">
+                                            <dl class="graduates__points">
+                                                <div class="graduates__point">
+                                                    <dt>Точка А:</dt>
+                                                    <dd>$3,000 в Одессе</dd>
+                                                </div>
+                                                <div class="graduates__point">
+                                                    <dt>Точка Б:</dt>
+                                                    <dd>$12,000 в Дубай</dd>
+                                                </div>
+                                            </dl>
+                                            <div class="graduates__points-arrow">
+                                                <img src="img/big-arrow.svg" width="73" height="190" alt="icon"
+                                                    class="result-img-big" />
+                                                <img src="img/arrow-right2.svg" width="73" height="8" alt="icon"
+                                                    class="result-img-smoll">
+                                            </div>
+                                            <div class="graduates__meta">
+                                                <div class="graduates__author">
+                                                    <picture>
+                                                        <source type="image/webp" srcset="img/avatar1.webp" />
+                                                        <img src="img/avatar1.png" alt="Яна Киор, Риелтор в ОАЭ"
+                                                            class="graduates__avatar" width="48" height="48"
+                                                            loading="lazy" />
+                                                    </picture>
+                                                </div>
+                                                <p class="graduates__name">
+                                                    Яна Киор<br />
+                                                    <span>Риелтор в ОАЭ</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="graduates__slide swiper-slide">
+                                    <blockquote class="graduates__quote">
+                                        <p>
+                                            «Обязательно проходите Академию DomStar и верьте в себя у
+                                            вас всё получится!»
+                                        </p>
+                                    </blockquote>
+
+                                    <div class="graduates__quote-box">
+                                        <figure class="graduates__video">
+                                            <a data-fancybox="graduates-videos"
+                                                href="https://youtu.be/vuMyYFvnTXg?si=hY_1S7w5_j503H0o"
+                                                class="graduates__video-link"
+                                                aria-label="Смотреть видео отзыв Яна Киор">
+                                                <picture>
+                                                    <source type="image/webp" srcset="img/video-banner2.webp"
+                                                        width="412" height="222" />
+                                                    <img src="img/video-banner2.jpg" alt="Видео отзыв Яна Киор"
+                                                        width="412" height="222" loading="lazy" />
+                                                </picture>
+                                                <span class="graduates__video-play" aria-hidden="true">
+                                                    <img src="img/play-btn.svg" width="56" height="57" alt="" />
+                                                </span>
+                                            </a>
+                                            <figcaption class="visually-hidden">
+                                                <time class="graduates__date" datetime="2025-08-09">August 9,
+                                                    2025</time>
+                                                <img width="26" height="26" src="img/icons.svg" alt="icon" />
+                                            </figcaption>
+                                        </figure>
+                                        <div class="graduates__quote-content">
+                                            <dl class="graduates__points">
+                                                <div class="graduates__point">
+                                                    <dt>Точка А:</dt>
+                                                    <dd>$3,000 в Одессе</dd>
+                                                </div>
+                                                <div class="graduates__point">
+                                                    <dt>Точка Б:</dt>
+                                                    <dd>$12,000 в Дубай</dd>
+                                                </div>
+                                            </dl>
+                                            <div class="graduates__points-arrow">
+                                                <img src="img/big-arrow.svg" width="73" height="190" alt="icon"
+                                                    class="result-img-big" />
+                                                <img src="img/arrow-right2.svg" width="73" height="8" alt="icon"
+                                                    class="result-img-smoll">
+                                            </div>
+                                            <div class="graduates__meta">
+                                                <div class="graduates__author">
+                                                    <picture>
+                                                        <source type="image/webp" srcset="img/avatar1.webp" />
+                                                        <img src="img/avatar1.png" alt="Яна Киор, Риелтор в ОАЭ"
+                                                            class="graduates__avatar" width="48" height="48"
+                                                            loading="lazy" />
+                                                    </picture>
+                                                </div>
+                                                <p class="graduates__name">
+                                                    Яна Киор<br />
+                                                    <span>Риелтор в ОАЭ</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-education__banner-bg">
+                        <picture>
+                            <source media="(min-width: 768px)" type="image/webp"
+                                srcset="img/banner-slider.webp 1x, img/banner-slider@2x.webp 2x" />
+                            <source media="(min-width: 768px)"
+                                srcset="img/banner-slider.jpg 1x, img/banner-slider@2x.jpg 2x" />
+                            <source type="image/webp"
+                                srcset="img/banner-slider-mobile.webp 1x, img/banner-slider-mobile@2x.webp 2x" />
+                            <source
+                                srcset="img/main-education__banner-mobile.jpg 1x, img/main-education__banner-mobile@2x.jpg 2x" />
+                            <img class="main-education__banner-image" src="img/banner-slider-mobile.png"
+                                srcset="img/banner-slider-mobile@2x.jpg 2x" alt="Оператор в центре мониторинга"
+                                width="320" height="220" loading="lazy" />
+                        </picture>
+
+                    </div>
+                </section>
+
+                <div class="information">
+                    <div class="wrapper">
+                        <div class="information__tabs">
+                            <div class="information__tab information__tab--active" data-tab="1">Кратко</div>
+                            <div class="information__tab" data-tab="2">Детальнее о программе</div>
+                        </div>
+
+                        <section class="information__content information__content--active" id="tab-1"
+                            aria-labelledby="information-title">
+                            <h2 id="information-title">Программа курса <br> «Международная недвижимость PRO»</h2>
+                            <ul class="information__content-list">
+                                <li class="information__content-item">
+                                    <div class="information__content-item-box information__content-item-box--1">
+                                        <h3 class="information__content-item-title">МОДУЛЬ 1:</h3>
+                                        <p class="information__content-item-text">О профессии и инструментах курса</p>
+                                    </div>
+                                </li>
+
+                                <li class="information__content-item">
+                                    <div class="information__content-item-box information__content-item-box--2">
+                                        <h3 class="information__content-item-title">МОДУЛЬ 2:</h3>
+                                        <p class="information__content-item-text">Что такое недвижимость в мире и как на
+                                            ней зарабатывать</p>
+                                    </div>
+                                </li>
+
+                                <li class="information__content-item">
+                                    <div class="information__content-item-box information__content-item-box--3">
+                                        <h3 class="information__content-item-title">МОДУЛЬ 3:</h3>
+                                        <p class="information__content-item-text">Финансовая грамотность и инвестиции:
+                                            как рассчитать окупаемость.</p>
+                                    </div>
+                                </li>
+
+                                <li class="information__content-item">
+                                    <div class="information__content-item-box information__content-item-box--4">
+                                        <h3 class="information__content-item-title">МОДУЛЬ 4:</h3>
+                                        <p class="information__content-item-text">Сравнение недвижимости: Дубай, Бали,
+                                            Кипр</p>
+                                    </div>
+                                </li>
+
+                                <li class="information__content-item">
+                                    <div class="information__content-item--img">
+                                        <picture>
+                                            <source media="(min-width: 768px)" type="image/webp"
+                                                srcset="img/information__img.webp 1x, img/information__img@2x.webp 2x" />
+                                            <source media="(min-width: 768px)"
+                                                srcset="img/information__img.jpg 1x, img/information__img@2x.jpg 2x" />
+                                            <source type="image/webp"
+                                                srcset="img/information__img-mobile.webp 1x, img/information__img-mobile@2x.webp 2x" />
+                                            <source
+                                                srcset="img/main-education__banner-mobile.jpg 1x, img/main-education__banner-mobile@2x.jpg 2x" />
+                                            <img class="information__content-img" src="img/information__img-mobile.png"
+                                                srcset="img/information__img-mobile@2x.jpg 2x"
+                                                alt="Оператор в центре мониторинга" width="288" height="276"
+                                                loading="lazy" />
+                                        </picture>
+                                    </div>
+                                </li>
+
+                                <li class="information__content-item">
+                                    <div class="information__content-item-box information__content-item-box--6">
+                                        <h3 class="information__content-item-title">МОДУЛЬ 6:</h3>
+                                        <p class="information__content-item-text">Личный бренд как стратегия</p>
+                                    </div>
+                                </li>
+
+                                <li class="information__content-item">
+                                    <div class="information__content-item-box information__content-item-box--7">
+                                        <h3 class="information__content-item-title">МОДУЛЬ 7:</h3>
+                                        <p class="information__content-item-text">Личный бренд в Instagram</p>
+                                    </div>
+                                </li>
+
+                                <li class="information__content-item">
+                                    <div class="information__content-item-box information__content-item-box--8">
+                                        <h3 class="information__content-item-title">МОДУЛЬ 8:</h3>
+                                        <p class="information__content-item-text">Маркетинг в недвижимости</p>
+                                    </div>
+                                </li>
+
+                                <li class="information__content-item">
+                                    <div class="information__content-item-box information__content-item-box--9">
+                                        <h3 class="information__content-item-title">МОДУЛЬ 9:</h3>
+                                        <p class="information__content-item-text">Работа с клиентом. Покупатели и
+                                            продавцы — закрытие сделки</p>
+                                    </div>
+                                </li>
+
+                                <li class="information__content-item">
+                                    <div class="information__content-item-box information__content-item-box--10">
+                                        <h3 class="information__content-item-title">МОДУЛЬ 10:</h3>
+                                        <p class="information__content-item-text">Психология продаж</p>
+                                    </div>
+                                </li>
+
+                                <li class="information__content-item">
+                                    <div class="information__content-item-box information__content-item-box--11">
+                                        <h3 class="information__content-item-title">МОДУЛЬ 11:</h3>
+                                        <p class="information__content-item-text">Путь к миллиону</p>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div class="information__content-btn">
+                                <button type="button" class="information__content-btn-more button--secondary">Подробнее
+                                    о курсе</button>
+                                <button type="button" class="information__content-btn-book button">Забронировать
+                                    встречу</button>
+                            </div>
+                        </section>
+                        <section class="information__content" id="tab-2" aria-labelledby="information-title-details">
+                            <h2 id="information-title-details">
+                                Подробное описание программы курса <br>
+                                «Международная недвижимость PRO»
+                            </h2>
+                            <div class="information__accordion-wrapper">
+                                <div class="information__accordion-item">
+                                    <button class="information__accordion-header" aria-expanded="false"
+                                        aria-controls="accordion-content-1" id="accordion-header-1">
+                                        <span>Модуль 1:</span> О профессии и инструментах курса
+                                    </button>
+                                    <div class="information__accordion-content" id="accordion-content-1" role="region"
+                                        aria-labelledby="accordion-header-1">
+                                        <div class="information__accordion-content-text">
+                                            <h3>Урок 1: Кто такой маклер, риэлтор, брокер и на чем он зарабатывает?</h3>
+                                            <ul>
+                                                <li>Основные термины: Кто такие брокер, маклер, риэлтор? Чем отличаются
+                                                    эти профессии и как они взаимодействуют в рынке недвижимости?</li>
+                                                <li>Каким должен быть риэлтор: Что важно для риэлтора, чтобы достичь
+                                                    успеха в профессии? Какие навыки, качества и личные характеристики
+                                                    необходимы для успешной работы?</li>
+                                                <li>Ключевые умения риэлтора: Риэлтор должен уметь анализировать рынок,
+                                                    подбирать объекты недвижимости для клиентов, а также обеспечивать
+                                                    полное сопровождение сделок.</li>
+                                                <li>Возможности профессии: Рынок недвижимости открыт для всех, и риэлтор
+                                                    может зарабатывать без ограничений. Какие возможности предоставляет
+                                                    профессия для роста и развития?</li>
+                                                <li>Как начать карьеру в недвижимости: Пошаговое руководство для
+                                                    новичков, чтобы быстро и эффективно начать работать в профессии
+                                                    риэлтора.</li>
+                                                <li>Как продать себя как эксперта: Как создать собственный бренд и стать
+                                                    экспертом в глазах клиентов? Важность правильного позиционирования и
+                                                    самопрезентации.</li>
+                                                <li>Доходы риэлторов в разных странах: Обзор возможностей для риэлторов
+                                                    в разных странах и факторов, которые влияют на уровень дохода.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="information__accordion-content-text">
+                                            <h3>Урок 2: Обзор системы работы. DOMSTAR как опора брокера</h3>
+                                            <ul>
+                                                <li>Обзор DOMSTAR: Как работает система и как она помогает брокерам на
+                                                    разных этапах их работы? Какие инструменты и возможности
+                                                    предоставляет платформа для эффективной работы с недвижимостью?</li>
+                                                <li>Роль брокера в системе: Как риэлтор может использовать все функции
+                                                    платформы для успешной работы и развития? Пошаговый обзор всех
+                                                    ключевых возможностей.</li>
+                                                <li>Особенности работы с клиентами через платформу: Практические примеры
+                                                    использования системы для работы с клиентами, от подбора объектов
+                                                    недвижимости до сопровождения сделок.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="information__accordion-item">
+                                    <button class="information__accordion-header" aria-expanded="false"
+                                        aria-controls="accordion-content-2" id="accordion-header-2">
+                                        <span>Модуль 2:</span> Что такое недвижимость в мире и как на ней зарабатывать
+                                    </button>
+                                    <div class="information__accordion-content" id="accordion-content-2" role="region"
+                                        aria-labelledby="accordion-header-2">
+                                        <div class="information__accordion-content-text">
+                                            <h3>Урок 1: Кто такой маклер, риэлтор, брокер и на чем он зарабатывает?</h3>
+                                            <ul>
+                                                <li>Основные термины: Кто такие брокер, маклер, риэлтор? Чем отличаются
+                                                    эти профессии и как они взаимодействуют в рынке недвижимости?</li>
+                                                <li>Каким должен быть риэлтор: Что важно для риэлтора, чтобы достичь
+                                                    успеха в профессии? Какие навыки, качества и личные характеристики
+                                                    необходимы для успешной работы?</li>
+                                                <li>Ключевые умения риэлтора: Риэлтор должен уметь анализировать рынок,
+                                                    подбирать объекты недвижимости для клиентов, а также обеспечивать
+                                                    полное сопровождение сделок.</li>
+                                                <li>Возможности профессии: Рынок недвижимости открыт для всех, и риэлтор
+                                                    может зарабатывать без ограничений. Какие возможности предоставляет
+                                                    профессия для роста и развития?</li>
+                                                <li>Как начать карьеру в недвижимости: Пошаговое руководство для
+                                                    новичков, чтобы быстро и эффективно начать работать в профессии
+                                                    риэлтора.</li>
+                                                <li>Как продать себя как эксперта: Как создать собственный бренд и стать
+                                                    экспертом в глазах клиентов? Важность правильного позиционирования и
+                                                    самопрезентации.</li>
+                                                <li>Доходы риэлторов в разных странах: Обзор возможностей для риэлторов
+                                                    в разных странах и факторов, которые влияют на уровень дохода.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="information__accordion-content-text">
+                                            <h3>Урок 2: Обзор системы работы. DOMSTAR как опора брокера</h3>
+                                            <ul>
+                                                <li>Обзор DOMSTAR: Как работает система и как она помогает брокерам на
+                                                    разных этапах их работы? Какие инструменты и возможности
+                                                    предоставляет платформа для эффективной работы с недвижимостью?</li>
+                                                <li>Роль брокера в системе: Как риэлтор может использовать все функции
+                                                    платформы для успешной работы и развития? Пошаговый обзор всех
+                                                    ключевых возможностей.</li>
+                                                <li>Особенности работы с клиентами через платформу: Практические примеры
+                                                    использования системы для работы с клиентами, от подбора объектов
+                                                    недвижимости до сопровождения сделок.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="information__accordion-item">
+                                    <button class="information__accordion-header" aria-expanded="false"
+                                        aria-controls="accordion-content-3" id="accordion-header-3">
+                                        <span>Модуль 3:</span> Финансовая грамотность и инвестирование. Как рассчитать
+                                        окупаемость и анализировать рентабельность.
+                                    </button>
+                                    <div class="information__accordion-content" id="accordion-content-3" role="region"
+                                        aria-labelledby="accordion-header-3">
+                                        <div class="information__accordion-content-text">
+                                            <h3>Урок 1: Кто такой маклер, риэлтор, брокер и на чем он зарабатывает?</h3>
+                                            <ul>
+                                                <li>Основные термины: Кто такие брокер, маклер, риэлтор? Чем отличаются
+                                                    эти профессии и как они взаимодействуют в рынке недвижимости?</li>
+                                                <li>Каким должен быть риэлтор: Что важно для риэлтора, чтобы достичь
+                                                    успеха в профессии? Какие навыки, качества и личные характеристики
+                                                    необходимы для успешной работы?</li>
+                                                <li>Ключевые умения риэлтора: Риэлтор должен уметь анализировать рынок,
+                                                    подбирать объекты недвижимости для клиентов, а также обеспечивать
+                                                    полное сопровождение сделок.</li>
+                                                <li>Возможности профессии: Рынок недвижимости открыт для всех, и риэлтор
+                                                    может зарабатывать без ограничений. Какие возможности предоставляет
+                                                    профессия для роста и развития?</li>
+                                                <li>Как начать карьеру в недвижимости: Пошаговое руководство для
+                                                    новичков, чтобы быстро и эффективно начать работать в профессии
+                                                    риэлтора.</li>
+                                                <li>Как продать себя как эксперта: Как создать собственный бренд и стать
+                                                    экспертом в глазах клиентов? Важность правильного позиционирования и
+                                                    самопрезентации.</li>
+                                                <li>Доходы риэлторов в разных странах: Обзор возможностей для риэлторов
+                                                    в разных странах и факторов, которые влияют на уровень дохода.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="information__accordion-content-text">
+                                            <h3>Урок 2: Обзор системы работы. DOMSTAR как опора брокера</h3>
+                                            <ul>
+                                                <li>Обзор DOMSTAR: Как работает система и как она помогает брокерам на
+                                                    разных этапах их работы? Какие инструменты и возможности
+                                                    предоставляет платформа для эффективной работы с недвижимостью?</li>
+                                                <li>Роль брокера в системе: Как риэлтор может использовать все функции
+                                                    платформы для успешной работы и развития? Пошаговый обзор всех
+                                                    ключевых возможностей.</li>
+                                                <li>Особенности работы с клиентами через платформу: Практические примеры
+                                                    использования системы для работы с клиентами, от подбора объектов
+                                                    недвижимости до сопровождения сделок.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="information__accordion-item">
+                                    <button class="information__accordion-header" aria-expanded="false"
+                                        aria-controls="accordion-content-4" id="accordion-header-4">
+                                        <span>Модуль 4:</span> Сравнение недвижимости по направлениям (Дубай, Бали,
+                                        Северный Кипр)
+                                    </button>
+                                    <div class="information__accordion-content" id="accordion-content-4" role="region"
+                                        aria-labelledby="accordion-header-4">
+                                        <div class="information__accordion-content-text">
+                                            <h3>Урок 1: Кто такой маклер, риэлтор, брокер и на чем он зарабатывает?</h3>
+                                            <ul>
+                                                <li>Основные термины: Кто такие брокер, маклер, риэлтор? Чем отличаются
+                                                    эти профессии и как они взаимодействуют в рынке недвижимости?</li>
+                                                <li>Каким должен быть риэлтор: Что важно для риэлтора, чтобы достичь
+                                                    успеха в профессии? Какие навыки, качества и личные характеристики
+                                                    необходимы для успешной работы?</li>
+                                                <li>Ключевые умения риэлтора: Риэлтор должен уметь анализировать рынок,
+                                                    подбирать объекты недвижимости для клиентов, а также обеспечивать
+                                                    полное сопровождение сделок.</li>
+                                                <li>Возможности профессии: Рынок недвижимости открыт для всех, и риэлтор
+                                                    может зарабатывать без ограничений. Какие возможности предоставляет
+                                                    профессия для роста и развития?</li>
+                                                <li>Как начать карьеру в недвижимости: Пошаговое руководство для
+                                                    новичков, чтобы быстро и эффективно начать работать в профессии
+                                                    риэлтора.</li>
+                                                <li>Как продать себя как эксперта: Как создать собственный бренд и стать
+                                                    экспертом в глазах клиентов? Важность правильного позиционирования и
+                                                    самопрезентации.</li>
+                                                <li>Доходы риэлторов в разных странах: Обзор возможностей для риэлторов
+                                                    в разных странах и факторов, которые влияют на уровень дохода.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="information__accordion-content-text">
+                                            <h3>Урок 2: Обзор системы работы. DOMSTAR как опора брокера</h3>
+                                            <ul>
+                                                <li>Обзор DOMSTAR: Как работает система и как она помогает брокерам на
+                                                    разных этапах их работы? Какие инструменты и возможности
+                                                    предоставляет платформа для эффективной работы с недвижимостью?</li>
+                                                <li>Роль брокера в системе: Как риэлтор может использовать все функции
+                                                    платформы для успешной работы и развития? Пошаговый обзор всех
+                                                    ключевых возможностей.</li>
+                                                <li>Особенности работы с клиентами через платформу: Практические примеры
+                                                    использования системы для работы с клиентами, от подбора объектов
+                                                    недвижимости до сопровождения сделок.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="information__accordion-item">
+                                    <button class="information__accordion-header" aria-expanded="false"
+                                        aria-controls="accordion-content-5" id="accordion-header-5">
+                                        <span>Модуль 5.1:</span> Недвижимость Дубая
+                                    </button>
+                                    <div class="information__accordion-content" id="accordion-content-5" role="region"
+                                        aria-labelledby="accordion-header-5">
+                                        <div class="information__accordion-content-text">
+                                            <h3>Урок 1: Кто такой маклер, риэлтор, брокер и на чем он зарабатывает?</h3>
+                                            <ul>
+                                                <li>Основные термины: Кто такие брокер, маклер, риэлтор? Чем отличаются
+                                                    эти профессии и как они взаимодействуют в рынке недвижимости?</li>
+                                                <li>Каким должен быть риэлтор: Что важно для риэлтора, чтобы достичь
+                                                    успеха в профессии? Какие навыки, качества и личные характеристики
+                                                    необходимы для успешной работы?</li>
+                                                <li>Ключевые умения риэлтора: Риэлтор должен уметь анализировать рынок,
+                                                    подбирать объекты недвижимости для клиентов, а также обеспечивать
+                                                    полное сопровождение сделок.</li>
+                                                <li>Возможности профессии: Рынок недвижимости открыт для всех, и риэлтор
+                                                    может зарабатывать без ограничений. Какие возможности предоставляет
+                                                    профессия для роста и развития?</li>
+                                                <li>Как начать карьеру в недвижимости: Пошаговое руководство для
+                                                    новичков, чтобы быстро и эффективно начать работать в профессии
+                                                    риэлтора.</li>
+                                                <li>Как продать себя как эксперта: Как создать собственный бренд и стать
+                                                    экспертом в глазах клиентов? Важность правильного позиционирования и
+                                                    самопрезентации.</li>
+                                                <li>Доходы риэлторов в разных странах: Обзор возможностей для риэлторов
+                                                    в разных странах и факторов, которые влияют на уровень дохода.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="information__accordion-content-text">
+                                            <h3>Урок 2: Обзор системы работы. DOMSTAR как опора брокера</h3>
+                                            <ul>
+                                                <li>Обзор DOMSTAR: Как работает система и как она помогает брокерам на
+                                                    разных этапах их работы? Какие инструменты и возможности
+                                                    предоставляет платформа для эффективной работы с недвижимостью?</li>
+                                                <li>Роль брокера в системе: Как риэлтор может использовать все функции
+                                                    платформы для успешной работы и развития? Пошаговый обзор всех
+                                                    ключевых возможностей.</li>
+                                                <li>Особенности работы с клиентами через платформу: Практические примеры
+                                                    использования системы для работы с клиентами, от подбора объектов
+                                                    недвижимости до сопровождения сделок.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="information__accordion-item">
+                                    <button class="information__accordion-header" aria-expanded="false"
+                                        aria-controls="accordion-content-6" id="accordion-header-6">
+                                        <span>Модуль 5.2:</span> Недвижимость Бали
+                                    </button>
+                                    <div class="information__accordion-content" id="accordion-content-6" role="region"
+                                        aria-labelledby="accordion-header-6">
+                                        <div class="information__accordion-content-text">
+                                            <h3>Урок 1: Кто такой маклер, риэлтор, брокер и на чем он зарабатывает?</h3>
+                                            <ul>
+                                                <li>Основные термины: Кто такие брокер, маклер, риэлтор? Чем отличаются
+                                                    эти профессии и как они взаимодействуют в рынке недвижимости?</li>
+                                                <li>Каким должен быть риэлтор: Что важно для риэлтора, чтобы достичь
+                                                    успеха в профессии? Какие навыки, качества и личные характеристики
+                                                    необходимы для успешной работы?</li>
+                                                <li>Ключевые умения риэлтора: Риэлтор должен уметь анализировать рынок,
+                                                    подбирать объекты недвижимости для клиентов, а также обеспечивать
+                                                    полное сопровождение сделок.</li>
+                                                <li>Возможности профессии: Рынок недвижимости открыт для всех, и риэлтор
+                                                    может зарабатывать без ограничений. Какие возможности предоставляет
+                                                    профессия для роста и развития?</li>
+                                                <li>Как начать карьеру в недвижимости: Пошаговое руководство для
+                                                    новичков, чтобы быстро и эффективно начать работать в профессии
+                                                    риэлтора.</li>
+                                                <li>Как продать себя как эксперта: Как создать собственный бренд и стать
+                                                    экспертом в глазах клиентов? Важность правильного позиционирования и
+                                                    самопрезентации.</li>
+                                                <li>Доходы риэлторов в разных странах: Обзор возможностей для риэлторов
+                                                    в разных странах и факторов, которые влияют на уровень дохода.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="information__accordion-content-text">
+                                            <h3>Урок 2: Обзор системы работы. DOMSTAR как опора брокера</h3>
+                                            <ul>
+                                                <li>Обзор DOMSTAR: Как работает система и как она помогает брокерам на
+                                                    разных этапах их работы? Какие инструменты и возможности
+                                                    предоставляет платформа для эффективной работы с недвижимостью?</li>
+                                                <li>Роль брокера в системе: Как риэлтор может использовать все функции
+                                                    платформы для успешной работы и развития? Пошаговый обзор всех
+                                                    ключевых возможностей.</li>
+                                                <li>Особенности работы с клиентами через платформу: Практические примеры
+                                                    использования системы для работы с клиентами, от подбора объектов
+                                                    недвижимости до сопровождения сделок.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="information__accordion-item">
+                                    <button class="information__accordion-header" aria-expanded="false"
+                                        aria-controls="accordion-content-7" id="accordion-header-7">
+                                        <span>Модуль 5.3:</span> Недвижимость Северного Кипра
+                                    </button>
+                                    <div class="information__accordion-content" id="accordion-content-7" role="region"
+                                        aria-labelledby="accordion-header-7">
+                                        <div class="information__accordion-content-text">
+                                            <h3>Урок 1: Кто такой маклер, риэлтор, брокер и на чем он зарабатывает?</h3>
+                                            <ul>
+                                                <li>Основные термины: Кто такие брокер, маклер, риэлтор? Чем отличаются
+                                                    эти профессии и как они взаимодействуют в рынке недвижимости?</li>
+                                                <li>Каким должен быть риэлтор: Что важно для риэлтора, чтобы достичь
+                                                    успеха в профессии? Какие навыки, качества и личные характеристики
+                                                    необходимы для успешной работы?</li>
+                                                <li>Ключевые умения риэлтора: Риэлтор должен уметь анализировать рынок,
+                                                    подбирать объекты недвижимости для клиентов, а также обеспечивать
+                                                    полное сопровождение сделок.</li>
+                                                <li>Возможности профессии: Рынок недвижимости открыт для всех, и риэлтор
+                                                    может зарабатывать без ограничений. Какие возможности предоставляет
+                                                    профессия для роста и развития?</li>
+                                                <li>Как начать карьеру в недвижимости: Пошаговое руководство для
+                                                    новичков, чтобы быстро и эффективно начать работать в профессии
+                                                    риэлтора.</li>
+                                                <li>Как продать себя как эксперта: Как создать собственный бренд и стать
+                                                    экспертом в глазах клиентов? Важность правильного позиционирования и
+                                                    самопрезентации.</li>
+                                                <li>Доходы риэлторов в разных странах: Обзор возможностей для риэлторов
+                                                    в разных странах и факторов, которые влияют на уровень дохода.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="information__accordion-content-text">
+                                            <h3>Урок 2: Обзор системы работы. DOMSTAR как опора брокера</h3>
+                                            <ul>
+                                                <li>Обзор DOMSTAR: Как работает система и как она помогает брокерам на
+                                                    разных этапах их работы? Какие инструменты и возможности
+                                                    предоставляет платформа для эффективной работы с недвижимостью?</li>
+                                                <li>Роль брокера в системе: Как риэлтор может использовать все функции
+                                                    платформы для успешной работы и развития? Пошаговый обзор всех
+                                                    ключевых возможностей.</li>
+                                                <li>Особенности работы с клиентами через платформу: Практические примеры
+                                                    использования системы для работы с клиентами, от подбора объектов
+                                                    недвижимости до сопровождения сделок.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="information__accordion-item">
+                                    <button class="information__accordion-header" aria-expanded="false"
+                                        aria-controls="accordion-content-8" id="accordion-header-8">
+                                        <span>Модуль 5.4:</span> Недвижимость Одесса
+                                    </button>
+                                    <div class="information__accordion-content" id="accordion-content-8" role="region"
+                                        aria-labelledby="accordion-header-8">
+                                        <div class="information__accordion-content-text">
+                                            <h3>Урок 1: Кто такой маклер, риэлтор, брокер и на чем он зарабатывает?</h3>
+                                            <ul>
+                                                <li>Основные термины: Кто такие брокер, маклер, риэлтор? Чем отличаются
+                                                    эти профессии и как они взаимодействуют в рынке недвижимости?</li>
+                                                <li>Каким должен быть риэлтор: Что важно для риэлтора, чтобы достичь
+                                                    успеха в профессии? Какие навыки, качества и личные характеристики
+                                                    необходимы для успешной работы?</li>
+                                                <li>Ключевые умения риэлтора: Риэлтор должен уметь анализировать рынок,
+                                                    подбирать объекты недвижимости для клиентов, а также обеспечивать
+                                                    полное сопровождение сделок.</li>
+                                                <li>Возможности профессии: Рынок недвижимости открыт для всех, и риэлтор
+                                                    может зарабатывать без ограничений. Какие возможности предоставляет
+                                                    профессия для роста и развития?</li>
+                                                <li>Как начать карьеру в недвижимости: Пошаговое руководство для
+                                                    новичков, чтобы быстро и эффективно начать работать в профессии
+                                                    риэлтора.</li>
+                                                <li>Как продать себя как эксперта: Как создать собственный бренд и стать
+                                                    экспертом в глазах клиентов? Важность правильного позиционирования и
+                                                    самопрезентации.</li>
+                                                <li>Доходы риэлторов в разных странах: Обзор возможностей для риэлторов
+                                                    в разных странах и факторов, которые влияют на уровень дохода.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="information__accordion-content-text">
+                                            <h3>Урок 2: Обзор системы работы. DOMSTAR как опора брокера</h3>
+                                            <ul>
+                                                <li>Обзор DOMSTAR: Как работает система и как она помогает брокерам на
+                                                    разных этапах их работы? Какие инструменты и возможности
+                                                    предоставляет платформа для эффективной работы с недвижимостью?</li>
+                                                <li>Роль брокера в системе: Как риэлтор может использовать все функции
+                                                    платформы для успешной работы и развития? Пошаговый обзор всех
+                                                    ключевых возможностей.</li>
+                                                <li>Особенности работы с клиентами через платформу: Практические примеры
+                                                    использования системы для работы с клиентами, от подбора объектов
+                                                    недвижимости до сопровождения сделок.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="information__accordion-item">
+                                    <button class="information__accordion-header" aria-expanded="false"
+                                        aria-controls="accordion-content-9" id="accordion-header-9">
+                                        <span>Модуль 6:</span> Личный бренд как стратегия
+                                    </button>
+                                    <div class="information__accordion-content" id="accordion-content-9" role="region"
+                                        aria-labelledby="accordion-header-9">
+                                        <div class="information__accordion-content-text">
+                                            <h3>Урок 1: Кто такой маклер, риэлтор, брокер и на чем он зарабатывает?</h3>
+                                            <ul>
+                                                <li>Основные термины: Кто такие брокер, маклер, риэлтор? Чем отличаются
+                                                    эти профессии и как они взаимодействуют в рынке недвижимости?</li>
+                                                <li>Каким должен быть риэлтор: Что важно для риэлтора, чтобы достичь
+                                                    успеха в профессии? Какие навыки, качества и личные характеристики
+                                                    необходимы для успешной работы?</li>
+                                                <li>Ключевые умения риэлтора: Риэлтор должен уметь анализировать рынок,
+                                                    подбирать объекты недвижимости для клиентов, а также обеспечивать
+                                                    полное сопровождение сделок.</li>
+                                                <li>Возможности профессии: Рынок недвижимости открыт для всех, и риэлтор
+                                                    может зарабатывать без ограничений. Какие возможности предоставляет
+                                                    профессия для роста и развития?</li>
+                                                <li>Как начать карьеру в недвижимости: Пошаговое руководство для
+                                                    новичков, чтобы быстро и эффективно начать работать в профессии
+                                                    риэлтора.</li>
+                                                <li>Как продать себя как эксперта: Как создать собственный бренд и стать
+                                                    экспертом в глазах клиентов? Важность правильного позиционирования и
+                                                    самопрезентации.</li>
+                                                <li>Доходы риэлторов в разных странах: Обзор возможностей для риэлторов
+                                                    в разных странах и факторов, которые влияют на уровень дохода.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="information__accordion-content-text">
+                                            <h3>Урок 2: Обзор системы работы. DOMSTAR как опора брокера</h3>
+                                            <ul>
+                                                <li>Обзор DOMSTAR: Как работает система и как она помогает брокерам на
+                                                    разных этапах их работы? Какие инструменты и возможности
+                                                    предоставляет платформа для эффективной работы с недвижимостью?</li>
+                                                <li>Роль брокера в системе: Как риэлтор может использовать все функции
+                                                    платформы для успешной работы и развития? Пошаговый обзор всех
+                                                    ключевых возможностей.</li>
+                                                <li>Особенности работы с клиентами через платформу: Практические примеры
+                                                    использования системы для работы с клиентами, от подбора объектов
+                                                    недвижимости до сопровождения сделок.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="information__accordion-item">
+                                    <button class="information__accordion-header" aria-expanded="false"
+                                        aria-controls="accordion-content-10" id="accordion-header-10">
+                                        <span>Модуль 7:</span> Личный бренд в Instagram
+                                    </button>
+                                    <div class="information__accordion-content" id="accordion-content-10" role="region"
+                                        aria-labelledby="accordion-header-10">
+                                        <div class="information__accordion-content-text">
+                                            <h3>Урок 1: Кто такой маклер, риэлтор, брокер и на чем он зарабатывает?</h3>
+                                            <ul>
+                                                <li>Основные термины: Кто такие брокер, маклер, риэлтор? Чем отличаются
+                                                    эти профессии и как они взаимодействуют в рынке недвижимости?</li>
+                                                <li>Каким должен быть риэлтор: Что важно для риэлтора, чтобы достичь
+                                                    успеха в профессии? Какие навыки, качества и личные характеристики
+                                                    необходимы для успешной работы?</li>
+                                                <li>Ключевые умения риэлтора: Риэлтор должен уметь анализировать рынок,
+                                                    подбирать объекты недвижимости для клиентов, а также обеспечивать
+                                                    полное сопровождение сделок.</li>
+                                                <li>Возможности профессии: Рынок недвижимости открыт для всех, и риэлтор
+                                                    может зарабатывать без ограничений. Какие возможности предоставляет
+                                                    профессия для роста и развития?</li>
+                                                <li>Как начать карьеру в недвижимости: Пошаговое руководство для
+                                                    новичков, чтобы быстро и эффективно начать работать в профессии
+                                                    риэлтора.</li>
+                                                <li>Как продать себя как эксперта: Как создать собственный бренд и стать
+                                                    экспертом в глазах клиентов? Важность правильного позиционирования и
+                                                    самопрезентации.</li>
+                                                <li>Доходы риэлторов в разных странах: Обзор возможностей для риэлторов
+                                                    в разных странах и факторов, которые влияют на уровень дохода.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="information__accordion-content-text">
+                                            <h3>Урок 2: Обзор системы работы. DOMSTAR как опора брокера</h3>
+                                            <ul>
+                                                <li>Обзор DOMSTAR: Как работает система и как она помогает брокерам на
+                                                    разных этапах их работы? Какие инструменты и возможности
+                                                    предоставляет платформа для эффективной работы с недвижимостью?</li>
+                                                <li>Роль брокера в системе: Как риэлтор может использовать все функции
+                                                    платформы для успешной работы и развития? Пошаговый обзор всех
+                                                    ключевых возможностей.</li>
+                                                <li>Особенности работы с клиентами через платформу: Практические примеры
+                                                    использования системы для работы с клиентами, от подбора объектов
+                                                    недвижимости до сопровождения сделок.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="information__accordion-item">
+                                    <button class="information__accordion-header" aria-expanded="false"
+                                        aria-controls="accordion-content-11" id="accordion-header-11">
+                                        <span>Модуль 8:</span> Маркетинг в недвижимости
+                                    </button>
+                                    <div class="information__accordion-content" id="accordion-content-11" role="region"
+                                        aria-labelledby="accordion-header-11">
+                                        <div class="information__accordion-content-text">
+                                            <h3>Урок 1: Кто такой маклер, риэлтор, брокер и на чем он зарабатывает?</h3>
+                                            <ul>
+                                                <li>Основные термины: Кто такие брокер, маклер, риэлтор? Чем отличаются
+                                                    эти профессии и как они взаимодействуют в рынке недвижимости?</li>
+                                                <li>Каким должен быть риэлтор: Что важно для риэлтора, чтобы достичь
+                                                    успеха в профессии? Какие навыки, качества и личные характеристики
+                                                    необходимы для успешной работы?</li>
+                                                <li>Ключевые умения риэлтора: Риэлтор должен уметь анализировать рынок,
+                                                    подбирать объекты недвижимости для клиентов, а также обеспечивать
+                                                    полное сопровождение сделок.</li>
+                                                <li>Возможности профессии: Рынок недвижимости открыт для всех, и риэлтор
+                                                    может зарабатывать без ограничений. Какие возможности предоставляет
+                                                    профессия для роста и развития?</li>
+                                                <li>Как начать карьеру в недвижимости: Пошаговое руководство для
+                                                    новичков, чтобы быстро и эффективно начать работать в профессии
+                                                    риэлтора.</li>
+                                                <li>Как продать себя как эксперта: Как создать собственный бренд и стать
+                                                    экспертом в глазах клиентов? Важность правильного позиционирования и
+                                                    самопрезентации.</li>
+                                                <li>Доходы риэлторов в разных странах: Обзор возможностей для риэлторов
+                                                    в разных странах и факторов, которые влияют на уровень дохода.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="information__accordion-content-text">
+                                            <h3>Урок 2: Обзор системы работы. DOMSTAR как опора брокера</h3>
+                                            <ul>
+                                                <li>Обзор DOMSTAR: Как работает система и как она помогает брокерам на
+                                                    разных этапах их работы? Какие инструменты и возможности
+                                                    предоставляет платформа для эффективной работы с недвижимостью?</li>
+                                                <li>Роль брокера в системе: Как риэлтор может использовать все функции
+                                                    платформы для успешной работы и развития? Пошаговый обзор всех
+                                                    ключевых возможностей.</li>
+                                                <li>Особенности работы с клиентами через платформу: Практические примеры
+                                                    использования системы для работы с клиентами, от подбора объектов
+                                                    недвижимости до сопровождения сделок.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="information__accordion-item">
+                                    <button class="information__accordion-header" aria-expanded="false"
+                                        aria-controls="accordion-content-12" id="accordion-header-12">
+                                        <span>Модуль 9:</span> Работа с клиентом. Покупатели и продавцы — закрытие
+                                        сделки.
+                                    </button>
+                                    <div class="information__accordion-content" id="accordion-content-12" role="region"
+                                        aria-labelledby="accordion-header-12">
+                                        <div class="information__accordion-content-text">
+                                            <h3>Урок 1: Кто такой маклер, риэлтор, брокер и на чем он зарабатывает?</h3>
+                                            <ul>
+                                                <li>Основные термины: Кто такие брокер, маклер, риэлтор? Чем отличаются
+                                                    эти профессии и как они взаимодействуют в рынке недвижимости?</li>
+                                                <li>Каким должен быть риэлтор: Что важно для риэлтора, чтобы достичь
+                                                    успеха в профессии? Какие навыки, качества и личные характеристики
+                                                    необходимы для успешной работы?</li>
+                                                <li>Ключевые умения риэлтора: Риэлтор должен уметь анализировать рынок,
+                                                    подбирать объекты недвижимости для клиентов, а также обеспечивать
+                                                    полное сопровождение сделок.</li>
+                                                <li>Возможности профессии: Рынок недвижимости открыт для всех, и риэлтор
+                                                    может зарабатывать без ограничений. Какие возможности предоставляет
+                                                    профессия для роста и развития?</li>
+                                                <li>Как начать карьеру в недвижимости: Пошаговое руководство для
+                                                    новичков, чтобы быстро и эффективно начать работать в профессии
+                                                    риэлтора.</li>
+                                                <li>Как продать себя как эксперта: Как создать собственный бренд и стать
+                                                    экспертом в глазах клиентов? Важность правильного позиционирования и
+                                                    самопрезентации.</li>
+                                                <li>Доходы риэлторов в разных странах: Обзор возможностей для риэлторов
+                                                    в разных странах и факторов, которые влияют на уровень дохода.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="information__accordion-content-text">
+                                            <h3>Урок 2: Обзор системы работы. DOMSTAR как опора брокера</h3>
+                                            <ul>
+                                                <li>Обзор DOMSTAR: Как работает система и как она помогает брокерам на
+                                                    разных этапах их работы? Какие инструменты и возможности
+                                                    предоставляет платформа для эффективной работы с недвижимостью?</li>
+                                                <li>Роль брокера в системе: Как риэлтор может использовать все функции
+                                                    платформы для успешной работы и развития? Пошаговый обзор всех
+                                                    ключевых возможностей.</li>
+                                                <li>Особенности работы с клиентами через платформу: Практические примеры
+                                                    использования системы для работы с клиентами, от подбора объектов
+                                                    недвижимости до сопровождения сделок.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="information__accordion-item">
+                                    <button class="information__accordion-header" aria-expanded="false"
+                                        aria-controls="accordion-content-13" id="accordion-header-13">
+                                        <span>Модуль 10:</span> Психология продаж
+                                    </button>
+                                    <div class="information__accordion-content" id="accordion-content-13" role="region"
+                                        aria-labelledby="accordion-header-13">
+                                        <div class="information__accordion-content-text">
+                                            <h3>Урок 1: Кто такой маклер, риэлтор, брокер и на чем он зарабатывает?</h3>
+                                            <ul>
+                                                <li>Основные термины: Кто такие брокер, маклер, риэлтор? Чем отличаются
+                                                    эти профессии и как они взаимодействуют в рынке недвижимости?</li>
+                                                <li>Каким должен быть риэлтор: Что важно для риэлтора, чтобы достичь
+                                                    успеха в профессии? Какие навыки, качества и личные характеристики
+                                                    необходимы для успешной работы?</li>
+                                                <li>Ключевые умения риэлтора: Риэлтор должен уметь анализировать рынок,
+                                                    подбирать объекты недвижимости для клиентов, а также обеспечивать
+                                                    полное сопровождение сделок.</li>
+                                                <li>Возможности профессии: Рынок недвижимости открыт для всех, и риэлтор
+                                                    может зарабатывать без ограничений. Какие возможности предоставляет
+                                                    профессия для роста и развития?</li>
+                                                <li>Как начать карьеру в недвижимости: Пошаговое руководство для
+                                                    новичков, чтобы быстро и эффективно начать работать в профессии
+                                                    риэлтора.</li>
+                                                <li>Как продать себя как эксперта: Как создать собственный бренд и стать
+                                                    экспертом в глазах клиентов? Важность правильного позиционирования и
+                                                    самопрезентации.</li>
+                                                <li>Доходы риэлторов в разных странах: Обзор возможностей для риэлторов
+                                                    в разных странах и факторов, которые влияют на уровень дохода.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="information__accordion-content-text">
+                                            <h3>Урок 2: Обзор системы работы. DOMSTAR как опора брокера</h3>
+                                            <ul>
+                                                <li>Обзор DOMSTAR: Как работает система и как она помогает брокерам на
+                                                    разных этапах их работы? Какие инструменты и возможности
+                                                    предоставляет платформа для эффективной работы с недвижимостью?</li>
+                                                <li>Роль брокера в системе: Как риэлтор может использовать все функции
+                                                    платформы для успешной работы и развития? Пошаговый обзор всех
+                                                    ключевых возможностей.</li>
+                                                <li>Особенности работы с клиентами через платформу: Практические примеры
+                                                    использования системы для работы с клиентами, от подбора объектов
+                                                    недвижимости до сопровождения сделок.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="information__accordion-item">
+                                    <button class="information__accordion-header" aria-expanded="false"
+                                        aria-controls="accordion-content-14" id="accordion-header-14">
+                                        <span>Модуль 11:</span> Путь к миллиону
+                                    </button>
+                                    <div class="information__accordion-content" id="accordion-content-14" role="region"
+                                        aria-labelledby="accordion-header-14">
+                                        <div class="information__accordion-content-text">
+                                            <h3>Урок 1: Кто такой маклер, риэлтор, брокер и на чем он зарабатывает?</h3>
+                                            <ul>
+                                                <li>Основные термины: Кто такие брокер, маклер, риэлтор? Чем отличаются
+                                                    эти профессии и как они взаимодействуют в рынке недвижимости?</li>
+                                                <li>Каким должен быть риэлтор: Что важно для риэлтора, чтобы достичь
+                                                    успеха в профессии? Какие навыки, качества и личные характеристики
+                                                    необходимы для успешной работы?</li>
+                                                <li>Ключевые умения риэлтора: Риэлтор должен уметь анализировать рынок,
+                                                    подбирать объекты недвижимости для клиентов, а также обеспечивать
+                                                    полное сопровождение сделок.</li>
+                                                <li>Возможности профессии: Рынок недвижимости открыт для всех, и риэлтор
+                                                    может зарабатывать без ограничений. Какие возможности предоставляет
+                                                    профессия для роста и развития?</li>
+                                                <li>Как начать карьеру в недвижимости: Пошаговое руководство для
+                                                    новичков, чтобы быстро и эффективно начать работать в профессии
+                                                    риэлтора.</li>
+                                                <li>Как продать себя как эксперта: Как создать собственный бренд и стать
+                                                    экспертом в глазах клиентов? Важность правильного позиционирования и
+                                                    самопрезентации.</li>
+                                                <li>Доходы риэлторов в разных странах: Обзор возможностей для риэлторов
+                                                    в разных странах и факторов, которые влияют на уровень дохода.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="information__accordion-content-text">
+                                            <h3>Урок 2: Обзор системы работы. DOMSTAR как опора брокера</h3>
+                                            <ul>
+                                                <li>Обзор DOMSTAR: Как работает система и как она помогает брокерам на
+                                                    разных этапах их работы? Какие инструменты и возможности
+                                                    предоставляет платформа для эффективной работы с недвижимостью?</li>
+                                                <li>Роль брокера в системе: Как риэлтор может использовать все функции
+                                                    платформы для успешной работы и развития? Пошаговый обзор всех
+                                                    ключевых возможностей.</li>
+                                                <li>Особенности работы с клиентами через платформу: Практические примеры
+                                                    использования системы для работы с клиентами, от подбора объектов
+                                                    недвижимости до сопровождения сделок.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="information__content-btn">
+                                <button type="button" class="information__content-btn-book button">Забронировать
+                                    встречу</button>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="bonus">
+                    <div class="bonus-top-fon">
+                        <picture>
+                            <source type="image/webp" srcset="img/bg-im.png.webp" />
+                            <img src="img/bg-im.png" alt="Бонусы курса" width="320" height="220" loading="lazy"/>
+                        </picture>
+                    </div>
+                    <div class="wrapper">
+                        <h2 class="bonus__title">Бонусы курса</h2>
+                        <div class="bonus__list">
+                            <article class="bonus__item">
+                                <div class="bonus__item-img">
+                                    <picture>
+                                        <source media="(min-width: 768px)" type="image/webp"
+                                            srcset="img/bonus__item-img1.webp 1x, img/bonus__item-img1@2x.webp 2x" />
+                                        <source media="(min-width: 768px)"
+                                            srcset="img/bonus__item-img1.jpg 1x, img/bonus__item-img1@2x.jpg 2x" />
+                                        <source type="image/webp"
+                                            srcset="img/bonus__item-img1-mobile.webp 1x, img/bonus__item-img1-mobile@2x.webp 2x" />
+                                        <source
+                                            srcset="img/bonus__item-img1-mobile.jpg 1x, img/bonus__item-img1-mobile@2x.jpg 2x" />
+                                        <img class="bonus__img" src="img/bonus__item-img1-mobile.jpg"
+                                            srcset="img/bonus__item-img1-mobile@2x.jpg 2x" alt="CRM-система"
+                                            width="281" height="112" loading="lazy" />
+                                    </picture>
+                                </div>
+                                <h3 class="bonus__item-title">Тестовый доступ к настроенной CRM-системе</h3>
+                            </article>
+
+                            <article class="bonus__item">
+                                <div class="bonus__item-img">
+                                    <picture>
+                                        <source media="(min-width: 768px)" type="image/webp"
+                                            srcset="img/bonus__item-img2.webp 1x, img/bonus__item-img2@2x.webp 2x" />
+                                        <source media="(min-width: 768px)"
+                                            srcset="img/bonus__item-img2.jpg 1x, img/bonus__item-img2@2x.jpg 2x" />
+                                        <source type="image/webp"
+                                            srcset="img/bonus__item-img2-mobile.webp 1x, img/bonus__item-img2-mobile@2x.webp 2x" />
+                                        <source
+                                            srcset="img/bonus__item-img2-mobile.jpg 1x, img/bonus__item-img2-mobile@2x.jpg 2x" />
+                                        <img class="bonus__img" src="img/bonus__item-img2-mobile.jpg"
+                                            srcset="img/bonus__item-img2-mobile@2x.jpg 2x" alt="Инвестиционный калькулятор"
+                                            width="281" height="112" loading="lazy" />
+                                    </picture>
+                                </div>
+                                <h3 class="bonus__item-title">Инвестиционный калькулятор</h3>
+                            </article>
+
+                            <article class="bonus__item">
+                                <div class="bonus__item-img">
+                                    <picture>
+                                        <source media="(min-width: 768px)" type="image/webp"
+                                            srcset="img/bonus__item-img3.webp 1x, img/bonus__item-img3@2x.webp 2x" />
+                                        <source media="(min-width: 768px)"
+                                            srcset="img/bonus__item-img3.jpg 1x, img/bonus__item-img3@2x.jpg 2x" />
+                                        <source type="image/webp"
+                                            srcset="img/bonus__item-img3-mobile.webp 1x, img/bonus__item-img3-mobile@2x.webp 2x" />
+                                        <source
+                                            srcset="img/bonus__item-img3-mobile.jpg 1x, img/bonus__item-img3-mobile@2x.jpg 2x" />
+                                        <img class="bonus__img" src="img/bonus__item-img3-mobile.jpg"
+                                            srcset="img/bonus__item-img3-mobile@2x.jpg 2x" alt="Интерактивная карта объектов"
+                                            width="281" height="112" loading="lazy" />
+                                    </picture>
+                                </div>
+                                <h3 class="bonus__item-title">Интерактивная карта объектов в ОАЕ</h3>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="bonus-bg">
+                        <picture>
+                            <source media="(min-width: 768px)" type="image/webp"
+                                srcset="img/bonus__fon.webp 1x, img/bonus__fon@2x.webp 2x" />
+                            <source media="(min-width: 768px)"
+                                srcset="img/bonus__fon.jpg 1x, img/bonus__fon@2x.jpg 2x" />
+                            <source type="image/webp"
+                                srcset="img/bonus__fon-mobile.webp 1x, img/bonus__fon-mobile@2x.webp 2x" />
+                            <source
+                                srcset="img/bonus__fon-mobile.jpg 1x, img/bonus__fon-mobile@2x.jpg 2x" />
+                            <img class="bonus__bg-img" src="img/bonus__fon-mobile.jpg"
+                                srcset="img/bonus__fon-mobile@2x.jpg 2x" alt="Фон бонусов"
+                                width="320" height="220" loading="lazy" />
+                        </picture>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="main-education__sticky" aria-label="Дополнительная информация">
+                <div class="main-education__sticky-max">
+                    <div class="subscription-card">
+                        <div class="subscription-card__header">
+                            <div class="subscription-card__header-content">
+                                <span class="subscription-card__price">
+                                    <span class="subscription-card__current-price">$100.00</span>
+                                    <span class="subscription-card__original-price">$239.00</span>
+                                </span>
+                                <span class="subscription-card__discount">Скидка 56%</span>
+                            </div>
+                            <span class="subscription-card__timer">
+                                <img src="img/time.svg" width="20" height="20" alt="">
+                                Осталось 2 дня со скидкой!
+                            </span>
+                        </div>
+
+                        <div class="subscription-card__content">
+                            <ul class="subscription-card__features">
+                                <li class="subscription-card__feature">
+                                    <img src="img/subscription-card__features1.svg" width="24" height="24" alt="">
+                                    12 мес. доступа онлайн
+                                </li>
+                                <li class="subscription-card__feature">
+                                    <img src="img/subscription-card__features2.svg" width="24" height="24" alt="">
+                                    16 чек-листов
+                                </li>
+                                <li class="subscription-card__feature">
+                                    <img src="img/subscription-card__features3.svg" width="24" height="24" alt="">
+                                    24 шаблона документов
+                                </li>
+                                <li class="subscription-card__feature">
+                                    <img src="img/subscription-card__features4.svg" width="24" height="24" alt="">
+                                    Еженедельные прямые эффиры
+                                </li>
+                                <li class="subscription-card__feature">
+                                    <img src="img/subscription-card__features5.svg" width="24" height="24" alt="">
+                                    Актуальная база
+                                </li>
+                            </ul>
+                            <button class="subscription-card__button">ЗАПИСАТЬСЯ</button>
+                        </div>
+
+                        <div class="subscription-card__bonuses">
+                            <h3 class="subscription-card__bonuses-title">Бонусы:</h3>
+                            <ul class="subscription-card__bonus-list">
+                                <li class="subscription-card__bonus-item">
+                                    <img src="img/subscription-card__bonus-item1.svg" width="24" height="24" alt="">
+                                    Тестовый доступ к настроенной CRM-системе
+                                </li>
+                                <li class="subscription-card__bonus-item">
+                                    <img src="img/subscription-card__bonus-item2.svg" width="24" height="24" alt="">
+                                    Инвестиционный калькулятор
+                                </li>
+                                <li class="subscription-card__bonus-item">
+                                    <img src="img/subscription-card__bonus-item3.svg" width="24" height="24" alt="">
+                                    Интерактивная карта объектов в ОАЕ
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="subscription-card__footer">
+                            <span class="subscription-card__share">Поделитесь этим курсом:</span>
+                            <ul class="subscription-card__socials">
+                                <li>
+                                    <button type="button" class="subscription-card__share-btn"
+                                        aria-label="Скопировать ссылку">
+                                        <img src="img/copy-link.svg" width="20" height="20" alt="">
+                                        Copy link
+                                    </button>
+                                </li>
+                                <li>
+                                    <a href="#" class="subscription-card__social-link"
+                                        aria-label="Поделиться в соцсети 1">
+                                        <img src="img/subscription-card__social-link1.svg" width="20" height="20"
+                                            alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="subscription-card__social-link"
+                                        aria-label="Поделиться в соцсети 2">
+                                        <img src="img/subscription-card__social-link2.svg" width="20" height="20"
+                                            alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="subscription-card__social-link"
+                                        aria-label="Поделиться в соцсети 3">
+                                        <img src="img/subscription-card__social-link3.svg" width="20" height="20"
+                                            alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__wrapper wrapper">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <div class="footer__logo">
+                        <a href="/" aria-label="Academy Star - главная страница">
+                            <img src="img/logo-footer.svg" width="176" height="43" alt="Academy Star Logo"
+                                loading="lazy" />
+                        </a>
+                    </div>
+                    <ul class="footer__social-list" aria-label="Социальные сети">
+                        <li class="footer__social-item">
+                            <a href="#" aria-label="Instagram Academy Star" class="footer__social-link" rel="noopener"
+                                target="_blank">
+                                <img src="img/social1.svg" width="20" height="21" alt="Instagram" />
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a href="#" aria-label="Telegram Academy Star" class="footer__social-link" rel="noopener"
+                                target="_blank">
+                                <img src="img/social2.svg" width="20" height="21" alt="Telegram" />
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a href="#" aria-label="Facebook Academy Star" class="footer__social-link" rel="noopener"
+                                target="_blank">
+                                <img src="img/social3.svg" width="20" height="21" alt="Facebook" />
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a href="#" aria-label="YouTube Academy Star" class="footer__social-link" rel="noopener"
+                                target="_blank">
+                                <img src="img/social4.svg" width="20" height="21" alt="YouTube" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="footer__nav" aria-label="Footer Navigation">
+                    <div class="footer__nav-col">
+                        <h3 id="footer-about-title" class="footer__nav-title">
+                            О компании
+                        </h3>
+                        <ul class="footer__nav-list" aria-labelledby="footer-about-title">
+                            <li class="footer__nav-item">
+                                <a href="/" class="footer__nav-link">Про нас</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="/" class="footer__nav-link">Контакти</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-col">
+                        <h3 id="footer-services-title" class="footer__nav-title">
+                            Послуги
+                        </h3>
+                        <ul class="footer__nav-list" aria-labelledby="footer-services-title">
+                            <li class="footer__nav-item">
+                                <a href="/" class="footer__nav-link">Маркетинг от DomStar</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="/" class="footer__nav-link">Платформа / Підписка</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="/" class="footer__nav-link">Навчання</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-col">
+                        <h3 id="footer-legal-title" class="footer__nav-title">
+                            Правова інформація
+                        </h3>
+                        <ul class="footer__nav-list" aria-labelledby="footer-legal-title">
+                            <li class="footer__nav-item">
+                                <a href="/" class="footer__nav-link">Політика конфіденційності</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="/" class="footer__nav-link">Публічна оферта</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="/" class="footer__nav-link">Доставка і повернення</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="/" class="footer__nav-link">Cookie</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="footer__bg" aria-hidden="true">
+                    <picture>
+                        <source type="image/webp" srcset="img/footer-bg.webp" />
+                        <img src="img/footer-bg.png" width="1920" height="290" alt="" loading="lazy" />
+                    </picture>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    © 2025 DomStar®. All content is available under the Creative Commons
+                    Attribution 4.0 International license unless otherwise noted.<br />
+                    <span lang="uk">Фізична особа-підприємець Звєрєва Христина Валеріївна | ІПН:
+                        3377414489</span>
+                </p>
+                <ul class="footer__payment-list" aria-label="Способы оплаты">
+                    <li class="footer__payment-item">
+                        <img src="img/MasterCard.svg" width="35" height="36" alt="MasterCard" loading="lazy" />
+                    </li>
+                    <li class="footer__payment-item">
+                        <img src="img/Visa.svg" width="35" height="36" alt="Visa" loading="lazy" />
+                    </li>
+                    <li class="footer__payment-item">
+                        <img src="img/Visa2.svg" width="72" height="36" alt="Visa" loading="lazy" />
+                    </li>
+                    <li class="footer__payment-item">
+                        <img src="img/Visa3.svg" width="35" height="36" alt="Visa" loading="lazy" />
+                    </li>
+                    <li class="footer__payment-item">
+                        <img src="img/GooglePay.svg" width="65" height="36" alt="Google Pay" loading="lazy" />
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div class="menu-overlay"></div>
+    <script src="script/jquery-3.7.0.min.js" defer></script>
+    <script src="script/swiper-bundle.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5/dist/fancybox/fancybox.umd.js" defer></script>
+    <script src="script/main.js" defer></script>
+</body>
+
+</html>
