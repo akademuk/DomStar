@@ -187,10 +187,10 @@
   --fonts-size-100: 100px;
   --fonts-family-fixel-text: "Fixel Text", sans-serif;
   --fonts-family-Segoe-UI: "Segoe UI", sans-serif;
-  --fonts-weight-bold: Bold;
-  --fonts-weight-medium: Medium;
-  --fonts-weight-regular: Regular;
-  --fonts-weight-semi-bold: SemiBold;
+  --fonts-weight-regular: 400;
+  --fonts-weight-medium: 500;
+  --fonts-weight-semi-bold: 600;
+  --fonts-weight-bold:   700;
 }
 
 * {
@@ -1914,6 +1914,12 @@ body.menu-open {
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
+  transition: all 0.4s;
+}
+
+.graduates__slide:hover {
+  border: 1px solid var(--colors-Blue-200);
+  background: var(--colors-Pink-100);
 }
 
 .graduates__quote {
@@ -3556,6 +3562,13 @@ body.menu-open {
   font-size: var(--fonts-size-12);
   font-weight: 600;
   line-height: 100%;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.information__tab:hover {
+  border-bottom: 2px solid var(--colors-Red-600);
+  color: var(--colors-Blue-950);
 }
 
 .information__tab--active {
@@ -3570,7 +3583,7 @@ body.menu-open {
   gap: 42px;
   align-self: stretch;
   position: relative;
-    z-index: 5;
+  z-index: 5;
 }
 
 .information__content h2 {
@@ -3865,7 +3878,6 @@ body.menu-open {
   display: none;
 }
 
-
 .bonus {
   padding: 64px 16px;
   background: var(--colors-Red-50);
@@ -3917,13 +3929,13 @@ body.menu-open {
 
 .bonus-box {
   display: flex;
-  padding: 23px 24px 21px 24px;
+  padding: 23px 24px 24px 24px;
   flex-direction: column;
   align-items: flex-start;
   align-self: stretch;
   border-radius: 12px;
   background: var(--colors-base-white-100);
-  gap: 12px;
+  gap: 9px;
 }
 
 .bonus__title {
@@ -3969,6 +3981,148 @@ body.menu-open {
   font-size: var(--fonts-size-12);
   font-weight: var(--fonts-weight-medium);
 }
+
+.education-step {
+  padding: 62px 0 0 0;
+  background: var(--colors-base-white-100);
+  position: relative;
+  overflow: hidden;
+}
+
+.education-step::before {
+  content: "";
+  background: url(../img/Noise-about.png) repeat;
+  background-size: auto;
+  mix-blend-mode: hard-light; 
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.education-step .wrapper {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 16px 59px 16px;
+}
+
+.education-step__banner {
+  height: 376px;
+  width: 100vw;
+}
+
+.education-step__banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.education-step__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 44px;
+    align-self: stretch;
+    position: relative;
+    z-index: 3;
+}
+
+.education-step__image {
+  display: none;
+}
+
+.education-step__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+  align-self: stretch;
+}
+
+.education-step__title h2 {
+  color: var(--colors-Blue-950,);
+  font-size: var(--fonts-size-18);
+  font-weight: var(--fonts-weight-medium);
+}
+
+.education-step__title p {
+  color: var(--colors-Blue-800);
+  font-size: var(--fonts-size-12);
+  font-weight: var(--fonts-weight-medium);
+}
+
+.education-step__slide {
+  max-width: 176px;
+  width: 176px !important;
+}
+
+.education-step__slider {
+  width: 100%;
+}
+
+.education-step__slide-image {
+  height: 176px;
+  border-radius: 4px;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.education-step__slide-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.education-step__slide-content-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  align-self: stretch;
+  padding-bottom: 7px;
+  border-bottom: 1px solid var(--colors-Blue-200);
+  margin-bottom: 10px;
+}
+
+.education-step__slide-content-title h3 {
+  color: var(--colors-Blue-950);
+  font-size: var(--fonts-size-14);
+  font-weight: var(--fonts-weight-medium);
+  line-height: 100%; 
+}
+
+.education-step__slide-content-title p {
+  color: var(--colors-Blue-700);
+  font-size: var(--fonts-size-12);
+  font-weight: var(--fonts-weight-medium);
+}
+
+.education-step__slide-content p {
+  color: var(--colors-Blue-900,);
+  font-size: var(--fonts-size-12);
+  font-weight: var(--fonts-weight-medium);
+  line-height: 117%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -5627,6 +5781,112 @@ body.menu-open {
 
   .bonus-top-fon img {
     object-position: bottom;
+  }
+
+  .education-step .wrapper {
+    max-width: 1280px;
+    padding: 0 52px 3px 52px;
+  }
+
+  .education-step__box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .education-step__content {
+    max-width: 676px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: 0;
+  }
+
+  .education-step__wrapper {
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .education-step__slide {
+    flex-shrink: unset !important;
+    max-width: 100%;
+    width: 100% !important;
+    display: flex !important;
+    gap: 24px;
+  }
+
+  .education-step__slide-content-title {
+    margin-bottom: 27px;
+  }
+
+  .education-step {
+    padding: 125px 0 0 0;
+  }
+
+  .education-step__title {
+      gap: 12px;
+  }
+
+  .education-step__title h2 {
+    font-size: var(--fonts-size-24);
+  }
+
+  .education-step__title p {
+    font-size: var(--fonts-size-16);
+  }
+
+  .education-step__slide-image {
+    margin: 0;
+    width: 176px;
+    min-width: 176px;
+  }
+
+  .education-step__slide-content-title h3 {
+    font-size: var(--fonts-size-18);
+  }
+
+  .education-step__slide-content-title p {
+    font-size: var(--fonts-size-14);
+  }
+
+  .education-step__slide-content p {
+    font-size: var(--fonts-size-14);
+  }
+  
+  .education-step__image {
+    display: block;
+    width: 456px;
+    height: 1319px;
+    transform: translate(212px, -60px);
+    position: relative;
+  }
+
+   .education-step__image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(253, 247, 244, 0.15) 0%, rgba(253, 247, 244, 0.15) 100%);
+   }
+
+   
+   .education-step__image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/Noisebox.png);
+    background-repeat: repeat;
+    background-size: contain;
+   }
+
+  .education-step__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 }
 

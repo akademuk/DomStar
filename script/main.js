@@ -35,13 +35,13 @@ function initBurgerMenu() {
 
 function toggleMobileMenu(menu, burger, body, overlay) {
   const isCurrentlyOpen = menu.classList.contains("open");
-  
+
   if (isCurrentlyOpen) {
     // При закрытии - сначала убираем класс open, затем через небольшую задержку убираем overflow
     menu.classList.remove("open");
     burger.classList.remove("open");
     overlay.classList.remove("active");
-    
+
     // Небольшая задержка перед разблокировкой скролла для завершения анимации
     setTimeout(() => {
       body.style.overflow = "";
@@ -52,7 +52,7 @@ function toggleMobileMenu(menu, burger, body, overlay) {
     body.style.overflow = "hidden";
     body.classList.add("menu-open");
     overlay.classList.add("active");
-    
+
     // Небольшая задержка для плавности анимации
     setTimeout(() => {
       menu.classList.add("open");
@@ -87,7 +87,7 @@ function initClientLogosSwiper() {
 
 document.addEventListener("DOMContentLoaded", () => {
   const firstAccordionItem = document.querySelector(".accordion-item");
-  
+
   // Проверяем, есть ли аккордеон на странице
   if (firstAccordionItem) {
     // Убираем старый способ инициализации
@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelectorAll(".accordion-item").forEach((otherItem) => {
           otherItem.classList.remove("active");
         });
-        
+
         const firstItem = document.querySelector(".accordion-item");
         if (firstItem) {
           firstItem.classList.add("active");
@@ -125,7 +125,7 @@ document.addEventListener("DOMContentLoaded", () => {
     item.querySelector(".accordion-header").addEventListener("click", () => {
       if (window.innerWidth <= 768) {
         const isCurrentlyActive = item.classList.contains("active");
-        
+
         // Убираем active у всех элементов
         document.querySelectorAll(".accordion-item").forEach((otherItem) => {
           otherItem.classList.remove("active");
@@ -157,13 +157,15 @@ if (swiperContainer) {
       },
       1280: {
         spaceBetween: 24,
-      }
-    }
+      },
+    },
   });
 }
 
 // Проверяем наличие элементов для Fancybox
-const fancyboxElements = document.querySelectorAll('[data-fancybox="graduates-videos"]');
+const fancyboxElements = document.querySelectorAll(
+  '[data-fancybox="graduates-videos"]'
+);
 if (fancyboxElements.length > 0) {
   Fancybox.bind('[data-fancybox="graduates-videos"]', {
     type: "iframe",
@@ -175,24 +177,26 @@ if (fancyboxElements.length > 0) {
   });
 }
 
-const faqButtons = document.querySelectorAll('.faq-question');
+const faqButtons = document.querySelectorAll(".faq-question");
 
 if (faqButtons.length > 0) {
-  faqButtons.forEach(button => {
-      button.addEventListener('click', function () {
-          const expanded = this.getAttribute('aria-expanded') === 'true';
-          const answer = document.getElementById(this.getAttribute('aria-controls'));
+  faqButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const expanded = this.getAttribute("aria-expanded") === "true";
+      const answer = document.getElementById(
+        this.getAttribute("aria-controls")
+      );
 
-          // Меняем состояние aria-expanded
-          this.setAttribute('aria-expanded', !expanded);
+      // Меняем состояние aria-expanded
+      this.setAttribute("aria-expanded", !expanded);
 
-          // Анимация раскрытия и скрытия
-          if (expanded) {
-              answer.style.maxHeight = '0';
-          } else {
-              answer.style.maxHeight = answer.scrollHeight + 'px'; // Вычисляем высоту ответа
-          }
-      });
+      // Анимация раскрытия и скрытия
+      if (expanded) {
+        answer.style.maxHeight = "0";
+      } else {
+        answer.style.maxHeight = answer.scrollHeight + "px"; // Вычисляем высоту ответа
+      }
+    });
   });
 }
 
@@ -218,37 +222,62 @@ function initClientLogosSwiper() {
   });
 }
 
+// Селекторы для вкладок
+const tabs = document.querySelectorAll(".information__tab");
+const contents = document.querySelectorAll(".information__content");
 
-  // Селекторы для вкладок
-    const tabs = document.querySelectorAll('.information__tab');
-    const contents = document.querySelectorAll('.information__content');
-
-    // Переключение вкладок
-    tabs.forEach(tab => {
-        tab.addEventListener('click', () => {
-            tabs.forEach(t => t.classList.remove('information__tab--active'));
-            tab.classList.add('information__tab--active');
-            const target = tab.dataset.tab;
-            contents.forEach(content => {
-                content.classList.remove('information__content--active');
-                if (content.id === `tab-${target}`) {
-                    content.classList.add('information__content--active');
-                }
-            });
-        });
+// Переключение вкладок
+tabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    tabs.forEach((t) => t.classList.remove("information__tab--active"));
+    tab.classList.add("information__tab--active");
+    const target = tab.dataset.tab;
+    contents.forEach((content) => {
+      content.classList.remove("information__content--active");
+      if (content.id === `tab-${target}`) {
+        content.classList.add("information__content--active");
+      }
     });
+  });
+});
 
-    // Селекторы для аккордеона
-    const headers = document.querySelectorAll(".information__accordion-header");
+// Селекторы для аккордеона
+const headers = document.querySelectorAll(".information__accordion-header");
 
-    headers.forEach(header => {
-        header.addEventListener("click", () => {
-            const item = header.parentElement;
-            item.classList.toggle("active");
+headers.forEach((header) => {
+  header.addEventListener("click", () => {
+    const item = header.parentElement;
+    item.classList.toggle("active");
 
-            // Закрытие других элементов
-            headers.forEach((h) => {
-                if (h !== header) h.parentElement.classList.remove("active");
-            });
-        });
+    // Закрытие других элементов
+    headers.forEach((h) => {
+      if (h !== header) h.parentElement.classList.remove("active");
     });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  let swiperInstance = null;
+
+  function toggleSwiper() {
+    const isMobile = window.innerWidth <= 1280;
+
+    if (isMobile && !swiperInstance) {
+      swiperInstance = new Swiper(".education-step__slider", {
+        slidesPerView: "auto",
+        spaceBetween: 16,
+        loop: false,
+        navigation: false,
+        pagination: false,
+      });
+    }
+
+    if (!isMobile && swiperInstance) {
+      swiperInstance.destroy(true, true);
+      swiperInstance = null;
+    }
+  }
+
+  toggleSwiper();
+  window.addEventListener("resize", toggleSwiper);
+});
