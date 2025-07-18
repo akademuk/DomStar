@@ -178,26 +178,23 @@
         </nav>
 
         <div class="main-education__wrapper">
-            <div class="main-education__content">
-                <section class="education-hero">
+            <div class="main-education__content" itemscope itemtype="https://schema.org/Course">
+                <section class="education-hero" aria-labelledby="course-title">
                     <div class="wrapper">
-                        <div class="education-hero__header">
-                            <h1 class="education-hero__title">
+                        <header class="education-hero__header">
+                            <h1 class="education-hero__title" id="course-title" itemprop="name">
                                 Международная недвижимость PRO
                             </h1>
-                            <p class="education-hero__subtitle">
-                                Освойте рынок недвижимости Украины, ОАЭ, Бали и Кипра с
-                                действующими экспертами и зарабатывайте дополнительно от 5000$
-                                в месяц
+                            <p class="education-hero__subtitle" itemprop="description">
+                                Освойте рынок недвижимости Украины, ОАЭ, Бали и Кипра с действующими экспертами и зарабатывайте дополнительно от 5000$ в месяц
                             </p>
-                        </div>
+                        </header>
                         <div class="education-hero__info">
-                            <div class="education-hero__authors">
+                            <div class="education-hero__authors" itemprop="provider" itemscope itemtype="https://schema.org/Organization">
                                 <div class="education-hero__authors-avatars">
                                     <picture class="education-hero__avatar">
                                         <source type="image/webp" srcset="img/avatar02.webp" />
-                                        <img src="img/avatar02.jpg" width="48" height="48" alt="Геннадий Сухацкий"
-                                            loading="lazy" />
+                                        <img src="img/avatar02.jpg" width="48" height="48" alt="Геннадий Сухацкий" loading="lazy" itemprop="logo" />
                                     </picture>
                                     <picture class="education-hero__avatar">
                                         <source type="image/webp" srcset="img/avatar01.webp" />
@@ -1626,74 +1623,92 @@
                             </div>
                         </section>
                     </div>
+
+                    <div class="information-bg">
+                        <picture>
+                            <source media="(min-width: 768px)" type="image/webp"
+                                srcset="img/information-bg.webp 1x, img/information-bg@2x.webp 2x" />
+                            <source media="(min-width: 768px)"
+                                srcset="img/information-bg.jpg 1x, img/information-bg@2x.jpg 2x" />
+                            <source type="image/webp"
+                                srcset="img/information-bg-mobile.webp 1x, img/information-bg-mobile@2x.webp 2x" />
+                            <source
+                                srcset="img/information-bg-mobile.jpg 1x, img/information-bg-mobile@2x.jpg 2x" />
+                            <img class="bonus__bg-img" src="img/information-bg-mobile.jpg"
+                                srcset="img/information-bg-mobile@2x.jpg 2x" alt="Фон бонусов"
+                                width="320" height="220" loading="lazy" />
+                        </picture>
+                    </div>
                 </div>
 
                 <div class="bonus">
                     <div class="bonus-top-fon">
                         <picture>
-                            <source type="image/webp" srcset="img/bg-im.png.webp" />
+                            <source type="image/webp" srcset="img/bg-im.webp" />
                             <img src="img/bg-im.png" alt="Бонусы курса" width="320" height="220" loading="lazy"/>
                         </picture>
                     </div>
                     <div class="wrapper">
-                        <h2 class="bonus__title">Бонусы курса</h2>
-                        <div class="bonus__list">
-                            <article class="bonus__item">
-                                <div class="bonus__item-img">
-                                    <picture>
-                                        <source media="(min-width: 768px)" type="image/webp"
-                                            srcset="img/bonus__item-img1.webp 1x, img/bonus__item-img1@2x.webp 2x" />
-                                        <source media="(min-width: 768px)"
-                                            srcset="img/bonus__item-img1.jpg 1x, img/bonus__item-img1@2x.jpg 2x" />
-                                        <source type="image/webp"
-                                            srcset="img/bonus__item-img1-mobile.webp 1x, img/bonus__item-img1-mobile@2x.webp 2x" />
-                                        <source
-                                            srcset="img/bonus__item-img1-mobile.jpg 1x, img/bonus__item-img1-mobile@2x.jpg 2x" />
-                                        <img class="bonus__img" src="img/bonus__item-img1-mobile.jpg"
-                                            srcset="img/bonus__item-img1-mobile@2x.jpg 2x" alt="CRM-система"
-                                            width="281" height="112" loading="lazy" />
-                                    </picture>
-                                </div>
-                                <h3 class="bonus__item-title">Тестовый доступ к настроенной CRM-системе</h3>
-                            </article>
+                        <div class="bonus-box">
+                            <h2 class="bonus__title">Бонусы</h2>
+                            <div class="bonus__list">
+                                <article class="bonus__item">
+                                    <div class="bonus__item-img">
+                                        <picture>
+                                            <source media="(min-width: 1280px)" type="image/webp"
+                                                srcset="img/bonus__item-img1.webp 1x, img/bonus__item-img1@2x.webp 2x" />
+                                            <source media="(min-width: 1280px)"
+                                                srcset="img/bonus__item-img1.jpg 1x, img/bonus__item-img1@2x.jpg 2x" />
+                                            <source type="image/webp"
+                                                srcset="img/bonus__item-img1-mobile.webp 1x, img/bonus__item-img1-mobile@2x.webp 2x" />
+                                            <source
+                                                srcset="img/bonus__item-img1-mobile.jpg 1x, img/bonus__item-img1-mobile@2x.jpg 2x" />
+                                            <img class="bonus__img" src="img/bonus__item-img1-mobile.jpg"
+                                                srcset="img/bonus__item-img1-mobile@2x.jpg 2x" alt="CRM-система"
+                                                width="281" height="112" loading="lazy" />
+                                        </picture>
+                                    </div>
+                                    <h3 class="bonus__item-title">Тестовый доступ к настроенной CRM-системе</h3>
+                                </article>
 
-                            <article class="bonus__item">
-                                <div class="bonus__item-img">
-                                    <picture>
-                                        <source media="(min-width: 768px)" type="image/webp"
-                                            srcset="img/bonus__item-img2.webp 1x, img/bonus__item-img2@2x.webp 2x" />
-                                        <source media="(min-width: 768px)"
-                                            srcset="img/bonus__item-img2.jpg 1x, img/bonus__item-img2@2x.jpg 2x" />
-                                        <source type="image/webp"
-                                            srcset="img/bonus__item-img2-mobile.webp 1x, img/bonus__item-img2-mobile@2x.webp 2x" />
-                                        <source
-                                            srcset="img/bonus__item-img2-mobile.jpg 1x, img/bonus__item-img2-mobile@2x.jpg 2x" />
-                                        <img class="bonus__img" src="img/bonus__item-img2-mobile.jpg"
-                                            srcset="img/bonus__item-img2-mobile@2x.jpg 2x" alt="Инвестиционный калькулятор"
-                                            width="281" height="112" loading="lazy" />
-                                    </picture>
-                                </div>
-                                <h3 class="bonus__item-title">Инвестиционный калькулятор</h3>
-                            </article>
+                                <article class="bonus__item">
+                                    <div class="bonus__item-img">
+                                        <picture>
+                                            <source media="(min-width: 1280px)" type="image/webp"
+                                                srcset="img/bonus__item-img2.webp 1x, img/bonus__item-img2@2x.webp 2x" />
+                                            <source media="(min-width: 1280px)"
+                                                srcset="img/bonus__item-img2.jpg 1x, img/bonus__item-img2@2x.jpg 2x" />
+                                            <source type="image/webp"
+                                                srcset="img/bonus__item-img2-mobile.webp 1x, img/bonus__item-img2-mobile@2x.webp 2x" />
+                                            <source
+                                                srcset="img/bonus__item-img2-mobile.jpg 1x, img/bonus__item-img2-mobile@2x.jpg 2x" />
+                                            <img class="bonus__img" src="img/bonus__item-img2-mobile.jpg"
+                                                srcset="img/bonus__item-img2-mobile@2x.jpg 2x" alt="Инвестиционный калькулятор"
+                                                width="281" height="112" loading="lazy" />
+                                        </picture>
+                                    </div>
+                                    <h3 class="bonus__item-title">Инвестиционный калькулятор</h3>
+                                </article>
 
-                            <article class="bonus__item">
-                                <div class="bonus__item-img">
-                                    <picture>
-                                        <source media="(min-width: 768px)" type="image/webp"
-                                            srcset="img/bonus__item-img3.webp 1x, img/bonus__item-img3@2x.webp 2x" />
-                                        <source media="(min-width: 768px)"
-                                            srcset="img/bonus__item-img3.jpg 1x, img/bonus__item-img3@2x.jpg 2x" />
-                                        <source type="image/webp"
-                                            srcset="img/bonus__item-img3-mobile.webp 1x, img/bonus__item-img3-mobile@2x.webp 2x" />
-                                        <source
-                                            srcset="img/bonus__item-img3-mobile.jpg 1x, img/bonus__item-img3-mobile@2x.jpg 2x" />
-                                        <img class="bonus__img" src="img/bonus__item-img3-mobile.jpg"
-                                            srcset="img/bonus__item-img3-mobile@2x.jpg 2x" alt="Интерактивная карта объектов"
-                                            width="281" height="112" loading="lazy" />
-                                    </picture>
-                                </div>
-                                <h3 class="bonus__item-title">Интерактивная карта объектов в ОАЕ</h3>
-                            </article>
+                                <article class="bonus__item">
+                                    <div class="bonus__item-img">
+                                        <picture>
+                                            <source media="(min-width: 1280px)" type="image/webp"
+                                                srcset="img/bonus__item-img3.webp 1x, img/bonus__item-img3@2x.webp 2x" />
+                                            <source media="(min-width: 1280px)"
+                                                srcset="img/bonus__item-img3.jpg 1x, img/bonus__item-img3@2x.jpg 2x" />
+                                            <source type="image/webp"
+                                                srcset="img/bonus__item-img3-mobile.webp 1x, img/bonus__item-img3-mobile@2x.webp 2x" />
+                                            <source
+                                                srcset="img/bonus__item-img3-mobile.jpg 1x, img/bonus__item-img3-mobile@2x.jpg 2x" />
+                                            <img class="bonus__img" src="img/bonus__item-img3-mobile.jpg"
+                                                srcset="img/bonus__item-img3-mobile@2x.jpg 2x" alt="Интерактивная карта объектов"
+                                                width="281" height="112" loading="lazy" />
+                                        </picture>
+                                    </div>
+                                    <h3 class="bonus__item-title">Интерактивная карта объектов в ОАЕ</h3>
+                                </article>
+                            </div>
                         </div>
                     </div>
                     <div class="bonus-bg">
@@ -1812,8 +1827,6 @@
                 </div>
             </aside>
         </div>
-
-
     </main>
 
     <footer class="footer">
