@@ -179,26 +179,26 @@ if (fancyboxElements.length > 0) {
 
 const faqButtons = document.querySelectorAll(".faq-question");
 
-if (faqButtons.length > 0) {
-  faqButtons.forEach((button) => {
-    button.addEventListener("click", function () {
-      const expanded = this.getAttribute("aria-expanded") === "true";
-      const answer = document.getElementById(
-        this.getAttribute("aria-controls")
-      );
+faqButtons.forEach((button) => {
+  const answer = document.getElementById(button.getAttribute("aria-controls"));
 
-      // Меняем состояние aria-expanded
-      this.setAttribute("aria-expanded", !expanded);
+  button.addEventListener("click", () => {
+    const isExpanded = button.getAttribute("aria-expanded") === "true";
 
-      // Анимация раскрытия и скрытия
-      if (expanded) {
-        answer.style.maxHeight = "0";
-      } else {
-        answer.style.maxHeight = answer.scrollHeight + "px"; // Вычисляем высоту ответа
-      }
+    faqButtons.forEach((btn) => {
+      const ans = document.getElementById(btn.getAttribute("aria-controls"));
+      btn.setAttribute("aria-expanded", "false");
+      ans.classList.remove("open");
     });
+
+    if (!isExpanded) {
+      button.setAttribute("aria-expanded", "true");
+      answer.classList.add("open");
+    }
   });
-}
+});
+
+
 
 function initClientLogosSwiper() {
   const wrapper = document.querySelector(".main-education__partners-wrapper");
@@ -281,3 +281,26 @@ document.addEventListener("DOMContentLoaded", () => {
   toggleSwiper();
   window.addEventListener("resize", toggleSwiper);
 });
+
+
+const otherCoursesSlider = document.querySelector(".other-courses__slider");
+if (swiperContainer) {
+  const swiper = new Swiper(".other-courses__slider", {
+    loop: false,
+    // centeredSlides: true,
+    navigation: {
+      nextEl: ".other-courses__next",
+      prevEl: ".other-courses__prev",
+    },
+    spaceBetween: 24,
+    slidesPerView: "auto",
+    breakpoints: {
+      0: {
+        spaceBetween: 16,
+      },
+      1280: {
+        spaceBetween: 24,
+      },
+    },
+  });
+}
