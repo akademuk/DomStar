@@ -2747,11 +2747,11 @@
                         <div class="cta__form">
                             <div class="cta__title">
                                 <h2 id="cta-title">
-                                    Готовы выйти на новый уровень <br> в недвижимости?
+                                    Готовы выйти на новый уровень в недвижимости?
                                 </h2>
                                 <p>
-                                    Заполните заявку — мы свяжемся и обсудим, как выйти на доход от
-                                    $2000+/мес!
+                                    Заполните заявку — мы свяжемся и обсудим,
+                                    как выйти на доход от $2000+/мес!
                                 </p>
                             </div>
                             <form autocomplete="on" aria-label="Форма заявки на консультацию">
@@ -2859,7 +2859,7 @@
                                     Актуальная база
                                 </li>
                             </ul>
-                            <button class="subscription-card__button">ЗАПИСАТЬСЯ</button>
+                            <button class="subscription-card__button open-modal-btn">ЗАПИСАТЬСЯ</button>
                         </div>
 
                         <div class="subscription-card__bonuses">
@@ -3350,6 +3350,91 @@
     </footer>
 
     <div class="menu-overlay"></div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-content__header">
+                <h2>Заявка на звонок</h2>
+                <span class="close">
+                    <img src="img/close.svg" width="14" height="15" alt="icon">
+                </span>
+            </div>
+            <div class="cta__form">
+                <div class="cta__title">
+                    <h2>
+                        Готовы выйти на новый уровень в недвижимости?
+                    </h2>
+                    <p>
+                        Заполните заявку — мы свяжемся и обсудим, как выйти на доход от
+                        $2000+/мес!
+                    </p>
+                    <div class="lead-management__card lead-management__card--aside"
+                        aria-labelledby="lead-benefits-title-cta">
+                        <h3 class="lead-management__card-title">
+                            Получите:
+                        </h3>
+                        <ul class="lead-management__benefits-list">
+                            <li class="lead-management__benefits-item">
+                                <img src="img/modal-icon.svg" width="26" height="26"
+                                    alt="Green checkmark symbol indicating successful completion or approval, set against a circular background with a calm and positive tone"
+                                    aria-hidden="true" class="lead-management__benefits-icon">
+                                <span class="lead-management__benefits-text">Разбор вашей ситуации и точек
+                                    роста</span>
+                            </li>
+                            <li class="lead-management__benefits-item">
+                                <img src="img/modal-icon.svg" width="26" height="26"
+                                    alt="Green checkmark symbol representing successful completion or approval, set against a circular background with a calm and positive tone"
+                                    aria-hidden="true" class="lead-management__benefits-icon">
+                                <span class="lead-management__benefits-text">Индивидуальный план выхода на
+                                    международный
+                                    рынок</span>
+                            </li>
+                            <li class="lead-management__benefits-item">
+                                <img src="img/modal-icon.svg" width="26" height="26"
+                                    alt="Green checkmark symbol representing successful completion or approval, set against a circular background with a calm and positive tone"
+                                    aria-hidden="true" class="lead-management__benefits-icon">
+                                <span class="lead-management__benefits-text">Доступ к базе знаний по недвижимости в
+                                    ОАЭ,
+                                    Кипре, Бали и
+                                    Украине</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <form autocomplete="on" aria-label="Форма заявки на консультацию">
+                    <div class="cta__form-col">
+                        <input type="text" id="cta-name2" name="name" placeholder="Ваше имя" required
+                            autocomplete="name">
+                        <input type="tel" id="cta-phone2" name="phone" placeholder="Ваш телефон" required
+                            autocomplete="tel" pattern="[\d\s\-\+\(\)]*" aria-label="Телефон">
+
+                        <div class="select-wrapper">
+                            <select id="contact-method2" name="contact-method" aria-label="Выберите способ связи">
+                                <option value="contact">Как связаться?</option>
+                                <option value="phone">По телефону</option>
+                                <option value="email">По электронной почте</option>
+                                <option value="whatsapp">Через WhatsApp</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="button" aria-label="Отправить заявку">
+                        Отправить заявку
+                    </button>
+                </form>
+            </div>
+            <div class="modal-bg">
+                <picture>
+                    <source type="image/webp" srcset="
+                    img/modal-bg.webp    1x,
+                    img/modal-bg@2x.webp 2x
+                    " />
+                    <img src="img/modal-bg.jpg" srcset="img/modal-bg@2x.jpg 2x" alt="" width="776" height="528"
+                        loading="lazy" />
+                </picture>
+            </div>
+        </div>
+    </div>
+
     <script src="script/jquery-3.7.0.min.js" defer></script>
     <script src="script/swiper-bundle.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5/dist/fancybox/fancybox.umd.js" defer></script>

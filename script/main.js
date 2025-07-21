@@ -304,3 +304,30 @@ if (swiperContainer) {
     },
   });
 }
+
+
+const modal = document.getElementById("myModal");
+const openModalBtns = document.querySelectorAll(".open-modal-btn");
+const closeBtn = document.getElementsByClassName("close")[0];
+
+
+openModalBtns.forEach(button => {
+    button.onclick = function() {
+        modal.style.display = "flex";
+        document.body.style.overflow = "hidden"; 
+    }
+});
+
+
+closeBtn.onclick = function() {
+    modal.style.display = "none";
+    document.body.style.overflow = "auto"; 
+}
+
+
+window.onclick = function(event) {
+    if (event.target === modal) {
+        modal.style.display = "none";
+        document.body.style.overflow = "auto"; 
+    }
+}

@@ -265,6 +265,12 @@ select {
   appearance: none;
 }
 
+#contact-method2 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 .select-wrapper::after {
   content: "";
   background: url(../img/select.svg);
@@ -2756,7 +2762,7 @@ body.menu-open {
   color: var(--colors-Red-950);
   text-align: center;
   font-family: var(--fonts-family-Segoe-UI);
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .footer__bottom {
@@ -3338,7 +3344,6 @@ body.menu-open {
 
 .main-education__banner-content {
   position: relative;
-  z-index: 5;
   display: flex;
   max-width: 800px;
   flex-direction: column;
@@ -4504,33 +4509,137 @@ body.menu-open {
   }
 
 
+  .modal {
+      display: none; 
+      position: fixed;
+      z-index: 100; 
+      left: 0;
+      top: 0;
+      overflow: auto;
+      width: 100%;
+      height: 100%;
+      min-width: 320px;
+      max-width: 1279px;
+      padding: 52px 16px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.75);
+  }
+
+.modal-content {
+  position: relative;
+  max-width: 476px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.modal-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 
 
+.modal-content__header {
+  display: flex;
+  padding: 21px 19px 16px 16px;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
+
+.modal-content__header .close {
+  margin-top: -4px;
+}
+
+.modal-content__header h2 {
+  color: var(--colors-Blue-950);
+  font-family: var(--fonts-family-Segoe-UI);
+  font-size: var(--fonts-size-16);
+  font-weight: 600;
+  line-height: 100%; 
+}
+
+.modal-content .cta__form {
+  position: relative;
+  z-index: 2;
+  padding: 32px 16px 16px 16px;
+  gap: 21px;
+}
+
+.modal-content .cta__title {
+  gap: 8px;
+}
+
+.modal-content .cta__title h2 {
+  color: var(--colors-Blue-950);
+  font-size: var(--fonts-size-18);
+  font-weight: 500;
+  line-height: 120%; 
+}
+
+.modal-content .cta__title p {
+  color: var(--colors-Blue-950);
+  font-size: var(--fonts-size-12);
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.modal-content form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content .cta__form input, 
+.modal-content .cta__form select {
+  height: 44px;
+  padding: 12px;
+}
+
+.modal-content .cta__form-col {
+  margin-bottom: 44px;
+}
+
+.modal-content .cta__form .button {
+  max-width: 181px;
+  margin-left: auto;
+  margin-right: 0;
+border-radius: 12px;
+    outline: 3px solid var(--colors-base-white-15);
+    border: none;
+    background: var(--colors-Blue-950);
+    color: var(--colors-Red-50);
+   
+
+    transition: all 0.4s;
+}
 
 
+  .modal-content .cta__form .button:hover {
+    outline: 5px solid var(--colors-base-white-15);
+    background: var(--colors-Blue-900);
+  }
 
+.modal-content .cta__form .button:active {
+    outline: 1px solid var(--colors-base-white-15);
+    background: var(--colors-Blue-800);
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  .modal-content .lead-management__card{
+    display: none;
+  }
 
 
 
@@ -6746,6 +6855,95 @@ body.menu-open {
     padding: 19px 0px 22px;
    }
 
+    .other-courses__container .other-courses__image img {
+      transition: all 0.4s;
+    }
+
+
+   .other-courses__container:hover .other-courses__image img {
+    transform: scale(1.5);
+   }
+
+   .modal {
+    max-width: 100%;
+    padding: 52px;
+   }
+
+   .modal-content {
+    max-width: 776px;
+    width: 100%;
+    border-radius: 16px;
+   }
+
+  .modal-content .lead-management__card{
+    display: flex;
+    width: 100%;
+  }
+
+  .modal-content__header h2 {
+    font-size: var(--fonts-size-20);
+  }
+  
+  .close {
+    cursor: pointer;
+  }
+
+  .modal-content .cta__form {
+    gap: 24px;
+    padding: 27px 32px 12px 32px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .modal-content .lead-management__benefits-item {
+    border-radius: 8px;
+    background: var(--colors-Red-300);
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.05);
+  }
+
+  .modal-content .cta__title p {
+    font-size: var(--fonts-size-16);
+  }
+
+  .modal-content .cta__title {
+    width: calc(50% - 12px);
+    justify-content: flex-start;
+  }
+  
+  .modal-content form {
+    width: calc(50% - 12px);
+  }
+
+    .modal-content .cta__form .lead-management__card  {
+      transform: none;
+      background: transparent;
+      outline: none;
+      padding: 0;
+      margin-top: 14px;
+    }
+
+    .modal-content__header {
+      padding: 21px 19px 16px 23px;
+    }
+
+    .modal-content .cta__title h2 {
+      font-size: var(--fonts-size-24);
+    }
+
+    .modal-content .lead-management__card-title {
+      padding-bottom: 2px;
+      width: 100%;
+    }
+
+    .modal-content .cta__form input, .modal-content .cta__form select {
+      height: 52px;
+      padding: 16px;
+    }
+
+    .modal-content .cta__form-col {
+      margin-top: 5px;
+      margin-bottom: 200px;
+    }
 }
 
 @media (max-width: 1279px) {
