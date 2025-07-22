@@ -100,7 +100,7 @@
   --colors-lime-100: #f1faea;
   --colors-lime-200: #eaf7df;
   --colors-lime-300: #e3f4d5;
-  --colors-lime-400: #dcf2ca;
+  --colors-Lime-400: #dcf2ca;
   --colors-lime-50: #f8fcf4;
   --colors-lime-500: #d5efc0;
   --colors-lime-600: #aec39d;
@@ -204,6 +204,7 @@ body {
   font-weight: var(--fonts-weight-regular);
   line-height: 1.2;
   font-style: normal;
+  overflow-x: hidden;
 }
 
 input {
@@ -1309,6 +1310,15 @@ body.menu-open {
     url(../img/paralax.jpg) type("image/jpeg")
   );
   position: relative;
+}
+
+.parallax-marketing {
+  background-image: image-set(
+    url(../img/parallax-marketing.webp) type("image/webp"),
+    url(../img/parallax-marketing.jpg) type("image/jpeg")
+  );
+  position: relative;
+  background-position: top;
 }
 
 .parallax::before {
@@ -2839,6 +2849,8 @@ body.menu-open {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  position: relative;
+  z-index: 2;
   align-items: center;
 }
 
@@ -4699,7 +4711,7 @@ body.menu-open {
   color: var(--colors-base-black-100);
   font-size: var(--fonts-size-24);
   font-weight: 500;
-  line-height: 120%; 
+  line-height: 120%;
 }
 
 .courses__container {
@@ -4754,7 +4766,7 @@ body.menu-open {
 }
 
 .courses__box .other-courses__content-text > p {
-      line-height: 110%;
+  line-height: 110%;
 }
 
 .courses__box .subscription-card__header {
@@ -4770,7 +4782,7 @@ body.menu-open {
   color: var(--colors-Blue-950);
   font-size: var(--fonts-size-20);
   font-weight: 500;
-  line-height: 100%; 
+  line-height: 100%;
 }
 
 .courses__box .subscription-card__original-price {
@@ -4778,7 +4790,7 @@ body.menu-open {
   font-size: var(--fonts-size-12);
   font-weight: 500;
   line-height: 120%;
-text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 .courses__box .subscription-card__price {
@@ -4798,7 +4810,7 @@ text-decoration: line-through;
   font-family: "Inter";
   font-size: 14px;
   font-weight: 500;
-  line-height: 20px; 
+  line-height: 20px;
   letter-spacing: -0.14px;
   display: flex;
   align-items: center;
@@ -4807,9 +4819,9 @@ text-decoration: line-through;
 
 .courses__box .subscription-card__content {
   width: 100%;
-   padding: 0 15px 14px 15px;
-     border-bottom: 1px solid var(--colors-Blue-200);
-     margin-bottom: 33px;
+  padding: 0 15px 14px 15px;
+  border-bottom: 1px solid var(--colors-Blue-200);
+  margin-bottom: 33px;
 }
 
 .courses__box .subscription-card__content .subscription-card__feature {
@@ -4819,7 +4831,7 @@ text-decoration: line-through;
   color: var(--colors-Blue-950);
   font-size: var(--fonts-size-12);
   font-weight: 500;
-  line-height: 120%; 
+  line-height: 120%;
 }
 
 .courses__box .subscription-card__content .subscription-card__feature img {
@@ -4853,7 +4865,339 @@ text-decoration: line-through;
   font-family: var(--fonts-family-Segoe-UI);
   font-size: var(--fonts-size-12);
   font-weight: 600;
+  line-height: 120%;
+}
+
+.main-marketing {
+    background: var(--colors-Red-200);
+}
+
+.main-marketing .breadcrumbs {
+  position: relative;
+} 
+
+.main-marketing .breadcrumbs::before {
+   content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../img/Noise-about.png) repeat;
+}
+
+.marketing__hero {
+  position: relative;
+  padding: 62px 16px 0px 16px;
+  background: var(--colors-Red-200);
+  overflow: hidden;
+}
+
+.marketing__hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.marketing__hero-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../img/Noise-about.png) repeat;
+}
+
+.marketing__hero-content {
+  display: flex;
+  min-width: 276px;
+  padding-bottom: 48px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 23px;
+  flex: 1 0 0;
+}
+
+.marketing__hero-content h1 {
+  color: #1E1E1E;
+  font-size: var(--fonts-size-33);
+  font-weight: 500;
+  line-height: 100%; 
+}
+
+.marketing__hero-content p {
+  color: var(--colors-base-black-100);
+  font-size: var(--fonts-size-14);
+  font-weight: 500;
+  line-height: 120%;
+  margin-bottom: 4px;
+}
+
+
+.marketing__hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.marketing__hero .wrapper {
+  display: flex;
+  max-width: 800px;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 64px;
+  align-self: stretch;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.marketing__hero-image {
+  height: 376px;
+  min-width: 276px;
+  flex: 1 0 0;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+        padding-top: 155px;
+    padding-left: 289px;
+}
+
+
+ .marketing__hero-btn {
+    padding: 22px 24px;
+    width: fit-content;
+    border-radius: 12px;
+    outline: 3px solid var(--colors-base-white-15);
+    border: none;
+    background: var(--colors-Blue-950);
+    color: var(--colors-Red-50);
+    font-family: var(--fonts-family-Segoe-UI);
+    font-size: var(--fonts-size-12);
+    font-weight: 600;
+
+    transition: all 0.4s;
+  }
+
+  .marketing__hero-btn:hover {
+    outline: 5px solid var(--colors-base-white-15);
+    background: var(--colors-Blue-900);
+  }
+
+  .marketing__hero-btn:active {
+    outline: 1px solid var(--colors-base-white-15);
+    background: var(--colors-Blue-800);
+  }
+
+.marketing__hero-image img{
+  width: 1023px;
+  height: 766px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.main-marketing .targetAudienceSection .wrapper {
+  gap: 23px;
+}
+
+.main-marketing .targetAudienceSection__box {
+  gap: 4px;
+}
+
+.parallax-marketing .education__img{ 
+  padding: 12.187px 0px 21.813px 0px;
+  height: 373px;
+}
+
+.parallax-marketing .education__img img {
+  width: 504px;
+  height: 342px;
+  object-fit: contain;
+}
+
+.main-marketing .targetAudienceSection {
+  padding-bottom: 0;
+}
+
+.main-marketing .targetAudienceSection__box-accardion {
+  max-height: 492px;
+}
+
+.parallax-marketing-content h2 {
+  font-size: var(--fonts-size-24);
+  font-weight: 500;
+line-height: 120%;
+margin-bottom: 13px;
+}
+
+.parallax-marketing-content .education__content-title p {
+  font-size: var(--fonts-size-16);
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.parallax-marketing-list {
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 12px;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+
+.parallax-marketing-item {
+  display: flex;
+  padding: 8px 12px;
+  border-radius: 99px;
+  background: var(--colors-Lime-400);
+  align-items: center;
+  gap: 10px;
+  color: rgba(0, 0, 0, 0.80);
+  font-size: var(--fonts-size-14);
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.parallax-marketing-content.education__content {
+  gap: 18px;
+}
+
+.does-work {
+  background: var(--colors-base-white-100);
+  padding: 61px 16px 65px 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.does-work::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../img/Noise-about.png) repeat;
+  background-blend-mode: luminosity;
+    mix-blend-mode: hard-light;
+}
+
+.does-work .wrapper {
+  display: flex;
+  max-width: 800px;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+  row-gap: 10px;
+  flex: 1 0 0;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.does-work__image {
+  display: flex;
+  height: 476px;
+  min-width: 276px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 0;
+}
+
+.does-work__image img {
+  width: 990px;
+  height: 720px;  
+  object-fit: contain;
+  object-position: center bottom;
+  margin-left: 8%;
+    margin-bottom: -14%;
+}
+
+.does-work__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 41px;
+  position: relative;
+  z-index: 2;
+  flex: 1 0 0;
+}
+
+.does-work__content h2 {
+  color: var(--colors-Blue-950);
+  font-size: var(--fonts-size-18);
+  font-weight: 500;
   line-height: 120%; 
+}
+
+.does-work__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+  flex: 1 0 0;
+}
+
+.does-work__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4px;
+  align-self: stretch;
+}
+
+.does-work__item h3 {
+  color: var(--colors-Blue-950);
+  font-size: var(--fonts-size-14);
+  font-weight: 500;
+  line-height: 100%; 
+}
+
+.does-work__item img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.does-work__item p {
+  color: var(--colors-Blue-900);
+  font-size: var(--fonts-size-12);
+  font-weight: 500;
+  line-height: 120%; 
+}
+
+.cta-marketing .wrapper {
+  z-index: 5;
+}
+
+.cta-marketing::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../img/Noise-about.png) repeat;
+  background-blend-mode: luminosity;
+  mix-blend-mode: plus-lighter;
+  z-index: 4;
+}
+
+.cta-marketing::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 42.56%, rgba(0, 0, 0, 0.00) 152.5%);
+  opacity: 1;
 }
 
 
@@ -5811,7 +6155,7 @@ text-decoration: line-through;
   }
 
   .breadcrumbs {
-    padding: 11px 52px;
+    padding: 14px 52px;
   }
 
   .breadcrumbs ol li span {
@@ -6964,12 +7308,12 @@ text-decoration: line-through;
 
   .courses__container .wrapper {
     display: flex;
-  max-width: 1176px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  gap: 64px;
-  flex: 1 0 0;
+    max-width: 1176px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 64px;
+    flex: 1 0 0;
   }
 
   .courses__box .other-courses__content-text {
@@ -7010,7 +7354,6 @@ text-decoration: line-through;
     margin-bottom: 0;
   }
 
-
   .courses__hero .wrapper {
     max-width: 1176px;
     align-items: flex-start;
@@ -7018,7 +7361,7 @@ text-decoration: line-through;
   }
 
   .courses__hero h1 {
-    font-size: var(--fonts-size-33);  
+    font-size: var(--fonts-size-33);
   }
 
   .courses__box {
@@ -7047,21 +7390,163 @@ text-decoration: line-through;
     padding-bottom: 157px;
   }
 
-.courses__pagination li {
-  transition: all 0.4s;
-  cursor: pointer;
+  .courses__pagination li {
+    transition: all 0.4s;
+    cursor: pointer;
+  }
+
+  .courses__pagination li:hover {
+    outline: 2px solid var(--colors-Red-200);
+    background: var(--colors-Red-500);
+  }
+
+  .courses__pagination li:active {
+    background: var(--colors-Red-700);
+  }
+
+  .marketing__hero {
+    padding: 128px 52px 53px 52px;
+  }
+
+  .marketing__hero .wrapper {
+    max-width: 1176px;
+    gap: 64px;
+  }
+  
+  .marketing__hero-content {
+    max-width: 556px;
+    width: 100%;
+    flex: none;
+    gap: 19px;
+  }
+
+  .marketing__hero-content h1 {
+    font-size: var(--fonts-size-48);
+  }
+
+  .marketing__hero-content p {
+    font-size: var(--fonts-size-18);
+  }
+
+  .marketing__hero-btn {
+    font-size: var(--fonts-size-16);
+  }
+
+  .marketing__hero-image img {
+    width: 1153px;
+    height: 864px;
+  }
+
+  .marketing__hero-image {
+        padding-top: 314px;
+    padding-left: 73px;
+  }
+
+  .main-marketing .targetAudienceSection {
+    padding-top: 90px;
+  }
+
+  .main-marketing .targetAudienceSection .wrapper {
+    gap: 52px;
+  }
+
+  .main-marketing .targetAudienceSection__box {
+    gap: 24px;
+  }
+
+  .main-marketing .targetAudienceSection__box-accardion {
+    padding-top: 3px;
+  }
+
+  .parallax-marketing-content h2 {
+    font-size: var(--fonts-size-33);
+    margin-bottom: 8px;
+  }
+
+  .parallax-marketing-content .education__content-title p {
+    font-size: var(--fonts-size-20);
+  }
+
+  .parallax-marketing-item {
+    font-size: var(--fonts-size-18);
+  }
+
+  .parallax-marketing-content.education__content {
+    gap: 57px;
+    padding: 57px 0px;
+  }
+
+  .parallax-marketing-list {
+        gap: 7px 12px;
+  }
+
+  .parallax-marketing .education__img {
+    height: auto;
+  }
+
+  .parallax-marketing .education__img img {
+    width: 690px;
+    height: 517px;  
+    object-position: left 5px;
+    object-fit: none;
+  }
+
+  .parallax-marketing {
+    height: auto;
+  }
+
+  .does-work {
+    padding: 128px 52px;
+  }
+
+  .does-work .wrapper {
+    max-width: 1176px;
+    gap: 64px;
+  }
+
+  .does-work__content {
+    max-width: 776px;
+    flex: none;
+    gap: 36px;
+  }
+
+  .does-work__list {
+    gap: 8px;
+  }
+
+  .does-work__item {
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .does-work__content h2 {
+    font-size: var(--fonts-size-24);
+  }
+  .does-work__item h3 {
+    font-size: var(--fonts-size-18);
+    max-width: 245px;
+    width: 100%;
+  }
+
+  .does-work__item p {
+    font-size: var(--fonts-size-14);
+    max-width: 245px;
+    width: 100%;
+  }
+
+  .does-work__item img {
+    flex: 1;
+  }
+
+  .does-work__image img {
+    width: 1202px;
+    height: 901px;
+    margin-left: 9%;
+    margin-bottom: -7%;
+  }
 }
 
-.courses__pagination li:hover {
-  outline: 2px solid var(--colors-Red-200);
-  background: var(--colors-Red-500);
-}
-
-.courses__pagination li:active {
-  background: var(--colors-Red-700);
-}
-
-}
 
 @media (max-width: 1279px) {
   .about__main-img {
