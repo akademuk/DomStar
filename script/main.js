@@ -63,12 +63,14 @@ function toggleMobileMenu(menu, burger, body, overlay) {
   menu.setAttribute("aria-hidden", isCurrentlyOpen);
 }
 
-function initClientLogosSwiper() {
+document.addEventListener("DOMContentLoaded", function () {
   const wrapper = document.querySelector(".realEstateSection-swiper-wrapper");
   if (!wrapper) return;
 
   const originalSlides = Array.from(wrapper.children);
   const neededClones = 10;
+
+  // Клонируем элементы
   for (let i = 0; i < neededClones; i++) {
     const slide = originalSlides[i % originalSlides.length].cloneNode(true);
     wrapper.appendChild(slide);
@@ -83,7 +85,8 @@ function initClientLogosSwiper() {
     autoplay: { delay: 0, disableOnInteraction: false },
     allowTouchMove: false,
   });
-}
+});
+
 
 document.addEventListener("DOMContentLoaded", () => {
   const firstAccordionItem = document.querySelector(".accordion-item");
