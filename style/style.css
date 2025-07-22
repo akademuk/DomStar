@@ -4643,13 +4643,13 @@ body.menu-open {
   display: none;
 }
 
-.main-сourses {
+.main-courses {
   background: var(--colors-Red-100);
   background-repeat: repeat;
   position: relative;
 }
 
-.main-сourses::before {
+.main-courses::before {
   content: "";
   background: url(../img/Noise-about.png) repeat;
   background-size: auto;
@@ -4662,7 +4662,7 @@ body.menu-open {
   z-index: 0;
 }
 
-.main-сourses .realEstateSection::before {
+.main-courses .realEstateSection::before {
   content: "";
   background: url(../img/Noise-about.png) repeat;
   background-size: auto;
@@ -4675,17 +4675,17 @@ body.menu-open {
   z-index: 0;
 }
 
-.main-сourses .realEstateSection {
+.main-courses .realEstateSection {
   background: var(--colors-Red-100);
 }
 
-.сourses__hero {
+.courses__hero {
   position: relative;
   z-index: 2;
   padding: 61px 16px 32px 16px;
 }
 
-.сourses__hero .wrapper {
+.courses__hero .wrapper {
   display: flex;
   max-width: 800px;
   flex-direction: column;
@@ -4695,20 +4695,20 @@ body.menu-open {
   margin: 0 auto;
 }
 
-.сourses__hero h1 {
+.courses__hero h1 {
   color: var(--colors-base-black-100);
   font-size: var(--fonts-size-24);
   font-weight: 500;
   line-height: 120%; 
 }
 
-.сourses__container {
+.courses__container {
   position: relative;
   z-index: 2;
   padding: 45px 16px 50px;
 }
 
-.сourses__container .wrapper {
+.courses__container .wrapper {
   display: flex;
   max-width: 800px;
   flex-direction: column;
@@ -4718,7 +4718,7 @@ body.menu-open {
   margin: 0 auto;
 }
 
-.сourses__box {
+.courses__box {
   width: 100%;
   display: flex;
   align-items: flex-start;
@@ -4728,7 +4728,7 @@ body.menu-open {
   flex-wrap: wrap;
 }
 
-.сourses__box .other-courses__slide {
+.courses__box .other-courses__slide {
   display: flex;
   min-width: 256px;
   align-items: center;
@@ -4736,28 +4736,28 @@ body.menu-open {
   max-width: fit-content !important;
 }
 
-.сourses__box .other-courses__image {
+.courses__box .other-courses__image {
   height: 160px;
 }
 
-.сourses__box .other-courses__content {
+.courses__box .other-courses__content {
   padding-top: 12px;
   padding-bottom: 17px;
   gap: 0;
 }
 
-.сourses__box .other-courses__content-text {
+.courses__box .other-courses__content-text {
   padding: 0 15px 11px 15px;
   border-bottom: 1px solid var(--colors-Blue-200);
   gap: 15px;
   margin-bottom: 15px;
 }
 
-.сourses__box .other-courses__content-text > p {
+.courses__box .other-courses__content-text > p {
       line-height: 110%;
 }
 
-.сourses__box .subscription-card__header {
+.courses__box .subscription-card__header {
   width: 100%;
   gap: 7px;
   padding: 0 15px;
@@ -4766,14 +4766,14 @@ body.menu-open {
   margin-bottom: 21px;
 }
 
-.сourses__box .subscription-card__current-price {
+.courses__box .subscription-card__current-price {
   color: var(--colors-Blue-950);
   font-size: var(--fonts-size-20);
   font-weight: 500;
   line-height: 100%; 
 }
 
-.сourses__box .subscription-card__original-price {
+.courses__box .subscription-card__original-price {
   color: var(--colors-Blue-600);
   font-size: var(--fonts-size-12);
   font-weight: 500;
@@ -4781,19 +4781,19 @@ body.menu-open {
 text-decoration: line-through;
 }
 
-.сourses__box .subscription-card__price {
+.courses__box .subscription-card__price {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-.сourses__box .subscription-card__features {
+.courses__box .subscription-card__features {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-.сourses__box .subscription-card__timer {
+.courses__box .subscription-card__timer {
   color: var(--colors-base-red);
   font-family: "Inter";
   font-size: 14px;
@@ -4805,14 +4805,14 @@ text-decoration: line-through;
   gap: 8px;
 }
 
-.сourses__box .subscription-card__content {
+.courses__box .subscription-card__content {
   width: 100%;
    padding: 0 15px 14px 15px;
      border-bottom: 1px solid var(--colors-Blue-200);
      margin-bottom: 33px;
 }
 
-.сourses__box .subscription-card__content .subscription-card__feature {
+.courses__box .subscription-card__content .subscription-card__feature {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -4822,16 +4822,16 @@ text-decoration: line-through;
   line-height: 120%; 
 }
 
-.сourses__box .subscription-card__content .subscription-card__feature img {
+.courses__box .subscription-card__content .subscription-card__feature img {
   width: 16px;
   height: 16px;
 }
 
-.сourses__box .other-courses__link {
+.courses__box .other-courses__link {
   width: calc(100% - 32px);
 }
 
-.сourses__pagination {
+.courses__pagination {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -4839,7 +4839,7 @@ text-decoration: line-through;
   gap: 8px;
 }
 
-.сourses__pagination li {
+.courses__pagination li {
   display: flex;
   height: 48px;
   padding: 14px 16px;
@@ -6958,11 +6958,11 @@ text-decoration: line-through;
     padding: 64px 52px 32px 52px;
   }
 
-  .сourses__container {
+  .courses__container {
     padding: 60px 52px;
   }
 
-  .сourses__container .wrapper {
+  .courses__container .wrapper {
     display: flex;
   max-width: 1176px;
   flex-direction: column;
@@ -6972,92 +6972,92 @@ text-decoration: line-through;
   flex: 1 0 0;
   }
 
-  .сourses__box .other-courses__content-text {
+  .courses__box .other-courses__content-text {
     padding-left: 23px;
     padding-bottom: 19px;
     margin-bottom: 22px;
   }
 
-  .сourses__box .subscription-card__header {
+  .courses__box .subscription-card__header {
     padding: 0 22px;
     border-bottom: none;
   }
 
-  .сourses__box .subscription-card__content {
+  .courses__box .subscription-card__content {
     margin-bottom: 27px;
   }
 
-  .сourses__box .other-courses__link {
+  .courses__box .other-courses__link {
     width: calc(100% - 46px);
   }
 
-  .сourses__box .other-courses__content {
+  .courses__box .other-courses__content {
     padding-top: 20px;
     padding-bottom: 23px;
   }
 
-  .сourses__pagination li {
+  .courses__pagination li {
     font-size: var(--fonts-size-14);
   }
 
-  .сourses__box .subscription-card__content .subscription-card__feature {
+  .courses__box .subscription-card__content .subscription-card__feature {
     font-size: var(--fonts-size-14);
   }
 
-  .сourses__box .subscription-card__features {
+  .courses__box .subscription-card__features {
     padding: 0px 21px 0px 7px;
     border: none;
     margin-bottom: 0;
   }
 
 
-  .сourses__hero .wrapper {
+  .courses__hero .wrapper {
     max-width: 1176px;
     align-items: flex-start;
     gap: 25px;
   }
 
-  .сourses__hero h1 {
+  .courses__hero h1 {
     font-size: var(--fonts-size-33);  
   }
 
-  .сourses__box {
+  .courses__box {
     gap: 24px;
   }
 
-  .сourses__box .other-courses__slide {
+  .courses__box .other-courses__slide {
     width: 376px;
     border-radius: 12px;
     flex: none;
   }
 
-  .сourses__box .other-courses__image {
+  .courses__box .other-courses__image {
     height: 232px;
   }
 
-  .сourses__box .subscription-card__current-price {
+  .courses__box .subscription-card__current-price {
     font-size: var(--fonts-size-28);
   }
 
-  .сourses__box .subscription-card__original-price {
+  .courses__box .subscription-card__original-price {
     font-size: var(--fonts-size-16);
   }
 
-  .сourses__container {
+  .courses__container {
     padding-bottom: 157px;
   }
 
-.сourses__pagination li {
+.courses__pagination li {
   transition: all 0.4s;
   cursor: pointer;
 }
 
-.сourses__pagination li:hover {
+.courses__pagination li:hover {
   outline: 2px solid var(--colors-Red-200);
   background: var(--colors-Red-500);
 }
 
-.сourses__pagination li:active {
+.courses__pagination li:active {
   background: var(--colors-Red-700);
 }
 
