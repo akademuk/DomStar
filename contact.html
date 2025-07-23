@@ -4,9 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DomStar — обучающая экосистема для риелторов и брокеров</title>
-    <meta name="twitter:image" content="https://domstar.example.com/img/og-image.jpg" />
-    <link rel="canonical" href="https://domstar.example.com/" />
+    <title>DomStar — обучающая экоcиcтема для риелторов и брокеров</title>
 
     <link rel="preload" href="style/reset.css" as="style" />
     <link rel="preload" href="style/style.css" as="style" />
@@ -30,10 +28,10 @@
         <div class="wrapper">
             <img width="24" height="24" src="img/icon1.svg" alt="icon" class="promo-bar__icon" />
             <p>
-                Акция! Полный курс c ментором и базой недвижимости по 4 странам со
-                скидкой — стартуйте прямо сейчас!
+                Акция! Полный курc c ментором и базой недвижимоcти по 4 cтранам cо
+                cкидкой — cтартуйте прямо cейчаc!
             </p>
-            <button type="button">
+            <button>
                 Запиcатьcя
                 <img src="img/arrow-right.svg" width="20" height="20" alt="icon" />
             </button>
@@ -143,7 +141,7 @@
     </header>
 
     <!-- HERO SECTION -->
-    <main class="main-marketing">
+    <main class="main-marketing main-contact">
         <nav class="breadcrumbs" aria-label="Breadcrumb">
             <ol itemscope itemtype="https://schema.org/BreadcrumbList">
                 <li>
@@ -152,282 +150,146 @@
                     </a>
                 </li>
                 <li>
-                    <span>Маркетинг</span>
+                    <span>Контакти</span>
                 </li>
             </ol>
         </nav>
 
-        <section class="marketing__hero">
+        <section class="marketing__hero contact-hero">
             <div class="wrapper">
-                <div class="marketing__hero-content">
-                    <h1>Готовые заявки <br> на покупку недвижимости</h1>
-                    <p>Вам не нужно искать клиентов – мы передаём вам готовые лиды на покупку объектов в ОАЭ, Кипре,
-                        Бали и Украине прямо в CRM-систему.</p>
-                    <button class="marketing__hero-btn open-modal-btn">Получить предложение
-                        <img src="img/proposial.svg" width="24" height="20" alt="">
+                <div class="marketing__hero-content contact-hero__left">
+                    <h1>Свяжитесь с нами</h1>
+                    <div class="contact-hero__left-text">
+                        <p>Хотите пообщаться? <br>
+                            Мы будем рады вас услышать! </p>
+                        <p>Свяжитесь с нашей командой по работе с клиентами, чтобы узнать о мероприятиях, рекламных
+                            тарифах или просто поздороваться.</p>
+                    </div>
+                    <button class="marketing__hero-btn open-modal-btn">Напишите нам сейчас
+                        <img src="img/mail.svg" width="24" height="25" alt="">
                     </button>
                 </div>
-                <div class="marketing__hero-image">
+                <div class="marketing__hero-image contact-hero__right">
                     <picture>
                         <source type="image/webp" srcset="
-                          img/marketing__hero-image.webp    1x,
-                          img/marketing__hero-image@2x.webp 2x
+                          img/contact-hero__image.webp    1x,
+                          img/contact-hero__image@2x.webp 2x
                         " />
-                        <img src="img/marketing__hero-image.png" srcset="img/marketing__hero-image@2x.png 2x" alt=""
-                            width="1153" height="864" loading="lazy" />
+                        <img src="img/contact-hero__image.png" srcset="img/contact-hero__image@2x.png 2x" alt=""
+                            width="838" height="564" loading="lazy" />
                     </picture>
                 </div>
             </div>
-
-            <div class="marketing__hero-bg">
-                <picture>
-                    <source type="image/webp" srcset="
-                        img/marketing__hero-bg.webp    1x,
-                        img/marketing__hero-bg@2x.webp 2x
-                    " />
-                    <img src="img/marketing__hero-bg.png" srcset="img/marketing__hero-bg@2x.jpg 2x" alt="" width="1920"
-                        height="555" loading="lazy" />
-                </picture>
-            </div>
         </section>
 
-        <section class="targetAudienceSection">
+        <section class="representative">
             <div class="wrapper">
-                <h2>Когда услуга актуальна:</h2>
-                <div class="targetAudienceSection__box">
-                    <div class="targetAudienceSection__box-img">
+                <h2>Наши представительства:</h2>
+                <div class="representative__box">
+                    <article class="representative__item">
                         <picture>
                             <source type="image/webp" srcset="
-                            img/marketing__actuality.webp    1x,
-                            img/marketing__actuality@2x.webp 2x
+                            img/representative__item1.webp    1x,
+                            img/representative__item1@2x.webp 2x
                             " />
-                            <img src="img/marketing__actuality.jpg" srcset="img/marketing__actuality@2x.jpg 2x" alt=""
-                                width="576" height="576" loading="lazy" />
+                            <img src="img/representative__item1.png" srcset="img/representative__item1@2x.png 2x" alt=""
+                                width="576" height="476" loading="lazy" />
                         </picture>
-                    </div>
-                    <div class="targetAudienceSection__box-accardion">
-                        <div class="accordion">
-                            <div class="accordion-item active">
-                                <div class="accordion-header">
-                                    <img width="22" height="22" src="img/icons-active1.svg" alt="icon"
-                                        class="accordion-header-icon">
-                                    Холодные звонки
-                                    <img width="24" height="25" src="img/accrdion-arrow.svg" alt="icon"
-                                        class="accordion-header-arrow">
-                                </div>
-                                <div class="accordion-content">
-                                    <p>
-                                        Устали тратить время на не целевые обращения
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="accordion-item">
-                                <div class="accordion-header">
-                                    <img width="24" height="25" src="img/icons-active2.svg" alt="icon"
-                                        class="accordion-header-icon">
-                                    Фокус на сделках
-                                    <img width="24" height="25" src="img/accrdion-arrow.svg" alt="icon"
-                                        class="accordion-header-arrow">
-                                </div>
-                                <div class="accordion-content">
-                                    <p>
-                                        Хотите стать успешным риелтором? Мы предложим план,
-                                        который поможет вам быстро освоить профессию и заключить
-                                        первые сделки.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="accordion-item">
-                                <div class="accordion-header">
-                                    <img width="24" height="25" src="img/icons-active3.svg" alt="icon"
-                                        class="accordion-header-icon">
-                                    Эффективная реклама
-                                    <img width="24" height="25" src="img/accrdion-arrow.svg" alt="icon"
-                                        class="accordion-header-arrow">
-                                </div>
-                                <div class="accordion-content">
-                                    <p>
-                                        Хотите стать успешным риелтором? Мы предложим план,
-                                        который поможет вам быстро освоить профессию и заключить
-                                        первые сделки.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="accordion-item">
-                                <div class="accordion-header">
-                                    <img width="24" height="25" src="img/icons-active4.svg" alt="icon"
-                                        class="accordion-header-icon">
-                                    Зарубежные клиенты
-                                    <img width="24" height="25" src="img/accrdion-arrow.svg" alt="icon"
-                                        class="accordion-header-arrow">
-                                </div>
-                                <div class="accordion-content">
-                                    <p>
-                                        Хотите стать успешным риелтором? Мы предложим план,
-                                        который поможет вам быстро освоить профессию и заключить
-                                        первые сделки.
-                                    </p>
-                                </div>
-                            </div>
+                        <div class="representative__item-content">
+                            <address>
+                                <b>Украина, г. Одесса</b>
+                                <span>ул. Генуезская, 24б</span>
+                                <a href="tel:+380634988001">+38 (063) 498-80-01</a>
+                                <span>Пн - Пт: 10:00 - 18:00</span>
+                            </address>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                    </article>
 
-        <section class="education parallax parallax-marketing">
-            <div class="wrapper">
-                <div class="education__img">
-                     <picture>
+                    <article class="representative__item">
+                        <picture>
                             <source type="image/webp" srcset="
-                            img/parallax-marketing-image.webp    1x,
-                            img/parallax-marketing-image@2x.webp 2x
+                            img/representative__item2.webp    1x,
+                            img/representative__item2@2x.webp 2x
                             " />
-                            <img src="img/parallax-marketing-image.png" srcset="img/parallax-marketing-image@2x.png 2x" alt=""
-                                width="690" height="517" loading="lazy" />
-                    </picture>
-                </div>
-                <div class="education__content parallax-marketing-content">
-                    <div class="education__content-title">
-                        <h2>Мы предоставляем "теплые" <br> обращения на покупку недвижимости — от проверенных источников</h2>
-                        <p>Вам остается — квалифицировать: подобрать объект, провести показ и закрыть сделку.</p>
-                    </div>
-
-                    <ul class="parallax-marketing-list">
-                        <li class="parallax-marketing-item"><img src="img/parallax-marketing-item.svg" width="14" height="15" alt="">Без рисков</li>
-                        <li class="parallax-marketing-item"><img src="img/parallax-marketing-item.svg" width="14" height="15" alt="">Без лишнего шума</li>
-                        <li class="parallax-marketing-item"><img src="img/parallax-marketing-item.svg" width="14" height="15" alt="">Только заинтересованные клиенты</li>
-                    </ul>
+                            <img src="img/representative__item2.png" srcset="img/representative__item2@2x.png 2x" alt=""
+                                width="576" height="476" loading="lazy" />
+                        </picture>
+                        <div class="representative__item-content">
+                            <address>
+                                <b>Дубай - Об'єднані Арабські Емірати</b>
+                                <span>Office 307, Building 11, Bay Square by Dubai Retail</span>
+                                <a href="tel:+971585132206">+971 58 513 22 06</a>
+                                <span>Пн - Пт: 10:00 - 18:00</span>
+                            </address>
+                        </div>
+                    </article>
                 </div>
             </div>
-        </section>
-
-        <section class="does-work">
-            <div class="wrapper">
-                <div class="does-work__content">
-                    <h2>Как это работает</h2>
-                    <div class="does-work__list">
-                        <div class="does-work__item">
-                            <h3>Заявка на сайте</h3>
-                            <img src="img/bigs-arrow.svg" width="247" height="9" alt="">
-                            <p>Заполняете простую форму с контактными данными и информацией о ваших потребностях.</p>
-                        </div>
-                        <img src="img/main-icons.svg" width="24" height="25" alt="icon">
-
-                        <div class="does-work__item">
-                            <h3>Уточнение запроса</h3>
-                            <img src="img/bigs-arrow.svg" width="247" height="9" alt="">
-                            <p>Менеджер свяжется с вами, уточнит детали и предложит оптимальное решение запроса</p>
-                        </div>
-                        <img src="img/main-icons.svg" width="24" height="25" alt="icon">
-
-                        <div class="does-work__item">
-                            <h3>Презентация плана</h3>
-                            <img src="img/bigs-arrow.svg" width="247" height="9" alt="">
-                            <p>Обсудим план рекламы, бюджет на продвижение и другие нюансы, которые влияют на результат</p>
-                        </div>
-                        <img src="img/main-icons.svg" width="24" height="25" alt="icon">
-
-                        <div class="does-work__item">
-                            <h3>Подписание договора и оплата</h3>
-                            <img src="img/bigs-arrow.svg" width="247" height="9" alt="">
-                            <p>После согласования всех условий подписываем договор, осуществляете оплату и приступаем к запуску рекламы</p>
-                        </div>
-                        <img src="img/main-icons.svg" width="24" height="25" alt="icon">
-
-                         <div class="does-work__item">
-                            <h3>Предоставление лида </h3>
-                            <img src="img/bigs-arrow.svg" width="247" height="9" alt="">
-                            <p>После запуска кампаний передаем целевые обращения в CRM-систему для обработки</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="does-work__image">
-                    <picture>
-                        <source type="image/webp" srcset="
-                        img/does-work__image.webp    1x,
-                        img/does-work__image@2x.webp 2x
-                        " />
-                        <img src="img/does-work__image.png" srcset="img/does-work__image@2x.png 2x" alt=""
-                            width="1202" height="901" loading="lazy" />
-                    </picture>
-                </div>
-            </div>
-        </section>
-
-        <section class="cta cta-marketing" aria-labelledby="cta-title">
-            <div class="wrapper">
-                <div class="cta__form">
-                    <div class="cta__title">
-                        <h2 id="cta-title">
-                            Индивидуальный просчет стоимости целевых обращений:
-                        </h2>
-                        <p>
-                           Заполните форму и после анализа запроса подготовим ориентировочную стоимость работ и оценку рекламного бюджета для получения желаемых показателей.
-                        </p>
-                    </div>
-                    <form autocomplete="on" aria-label="Форма заявки на консультацию">
-                        <div class="cta__form-col">
-                            <input type="text" id="cta-name" name="name" placeholder="Ваше имя" required
-                                autocomplete="name">
-                            <input type="tel" id="cta-phone" name="phone" placeholder="Ваш телефон" required
-                                autocomplete="tel" pattern="[\d\s\-\+\(\)]*" aria-label="Телефон">
-                            <input type="text" id="cta-city" name="city" placeholder="Регион продвижения" required
-                                autocomplete="tel" pattern="[\d\s\-\+\(\)]*" aria-label="Регион продвижения">
-                            <input type="text" id="cta-value" name="value" placeholder="Сколько нужно обращений?" required
-                                autocomplete="tel" pattern="[\d\s\-\+\(\)]*" aria-label="Сколько нужно обращений?">
-                            
-                        </div>
-
-                        <button type="submit" class="button" aria-label="Получить расчет">
-                            Получить расчет
-                        </button>
-                    </form>
-                </div>
-                <aside class="lead-management__card lead-management__card--aside"
-                    aria-labelledby="lead-benefits-title-cta">
-                    <h3 id="lead-benefits-title-cta" class="lead-management__card-title">
-                        Получите:
-                    </h3>
-                    <ul class="lead-management__benefits-list">
-                        <li class="lead-management__benefits-item">
-                            <img src="img/icons1.svg" width="26" height="26"
-                                alt="Green checkmark symbol indicating successful completion or approval, set against a circular background with a calm and positive tone"
-                                aria-hidden="true" class="lead-management__benefits-icon">
-                            <span class="lead-management__benefits-text">Разбор вашей ситуации и точек роста</span>
-                        </li>
-                        <li class="lead-management__benefits-item">
-                            <img src="img/icons1.svg" width="26" height="26"
-                                alt="Green checkmark symbol representing successful completion or approval, set against a circular background with a calm and positive tone"
-                                aria-hidden="true" class="lead-management__benefits-icon">
-                            <span class="lead-management__benefits-text">Индивидуальный план выхода на международный
-                                рынок</span>
-                        </li>
-                        <li class="lead-management__benefits-item">
-                            <img src="img/icons1.svg" width="26" height="26"
-                                alt="Green checkmark symbol representing successful completion or approval, set against a circular background with a calm and positive tone"
-                                aria-hidden="true" class="lead-management__benefits-icon">
-                            <span class="lead-management__benefits-text">Доступ к базе знаний по недвижимости в ОАЭ,
-                                Кипре, Бали и
-                                Украине</span>
-                        </li>
-                    </ul>
-                </aside>
-            </div>
-            <div class="cta__bg" aria-hidden="true">
-                 <picture>
-                        <source type="image/webp" srcset="
-                        img/cta-bg.webp    1x,
-                        img/cta-bg@2x.webp 2x
-                        " />
-                        <img src="img/cta-bg.jpg" srcset="img/cta-bg@2x.jpg 2x" alt=""
-                            width="1202" height="901" loading="lazy" />
+            <div class="representative-bg">
+                <picture>
+                    <source type="image/webp" srcset="
+                        img/representative-bg.webp    1x,
+                        img/representative-bg@2x.webp 2x
+                    " />
+                    <img src="img/representative-bg.png" srcset="img/representative-bg@2x.jpg 2x" alt="" width="1920"
+                        height="755" loading="lazy" />
                 </picture>
             </div>
         </section>
+
+        <section class="contact-section">
+            <div class="wrapper">
+                <h2>Контакты</h2>
+                <div class="contact-section__box">
+                    <div class="contact-section__left">
+                        <div class="contact-section__title">
+                            <h3>Наша цель:</h3>
+                            <p>Главная цель академии – сформировать рынок обучения в сфере недвижимости и создать
+                                сообщество ТОП-экспертов для повышения уровня работы каждого специалиста.</p>
+                        </div>
+                        <ul class="contact-section__list">
+                            <li><span>АДРЕС:</span>Украина, г. Одесса, ул. Генуезская, 24б</li>
+                            <li><span>ТЕЛЕФОНЫ:</span><strong><a href="tel:+380634988001">+38 (063) 498-80-01</a><a
+                                        href="tel:+380936524869">+38 (093) 652 48 69</a></strong></li>
+                            <li><span>EMAIL:</span><a
+                                    href="mailto:career.eduguard@gmail.com">career.eduguard@gmail.com</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="contact-section__right">
+                        <div class="contact-section__form-title">
+                            <h3>Обратная связь</h3>
+                            <p>Не стесняйтесь связаться с нами, мы любим заводить новых партнеров и друзей.</p>
+                        </div>
+                        <form autocomplete="on" aria-label="Форма заявки на консультацию">
+                            <div class="cta__form-col">
+                                <input type="text" id="cta-name" name="name" placeholder="Ваше имя" required
+                                    autocomplete="name">
+                                <input type="tel" id="cta-phone" name="phone" placeholder="Ваш телефон" required
+                                    autocomplete="tel" pattern="[\d\s\-\+\(\)]*" aria-label="Телефон">
+
+                                <textarea name="message" id="cta-message" placeholder="Напишите свое сообщение  "
+                                    required></textarea>
+                            </div>
+
+                            <button type="submit" class="button" aria-label="Отправить заявку">
+                                Отправить
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="maps">
+            <picture>
+                <source type="image/webp" srcset="
+                    img/maps.webp    1x,
+                    img/maps@2x.webp 2x
+                " />
+                <img src="img/maps.jpg" srcset="img/maps@2x.jpg 2x" alt="" width="1920" height="576" loading="lazy" />
+            </picture>
+        </div>
 
     </main>
 
