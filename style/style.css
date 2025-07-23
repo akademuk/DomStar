@@ -5655,6 +5655,95 @@ border-radius: 99px;
   object-position: center;
 }
 
+.hero-404 {
+  background: var(--colors-Red-50);
+  position: relative;
+  min-height: 80vh;
+  padding: 48px 16px;
+}
+
+.hero-404 .wrapper {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  max-width: 800px;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  height: 100%;
+}
+
+.hero-404__image{
+  background: linear-gradient(0deg, #70635B 0%, #70635B 100%), url('../img/404.png') #FDF7F4 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-blend-mode: color, normal;
+  max-width: 348px;
+  width: 100%;
+  height: 348px;
+  margin-bottom: 10px;
+}
+
+
+.hero-404__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+.hero-404 strong {
+  color: var(--colors-Red-950);
+  text-align: center;
+  font-size: var(--fonts-size-20);
+  font-weight: 500;
+  line-height: 120%; 
+  margin-bottom: 32px;
+}
+
+.hero-404 p {
+  color: var(--colors-Red-950);
+  text-align: center;
+  font-size: var(--fonts-size-24);
+  font-weight: 400;
+  line-height: 120%; 
+  margin-bottom: 24px;
+}
+
+ .hero-404__link {
+    padding: 14px 16px;
+    max-width: 330px;
+    width: max-content;
+    text-decoration: none;
+    margin: 0 auto;
+    border-radius: 12px;
+    outline: 3px solid var(--colors-base-white-15);
+    border: none;
+    background: var(--colors-Blue-950);
+    color: var(--colors-Red-50);
+    font-family: var(--fonts-family-Segoe-UI);
+    font-size: var(--fonts-size-14);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: all 0.4s;
+  }
+
+  .shero-404__link:hover {
+    outline: 5px solid var(--colors-base-white-15);
+    background: var(--colors-Blue-900);
+  }
+
+  .hero-404__link:active {
+    outline: 1px solid var(--colors-base-white-15);
+    background: var(--colors-Blue-800);
+  }
+
+
 
 @media (min-width: 1280px) {
   .result-img-smoll {
@@ -8111,6 +8200,31 @@ border-radius: 99px;
 
    .maps {
     height: 576px;
+   }
+
+   .hero-404 {
+    padding-bottom: 64px;
+   }
+
+   .hero-404__image {
+    width: 548px;
+    max-width: 548px;
+    height: 548px;
+    margin-bottom: 24px;
+   }
+
+   .hero-404 strong {
+    font-size: var(--fonts-size-28);
+    margin-bottom: 32px;
+   }
+
+   .hero-404 p {
+    font-size: var(--fonts-size-33);
+    margin-bottom: 24px;
+   }
+
+   .hero-404 .wrapper {
+    max-width: 1176px;
    }
 }
 
