@@ -5841,6 +5841,152 @@ textarea:active {
   max-width: 100%;
 }
 
+.public_offer {
+  padding: 48px 16px 32px 16px;
+}
+
+.public_offer .wrapper {
+  display: flex;
+  max-width: 800px;
+  width: 100%;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 24px;
+  flex: 1 0 0;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  flex-direction: row-reverse;
+}
+
+.public_offer__nav {
+  display: flex;
+  min-width: 276px;
+  flex: 1 0 0;
+  padding: 24px 0;
+  flex-direction: column;
+  border-radius: 4px;
+  background: var(--colors-Blue-50);
+  position: sticky;
+  top: 0;
+}
+
+.public_offer__content {
+  display: flex;
+  min-width: 276px;
+  padding-bottom: 48px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  flex: 1 0 0;
+}
+
+.public_offer__nav h2 {
+  width: 100%;
+  color: var(--colors-Blue-950);
+  font-size: var(--fonts-size-28);
+  font-weight: 500;
+  line-height: 100%; 
+  padding: 0 24px 24px 24px;
+  border-bottom: 1px solid #EAEAFA;
+  margin-bottom: 24px;
+}
+
+.public_offer__nav ul {
+  display: flex;
+  padding: 0 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.public_offer__nav ul h3 {
+  color: var(--colors-Blue-900);
+  font-size: var(--fonts-size-16);
+  font-weight: 500;
+  line-height: 120%;
+  margin-bottom: 12px;
+}
+
+.public_offer__nav ul li {
+  display: flex;
+  min-height: 28px;
+  padding: 4px;
+  align-items: center;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.public_offer__nav ul li a {
+  color: var(--colors-Blue-950);
+  font-family: var(--fonts-family-Segoe-UI);
+  font-size: var(--fonts-size-12);
+  font-weight: 400;
+  line-height: 100%; 
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 4px;
+  transition: all 0.4s;
+}
+
+.public_offer__nav ul li:hover a {
+  color: var(--colors-Red-700);
+}
+
+.public_offer__nav ul li:hover img {
+  filter: brightness(0) saturate(100%) invert(56%) sepia(25%) saturate(230%) hue-rotate(339deg) brightness(93%) contrast(86%);
+}
+
+.public_offer__nav ul li:active a {
+color: var(--colors-Red-600);
+}
+
+.public_offer__nav ul li:active img {
+  filter: brightness(0) saturate(100%) invert(82%) sepia(2%) saturate(6799%) hue-rotate(324deg) brightness(105%) contrast(53%);
+}
+
+.public_offer__content-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+}
+
+.public_offer__content-box h1,
+.public_offer__content-box h2 {
+  color: var(--colors-base-black-100);
+  font-size: var(--fonts-size-16);
+  font-weight: 500;
+  line-height: 120%;
+  margin-bottom: 16px; 
+}
+
+.public_offer__content-box p,
+.public_offer__content-box a,
+.public_offer__content-box li {
+  color: var(--colors-base-black-100);
+  font-size: var(--fonts-size-12);
+  font-weight: 400;
+  line-height: 120%;
+  text-decoration: none;
+}
+
+.public_offer__content-box ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+
+
+@media (max-width: 607px) {
+  .public_offer__nav {
+    position: static;
+  }
+}
+
+
 @media (min-width: 1280px) {
   .result-img-smoll {
     display: none;
@@ -8373,6 +8519,60 @@ textarea:active {
   .hero-thank-you__box .education__img img {
     position: static;
     min-width: 100%;
+  }
+
+  .public_offer {
+    padding: 80px 52px 32px 52px;
+  }
+
+  .public_offer .wrapper {
+    max-width: 1176px;
+    gap: 24px;
+  }
+
+  .public_offer__content {
+    padding: 0 32px 48px 0;
+    gap: 64px;
+  }
+
+  .public_offer__content-box {
+    gap: 32px;
+  }
+
+  .public_offer__content-box h1, .public_offer__content-box h2 {
+    margin-bottom: 0;
+    font-size: var(--fonts-size-20);
+  }
+
+  .public_offer__content-box p, .public_offer__content-box a, .public_offer__content-box li {
+    font-size: var(--fonts-size-16);
+  }
+
+  .public_offer__nav {
+    display: flex;
+    max-width: 476px;
+    align-items: center;
+    flex: 1 0 0;
+    padding: 48px 0;
+  }
+
+  .public_offer__nav h2 {
+    padding: 0 32px 32px 32px;
+    margin-bottom: 32px;
+    font-size: var(--fonts-size-40);
+  }
+
+  .public_offer__nav ul {
+    padding: 0 32px;
+  }
+
+  .public_offer__nav ul h3 {
+    font-size: var(--fonts-size-20);
+    margin-bottom: 24px;
+  }
+
+  .public_offer__nav ul li a {
+    font-size: var(--fonts-size-14);
   }
 }
 
