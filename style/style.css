@@ -4924,6 +4924,8 @@ body.menu-open {
   right: 0;
   bottom: 0;
   background: url(../img/Noise-about.png) repeat;
+  background-blend-mode: luminosity;
+    mix-blend-mode: hard-light;
 }
 
 .marketing__hero-content {
