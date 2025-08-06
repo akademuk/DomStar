@@ -64,7 +64,7 @@ function toggleMobileMenu(menu, burger, body, overlay) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  const wrapper = document.querySelector(".realEstateSection-swiper-wrapper");
+  const wrapper = document.querySelector(".feature-swiper-wrapper");
   if (!wrapper) return;
 
   const originalSlides = Array.from(wrapper.children);
@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   /* global Swiper */
-  new Swiper(".realEstateSection-swiper", {
+  new Swiper(".feature-swiper", {
     loop: true,
     speed: 5000,
     slidesPerView: "auto",
@@ -143,9 +143,9 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-const swiperContainer = document.querySelector(".graduates__slider");
-if (swiperContainer) {
-  const swiper = new Swiper(".graduates__slider", {
+const graduatesSwiperContainer = document.querySelector(".graduates__slider");
+if (graduatesSwiperContainer) {
+  const graduatesSwiper = new Swiper(".graduates__slider", {
     loop: true,
     // centeredSlides: true,
     navigation: {
@@ -275,7 +275,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
 
-    if (!isMobile && swiperInstance) {
+    if (!isMobile && swiperInstance && typeof swiperInstance.destroy === 'function') {
       swiperInstance.destroy(true, true);
       swiperInstance = null;
     }
@@ -287,8 +287,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 const otherCoursesSlider = document.querySelector(".other-courses__slider");
-if (swiperContainer) {
-  const swiper = new Swiper(".other-courses__slider", {
+if (otherCoursesSlider) {
+  const otherCoursesSwiper = new Swiper(".other-courses__slider", {
     loop: false,
     // centeredSlides: true,
     navigation: {
@@ -314,23 +314,29 @@ const openModalBtns = document.querySelectorAll(".open-modal-btn");
 const closeBtn = document.getElementsByClassName("close")[0];
 
 
-openModalBtns.forEach(button => {
-    button.onclick = function() {
-        modal.style.display = "flex";
-        document.body.style.overflow = "hidden"; 
-    }
-});
-
-
-closeBtn.onclick = function() {
-    modal.style.display = "none";
-    document.body.style.overflow = "auto"; 
+if (openModalBtns.length > 0) {
+    openModalBtns.forEach(button => {
+        button.onclick = function() {
+            modal.style.display = "flex";
+            document.body.style.overflow = "hidden"; 
+        }
+    });
 }
 
 
-window.onclick = function(event) {
-    if (event.target === modal) {
+if (closeBtn) {
+    closeBtn.onclick = function() {
         modal.style.display = "none";
         document.body.style.overflow = "auto"; 
     }
 }
+
+if (modal) {
+    window.onclick = function(event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto"; 
+        }
+    }
+}
+
